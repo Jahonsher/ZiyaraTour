@@ -51,19 +51,31 @@ export default function StatsCounter() {
   const seen = useInView(ref)
 
   return (
-    <section ref={ref} className="py-14 sm:py-20 bg-slate-50">
-      <div className="container-x">
-        <div className="text-center mb-10">
+    <section ref={ref} className="relative py-14 sm:py-20 bg-slate-50 overflow-hidden">
+      <div className="blob w-[260px] h-[260px] bg-accent-200/40 -top-10 right-1/3 animate-blob" />
+      <div className="container-x relative">
+        <div
+          className={`text-center mb-10 transition-all duration-700 ${
+            seen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          }`}
+        >
           <div className="section-eyebrow">{t('counter.eyebrow')}</div>
           <h2 className="section-title mt-2">{t('counter.title')}</h2>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {ITEMS.map((it) => (
-            <div key={it.labelKey} className="relative bg-white rounded-3xl border border-slate-100 p-6 sm:p-8 text-center shadow-card overflow-hidden">
-              <div className="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-brand-50" />
+          {ITEMS.map((it, i) => (
+            <div
+              key={it.labelKey}
+              style={{ transitionDelay: `${i * 120}ms` }}
+              className={`relative bg-white rounded-3xl border border-slate-100 p-6 sm:p-8 text-center shadow-card overflow-hidden transition-all duration-700 hover:-translate-y-2 hover:shadow-pop hover:border-brand-200 group ${
+                seen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
+              <div className="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-brand-50 group-hover:bg-accent-100 group-hover:scale-125 transition-all duration-500" />
+              <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-brand-50/60 to-transparent" />
               <div className="relative">
-                <div className="text-3xl">{it.icon}</div>
+                <div className="text-3xl inline-block group-hover:animate-bounce-soft">{it.icon}</div>
                 <div className="mt-3 font-display font-extrabold text-4xl sm:text-5xl text-ink-900">
                   <Count target={it.num} suffix={it.suffix} active={seen} />
                 </div>

@@ -1,6 +1,7 @@
 import { useI18n } from '../i18n/I18nContext.jsx'
 import site from '../data/site.json'
 import Img from './Img.jsx'
+import Reveal from './Reveal.jsx'
 
 export default function BlogSection() {
   const { t, localize } = useI18n()
@@ -10,21 +11,23 @@ export default function BlogSection() {
   return (
     <section className="py-16 sm:py-24">
       <div className="container-x">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+        <Reveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
           <div>
             <div className="section-eyebrow">{t('blog.eyebrow')}</div>
             <h2 className="section-title mt-2">{t('blog.title')}</h2>
             <p className="mt-3 text-slate-600 max-w-2xl">{t('blog.subtitle')}</p>
           </div>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {posts.map((p) => (
-            <article key={p.id} className="card group flex flex-col">
+          {posts.map((p, i) => (
+            <Reveal key={p.id} variant="up" delay={i * 120}>
+            <article className="card group flex flex-col tilt-hover h-full">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Img src={p.image} alt={localize(p.title)} label={localize(p.title)}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700" />
-                <span className="absolute top-3 left-3 chip bg-white/95 text-brand-800 shadow-sm">
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-[900ms]" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <span className="absolute top-3 left-3 chip bg-white/95 text-brand-800 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
                   {localize(p.category)}
                 </span>
               </div>
@@ -52,6 +55,7 @@ export default function BlogSection() {
                 </div>
               </div>
             </article>
+            </Reveal>
           ))}
         </div>
       </div>

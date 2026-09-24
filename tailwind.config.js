@@ -57,11 +57,47 @@ export default {
           '0%': { transform: 'scale(1)', opacity: 0.6 },
           '100%': { transform: 'scale(1.6)', opacity: 0 },
         },
+        'blob': {
+          '0%, 100%': { transform: 'translate(0,0) scale(1)' },
+          '33%':      { transform: 'translate(30px,-40px) scale(1.15)' },
+          '66%':      { transform: 'translate(-25px,25px) scale(0.9)' },
+        },
+        'shine': {
+          '0%':   { transform: 'translateX(-120%) skewX(-20deg)' },
+          '100%': { transform: 'translateX(220%) skewX(-20deg)' },
+        },
+        'gradient-x': {
+          '0%,100%': { backgroundPosition: '0% 50%' },
+          '50%':     { backgroundPosition: '100% 50%' },
+        },
+        'marquee': {
+          '0%':   { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'tilt': {
+          '0%,100%': { transform: 'rotate(-1.5deg)' },
+          '50%':     { transform: 'rotate(1.5deg)' },
+        },
+        'bounce-soft': {
+          '0%,100%': { transform: 'translateY(0)' },
+          '50%':     { transform: 'translateY(-6px)' },
+        },
+        'spin-slow': {
+          '0%':   { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         'fade-up': 'fade-up .6s ease-out both',
         'float': 'float 6s ease-in-out infinite',
         'pulse-ring': 'pulse-ring 2s ease-out infinite',
+        'blob': 'blob 14s ease-in-out infinite',
+        'shine': 'shine 2.4s ease-in-out infinite',
+        'gradient-x': 'gradient-x 6s ease infinite',
+        'marquee': 'marquee 30s linear infinite',
+        'tilt': 'tilt 6s ease-in-out infinite',
+        'bounce-soft': 'bounce-soft 3s ease-in-out infinite',
+        'spin-slow': 'spin-slow 24s linear infinite',
       },
     },
   },

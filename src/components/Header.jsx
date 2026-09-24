@@ -61,8 +61,8 @@ export default function Header({ transparent = false }) {
       </div>
 
       <div className="container-x flex items-center justify-between h-16 sm:h-20">
-        <Link to="/" className="flex items-center gap-2 font-display font-bold text-lg sm:text-xl">
-          <img src={site.logo} alt="ZiyaraTour" className="w-10 h-10 rounded-xl object-contain bg-white p-1 shadow-sm" />
+        <Link to="/" className="flex items-center gap-2 font-display font-bold text-lg sm:text-xl group">
+          <img src={site.logo} alt="ZiyaraTour" className="w-10 h-10 rounded-xl object-contain bg-white p-1 shadow-sm transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110" />
           <span className={solid ? 'text-ink-900' : 'text-white'}>ZiyaraTour</span>
         </Link>
 
@@ -70,8 +70,10 @@ export default function Header({ transparent = false }) {
           {NAV.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === '/'}
               className={({ isActive }) =>
-                `px-3 py-2 rounded-full text-sm font-semibold transition ${linkClass} ${
+                `relative px-3 py-2 rounded-full text-sm font-semibold transition ${linkClass} ${
                   isActive ? (solid ? 'text-brand-700' : 'text-white') : ''
+                } after:content-[''] after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-0.5 after:bg-current after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 ${
+                  isActive ? 'after:scale-x-100' : 'after:scale-x-0'
                 }`
               }>
               {t(item.key)}
@@ -81,7 +83,7 @@ export default function Header({ transparent = false }) {
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher variant={solid ? 'light' : 'dark'} />
-          <Link to="/book" className="hidden sm:inline-flex btn-primary !py-2.5 !px-5 text-sm">
+          <Link to="/book" className="hidden sm:inline-flex btn-primary btn-shine !py-2.5 !px-5 text-sm hover:scale-105 transition-transform">
             {t('nav.book')}
           </Link>
           <button className={`lg:hidden p-2 rounded-lg ${solid ? 'text-ink-800' : 'text-white'}`}

@@ -28,7 +28,7 @@ export default function TourCard({ tour }) {
   }
 
   return (
-    <Link to={`/tours/${tour.slug}`} className="card group flex flex-col relative">
+    <Link to={`/tours/${tour.slug}`} className="card group flex flex-col relative tilt-hover">
       <div className="relative aspect-[5/4] overflow-hidden rounded-t-2xl">
         <Img
           src={tour.cover}
@@ -39,6 +39,12 @@ export default function TourCard({ tour }) {
 
         {/* subtle bottom gradient for readability */}
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink-900/60 to-transparent" />
+
+        {/* hover sheen */}
+        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-tr from-accent-500/0 via-white/10 to-brand-500/0" />
+
+        {/* hover shine sweep */}
+        <div className="pointer-events-none absolute -inset-y-8 -left-1/2 w-1/2 rotate-12 bg-gradient-to-r from-transparent via-white/25 to-transparent opacity-0 group-hover:opacity-100 group-hover:translate-x-[300%] transition-all duration-1000" />
 
         {/* top-left badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
@@ -121,8 +127,8 @@ export default function TourCard({ tour }) {
             </div>
             <div className="text-[11px] text-slate-500">{t('card.person')}</div>
           </div>
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-50 text-brand-700 group-hover:bg-brand-600 group-hover:text-white transition">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-50 text-brand-700 group-hover:bg-brand-600 group-hover:text-white group-hover:scale-110 transition-all duration-300">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-0.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </span>
         </div>
       </div>

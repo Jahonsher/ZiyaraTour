@@ -1,4 +1,5 @@
 import { useI18n } from '../i18n/I18nContext.jsx'
+import Reveal from './Reveal.jsx'
 
 const SERVICES = [
   { key: 'tours',     icon: 'route' },
@@ -35,25 +36,30 @@ export default function Services() {
   return (
     <section className="py-16 sm:py-24">
       <div className="container-x">
-        <div className="text-center mb-12">
+        <Reveal className="text-center mb-12">
           <div className="section-eyebrow">{t('sections.services.eyebrow')}</div>
           <h2 className="section-title mt-2">{t('sections.services.title')}</h2>
           <p className="mt-3 text-slate-600 max-w-2xl mx-auto">{t('sections.services.subtitle')}</p>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {SERVICES.map((s) => (
-            <div key={s.key} className="p-6 bg-white rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-card transition group">
-              <div className="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition">
-                {ICONS[s.icon]}
+          {SERVICES.map((s, i) => (
+            <Reveal key={s.key} variant="up" delay={i * 90}>
+              <div className="relative p-6 bg-white rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-pop transition-all duration-500 hover:-translate-y-2 group overflow-hidden h-full">
+                <div className="pointer-events-none absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-brand-50 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500" />
+                <div className="relative">
+                  <div className="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                    {ICONS[s.icon]}
+                  </div>
+                  <h3 className="mt-4 font-display font-bold text-lg text-ink-900 group-hover:text-brand-700 transition-colors">
+                    {t(`services.${s.key}.title`)}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+                    {t(`services.${s.key}.text`)}
+                  </p>
+                </div>
               </div>
-              <h3 className="mt-4 font-display font-bold text-lg text-ink-900">
-                {t(`services.${s.key}.title`)}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                {t(`services.${s.key}.text`)}
-              </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

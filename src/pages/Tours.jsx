@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import TourCard from '../components/TourCard.jsx'
+import Reveal from '../components/Reveal.jsx'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import tours from '../data/tours.json'
 import destinations from '../data/destinations.json'
@@ -36,21 +37,24 @@ export default function Tours() {
   }
 
   return (
-    <div className="pt-28 sm:pt-32 pb-16">
-      <div className="container-x">
-        <header className="mb-8">
+    <div className="relative pt-28 sm:pt-32 pb-16 overflow-hidden">
+      <div className="blob w-[320px] h-[320px] bg-brand-200/40 -top-10 -left-20 animate-blob" />
+      <div className="blob w-[280px] h-[280px] bg-accent-200/40 top-20 right-0 animate-blob" style={{ animationDelay: '4s' }} />
+
+      <div className="container-x relative">
+        <Reveal as="header" className="mb-8">
           <h1 className="font-display font-bold text-3xl sm:text-5xl text-ink-900">{t('nav.tours')}</h1>
           <p className="mt-3 text-slate-600 max-w-2xl">{t('sections.featured.subtitle')}</p>
-        </header>
+        </Reveal>
 
-        <div className="flex flex-wrap items-center gap-2 mb-8">
+        <Reveal className="flex flex-wrap items-center gap-2 mb-8" delay={120}>
           {CATEGORIES.map((c) => (
             <button
               key={c}
               onClick={() => setCategory(c)}
-              className={`px-4 py-2 rounded-full text-sm font-semibold border transition ${
+              className={`px-4 py-2 rounded-full text-sm font-semibold border transition-all duration-300 hover:-translate-y-0.5 ${
                 category === c
-                  ? 'bg-brand-600 text-white border-brand-600 shadow-cta'
+                  ? 'bg-brand-600 text-white border-brand-600 shadow-cta scale-105'
                   : 'bg-white text-ink-700 border-slate-200 hover:border-brand-300'
               }`}
             >
@@ -58,14 +62,14 @@ export default function Tours() {
             </button>
           ))}
           {(destination || duration) && (
-            <button onClick={clear} className="ml-auto text-sm text-brand-700 font-semibold underline underline-offset-4">
+            <button onClick={clear} className="ml-auto text-sm text-brand-700 font-semibold underline underline-offset-4 hover:text-accent-600 transition">
               Clear filters
             </button>
           )}
-        </div>
+        </Reveal>
 
         {(destination || duration) && (
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-6 animate-fade-up">
             {destination && (
               <span className="chip bg-brand-50 text-brand-800">
                 {localize(destinations.find((d) => d.id === destination)?.name)}
@@ -76,15 +80,17 @@ export default function Tours() {
         )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((tour) => (
-            <TourCard key={tour.id} tour={tour} />
+          {filtered.map((tour, i) => (
+            <Reveal key={tour.id} variant="up" delay={(i % 6) * 80} threshold={0.1}>
+              <TourCard tour={tour} />
+            </Reveal>
           ))}
         </div>
 
         {filtered.length === 0 && (
-          <div className="text-center py-24 text-slate-500">
-            <p className="text-xl">😕</p>
-            <p className="mt-2">{t('misc.notFound')}</p>
+          <div className="text-center py-24 text-slate-500 animate-fade-up">
+            <p className="text-5xl animate-bounce-soft">😕</p>
+            <p className="mt-3">{t('misc.notFound')}</p>
           </div>
         )}
       </div>

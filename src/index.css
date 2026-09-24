@@ -64,3 +64,110 @@
 
 /* Prevent layout shift on scrollbar for modals */
 html.lock-scroll { overflow: hidden; }
+
+/* --- Modern animation utilities --- */
+
+/* Shine sweep across an element (add on hover with .btn-shine) */
+.btn-shine { position: relative; overflow: hidden; isolation: isolate; }
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,.55) 50%, transparent 80%);
+  transform: translateX(-120%) skewX(-20deg);
+  transition: transform .8s ease;
+  pointer-events: none;
+}
+.btn-shine:hover::after { transform: translateX(220%) skewX(-20deg); }
+
+/* Text with animated gradient */
+.text-gradient-animated {
+  background: linear-gradient(90deg, #fdba74, #f97316, #fb923c, #fdba74);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-x 6s ease infinite;
+}
+
+/* Glowing ring for icons / avatars */
+.glow-ring {
+  position: relative;
+}
+.glow-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  background: conic-gradient(from 0deg, rgba(249,115,22,.9), rgba(30,64,224,.6), rgba(249,115,22,.9));
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity .4s ease;
+  z-index: -1;
+}
+.glow-ring:hover::before { opacity: .8; }
+
+/* Marquee track: content must be duplicated for seamless loop */
+.marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+
+/* 3D tilt on hover for cards */
+.tilt-hover {
+  transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s ease;
+  transform-style: preserve-3d;
+}
+.tilt-hover:hover {
+  transform: perspective(900px) rotateX(4deg) rotateY(-4deg) translateY(-6px);
+}
+
+/* Underline reveal for links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -3px;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .35s ease;
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Soft floating blob (used for decorative backgrounds) */
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: .55;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Image hover reveal caption */
+.img-reveal .img-reveal-caption {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform .5s ease, opacity .5s ease;
+}
+.img-reveal:hover .img-reveal-caption {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Respect users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
