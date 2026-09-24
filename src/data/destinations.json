@@ -1,0 +1,79 @@
+[
+  {
+    "id": "tashkent",
+    "image": "/images/hero-bg.jpg",
+    "tours": 3,
+    "name": {
+      "en": "Tashkent",
+      "ru": "Ташкент",
+      "uz": "Toshkent",
+      "uzc": "Тошкент"
+    }
+  },
+  {
+    "id": "samarkand",
+    "image": "/images/tours/silk-road.jpg",
+    "tours": 3,
+    "name": {
+      "en": "Samarkand",
+      "ru": "Самарканд",
+      "uz": "Samarqand",
+      "uzc": "Самарқанд"
+    }
+  },
+  {
+    "id": "bukhara",
+    "image": "/images/tours/middle-ages.jpg",
+    "tours": 3,
+    "name": {
+      "en": "Bukhara",
+      "ru": "Бухара",
+      "uz": "Buxoro",
+      "uzc": "Бухоро"
+    }
+  },
+  {
+    "id": "khiva",
+    "image": "/images/tours/middle-ages-8.jpg",
+    "tours": 2,
+    "name": {
+      "en": "Khiva",
+      "ru": "Хива",
+      "uz": "Xiva",
+      "uzc": "Хива"
+    }
+  },
+  {
+    "id": "shakhrisabz",
+    "image": "",
+    "tours": 0,
+    "name": {
+      "en": "Shakhrisabz",
+      "ru": "Шахрисабз",
+      "uz": "Shahrisabz",
+      "uzc": "Шаҳрисабз"
+    }
+  },
+  {
+    "id": "navoi",
+    "image": "",
+    "tours": 0,
+    "name": {
+      "en": "Navoi",
+      "ru": "Навои",
+      "uz": "Navoiy",
+      "uzc": "Навоий"
+    }
+  },
+  {
+    "id": "fergana",
+    "image": "",
+    "tours": 0,
+    "name": {
+      "en": "Fergana",
+      "ru": "Фергана",
+      "uz": "Farg'ona",
+      "uzc": "Фарғона"
+    }
+  }
+]

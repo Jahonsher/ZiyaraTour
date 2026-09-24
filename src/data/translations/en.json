@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "destinations": "Destinations",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Book now"
+  },
+  "hero": {
+    "eyebrow": "Discover Uzbekistan",
+    "title": "The Silk Road, lived",
+    "titleHighlight": "Uzbekistan",
+    "subtitle": "Curated tours across Samarkand, Bukhara, Khiva and beyond — designed by local experts, delivered with heart.",
+    "cta": "Explore tours",
+    "secondary": "Get a quote"
+  },
+  "search": {
+    "destination": "Destination",
+    "duration": "Duration",
+    "date": "Departure",
+    "guests": "Travellers",
+    "any": "Any",
+    "search": "Search tours"
+  },
+  "sections": {
+    "featured": {
+      "eyebrow": "Best-sellers",
+      "title": "Featured tour packages",
+      "subtitle": "Hand-picked itineraries our travellers love the most."
+    },
+    "destinations": {
+      "eyebrow": "Where to go",
+      "title": "Popular destinations",
+      "subtitle": "Cities and regions our guides know inside and out."
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "title": "Everything for your journey",
+      "subtitle": "From visa support to hotels, trains and unforgettable local experiences."
+    },
+    "why": {
+      "eyebrow": "Why ZiyaraTour",
+      "title": "A journey planned like your own family's",
+      "subtitle": "We're a local team who has spent years perfecting every route."
+    },
+    "testimonials": {
+      "eyebrow": "Reviews",
+      "title": "Stories from our travellers"
+    },
+    "cta": {
+      "title": "Your custom tour, in 24 hours",
+      "subtitle": "Tell us what you want to see — we'll design a private itinerary and send it to Telegram.",
+      "btn": "Request a custom tour"
+    }
+  },
+  "tour": {
+    "days": "days",
+    "nights": "nights",
+    "from": "From",
+    "person": "per person",
+    "book": "Book this tour",
+    "details": "View details",
+    "highlights": "Highlights",
+    "included": "What's included",
+    "excluded": "Not included",
+    "itinerary": "Day-by-day plan",
+    "gallery": "Gallery",
+    "reviews": "reviews",
+    "share": "Share",
+    "back": "Back to tours"
+  },
+  "book": {
+    "title": "Book your tour",
+    "subtitle": "Fill in your details — the booking goes straight to our team on Telegram.",
+    "form": {
+      "name": "Full name",
+      "namePh": "Ivan Ivanov",
+      "phone": "Phone / WhatsApp",
+      "phonePh": "+998 90 123 45 67",
+      "email": "Email",
+      "emailPh": "you@example.com",
+      "tour": "Tour",
+      "tourPh": "Select a tour",
+      "date": "Preferred date",
+      "guests": "Number of travellers",
+      "message": "Message",
+      "messagePh": "Any special requests, dietary needs, arrival time…",
+      "submit": "Send to Telegram",
+      "sending": "Sending…",
+      "success": "Thank you! Your request has been sent. We'll contact you soon.",
+      "error": "Sorry, something went wrong. Please try again or contact us directly.",
+      "missingConfig": "Booking channel is not configured yet. Please contact us directly by phone or Telegram.",
+      "requiredHint": "Fields marked * are required.",
+      "agree": "I agree to be contacted about my request."
+    }
+  },
+  "services": {
+    "tours": { "title": "Tour packages", "text": "Group and private tours across all of Uzbekistan." },
+    "hotels": { "title": "Hotels", "text": "Boutique heritage hotels and international 4–5* brands." },
+    "visa": { "title": "Visa support", "text": "Invitation letters, e-visa help, on-arrival advice." },
+    "transport": { "title": "Transport", "text": "Comfortable cars, minivans, and high-speed train tickets." },
+    "flights": { "title": "Flights", "text": "Domestic & international flight booking at agency rates." },
+    "guides": { "title": "Local guides", "text": "Certified guides speaking English, Russian, Arabic and more." }
+  },
+  "why": {
+    "local": { "title": "Truly local", "text": "Born and raised in Uzbekistan — we know every corner." },
+    "flex": { "title": "Flexible plans", "text": "Every tour can be customised to your dates, pace and budget." },
+    "safe": { "title": "Safe & vetted", "text": "Trusted partners, licensed guides and 24/7 support on the road." },
+    "value": { "title": "Fair pricing", "text": "No hidden costs. Best price guarantee for direct bookings." }
+  },
+  "stats": {
+    "years": "Years of experience",
+    "travellers": "Happy travellers",
+    "tours": "Tour programs",
+    "rating": "Average rating"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A local team for the great Silk Road",
+    "p1": "ZiyaraTour is a Tashkent-based agency specialising in cultural, historical and pilgrimage travel across Uzbekistan. We combine deep local knowledge with modern comfort so you can focus on the journey.",
+    "p2": "Our team includes licensed guides, drivers, and long-time partners in every city we visit. We are proud partners of the International Institute of Central Asian Studies.",
+    "partnersTitle": "Our partners",
+    "officialPartner": "Official partner:"
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Talk to a real human",
+    "subtitle": "We usually reply within a few hours. For urgent trips, Telegram is fastest.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "socials": "Follow us"
+  },
+  "footer": {
+    "tagline": "Tour operator based in Tashkent, Uzbekistan.",
+    "explore": "Explore",
+    "company": "Company",
+    "follow": "Follow us",
+    "rights": "All rights reserved.",
+    "made": "Made with care in Uzbekistan."
+  },
+  "categories": {
+    "all": "All tours",
+    "cultural": "Cultural",
+    "pilgrimage": "Pilgrimage",
+    "city": "City break",
+    "adventure": "Adventure"
+  },
+  "destinations": {
+    "explore": "Explore",
+    "toursCount": "tours"
+  },
+  "misc": {
+    "loading": "Loading…",
+    "notFound": "Tour not found",
+    "backHome": "Back to home"
+  },
+  "card": {
+    "bestseller": "Best seller",
+    "hotdeal": "Hot deal",
+    "new": "New",
+    "wishlist": "Add to wishlist",
+    "person": "/ person"
+  },
+  "deals": {
+    "eyebrow": "Limited offer",
+    "title": "Deal of the week",
+    "subtitle": "Save up to 25% on our top-rated Silk Road package.",
+    "save": "Save",
+    "cta": "Grab this deal",
+    "ends": "Offer ends soon"
+  },
+  "counter": {
+    "eyebrow": "By the numbers",
+    "title": "Trusted by travellers worldwide"
+  },
+  "blog": {
+    "eyebrow": "Travel journal",
+    "title": "Stories & travel tips",
+    "subtitle": "Insider guides written by our local team.",
+    "readMore": "Read more",
+    "min": "min read",
+    "all": "All posts"
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "Travel inspiration in your inbox",
+    "subtitle": "Once a month — new tours, seasonal offers, insider tips. No spam.",
+    "placeholder": "your@email.com",
+    "cta": "Subscribe",
+    "success": "Thanks! You're on the list.",
+    "invalid": "Please enter a valid email."
+  }
+}

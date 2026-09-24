@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-white text-ink-800 font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .container-x { @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8; }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition
+           px-6 py-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-400 shadow-cta;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-brand-800 border border-brand-100 hover:bg-brand-50 focus:ring-brand-300;
+  }
+  .btn-ghost {
+    @apply btn text-white/90 hover:text-white hover:bg-white/10;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card overflow-hidden transition
+           hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .section-title {
+    @apply font-display text-3xl sm:text-4xl font-bold text-ink-900;
+  }
+  .section-eyebrow {
+    @apply text-accent-600 font-semibold uppercase tracking-widest text-xs;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3
+           text-ink-800 placeholder:text-slate-400
+           focus:border-brand-400 focus:ring-2 focus:ring-brand-100 focus:outline-none transition;
+  }
+  .label {
+    @apply block text-sm font-medium text-ink-700 mb-1.5;
+  }
+}
+
+/* Ken-Burns-style slow zoom for hero image */
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
+}
+.kenburns { animation: kenburns 18s ease-in-out infinite alternate; }
+
+/* Prevent layout shift on scrollbar for modals */
+html.lock-scroll { overflow: hidden; }

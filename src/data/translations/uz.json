@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "tours": "Turlar",
+    "destinations": "Yo'nalishlar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "book": "Buyurtma berish"
+  },
+  "hero": {
+    "eyebrow": "O'zbekistonni kashf eting",
+    "title": "Jonli Ipak yo'li",
+    "titleHighlight": "O'zbekiston",
+    "subtitle": "Samarqand, Buxoro, Xiva va boshqa shaharlar bo'ylab mahalliy ekspertlar tomonidan tayyorlangan sayohatlar.",
+    "cta": "Turlarni ko'rish",
+    "secondary": "Narx so'rash"
+  },
+  "search": {
+    "destination": "Yo'nalish",
+    "duration": "Muddat",
+    "date": "Jo'nash sanasi",
+    "guests": "Sayohatchilar",
+    "any": "Ixtiyoriy",
+    "search": "Turni topish"
+  },
+  "sections": {
+    "featured": {
+      "eyebrow": "Eng ommaboplari",
+      "title": "Tanlangan tur paketlar",
+      "subtitle": "Sayohatchilarimiz eng ko'p tanlaydigan yo'nalishlar."
+    },
+    "destinations": {
+      "eyebrow": "Qayerga borish",
+      "title": "Ommabop yo'nalishlar",
+      "subtitle": "Gidlarimiz eng yaxshi biladigan shahar va viloyatlar."
+    },
+    "services": {
+      "eyebrow": "Nima qilamiz",
+      "title": "Sayohat uchun barchasi bir joyda",
+      "subtitle": "Vizadan tortib mehmonxona, poyezd va noyob taassurotlargacha."
+    },
+    "why": {
+      "eyebrow": "Nega ZiyaraTour",
+      "title": "Sayohat — o'z oilamiz uchun rejalashtirilgandek",
+      "subtitle": "Har bir marshrutni yillar davomida sinab, mukammallashtirgan mahalliy jamoa."
+    },
+    "testimonials": {
+      "eyebrow": "Fikrlar",
+      "title": "Sayohatchilarimizning hikoyalari"
+    },
+    "cta": {
+      "title": "Shaxsiy tur — 24 soat ichida",
+      "subtitle": "Nima ko'rmoqchisiz — ayting, biz shaxsiy marshrut tuzib Telegram orqali yuboramiz.",
+      "btn": "Shaxsiy tur buyurtma qilish"
+    }
+  },
+  "tour": {
+    "days": "kun",
+    "nights": "kecha",
+    "from": "dan",
+    "person": "kishi uchun",
+    "book": "Turni buyurtma qilish",
+    "details": "Batafsil",
+    "highlights": "Asosiy jihatlar",
+    "included": "Narxga kiritilgan",
+    "excluded": "Kiritilmagan",
+    "itinerary": "Kundalik dastur",
+    "gallery": "Galereya",
+    "reviews": "sharh",
+    "share": "Ulashish",
+    "back": "Barcha turlarga"
+  },
+  "book": {
+    "title": "Tur uchun buyurtma",
+    "subtitle": "Formani to'ldiring — buyurtma to'g'ridan-to'g'ri Telegram guruhimizga tushadi.",
+    "form": {
+      "name": "F.I.SH.",
+      "namePh": "Ali Valiyev",
+      "phone": "Telefon / WhatsApp",
+      "phonePh": "+998 90 123 45 67",
+      "email": "Email",
+      "emailPh": "siz@example.com",
+      "tour": "Tur",
+      "tourPh": "Turni tanlang",
+      "date": "Kerakli sana",
+      "guests": "Sayohatchilar soni",
+      "message": "Izoh",
+      "messagePh": "Alohida talab, parhez, kelish vaqti…",
+      "submit": "Telegramga yuborish",
+      "sending": "Yuborilmoqda…",
+      "success": "Rahmat! Buyurtmangiz yuborildi. Tez orada siz bilan bog'lanamiz.",
+      "error": "Kechirasiz, xato yuz berdi. Qayta urinib ko'ring yoki biz bilan bevosita bog'laning.",
+      "missingConfig": "Buyurtma kanali hali sozlanmagan. Telefon yoki Telegram orqali biz bilan bog'laning.",
+      "requiredHint": "* belgili maydonlar majburiy.",
+      "agree": "Ma'lumotlarim qayta ishlanishiga roziman."
+    }
+  },
+  "services": {
+    "tours": { "title": "Tur paketlar", "text": "O'zbekiston bo'ylab guruh va shaxsiy turlar." },
+    "hotels": { "title": "Mehmonxonalar", "text": "Tarixiy binolardagi butik va xalqaro 4–5* mehmonxonalar." },
+    "visa": { "title": "Viza yordami", "text": "Taklifnoma, e-visa va kirish maslahatlari." },
+    "transport": { "title": "Transport", "text": "Qulay avtomobil, minivan va tezyurar poyezd chiptalari." },
+    "flights": { "title": "Aviachiptalar", "text": "Ichki va xalqaro reyslar agentlik narxlarida." },
+    "guides": { "title": "Mahalliy gidlar", "text": "Ingliz, rus, arab va boshqa tillarda sertifikatli gidlar." }
+  },
+  "why": {
+    "local": { "title": "Haqiqiy mahalliy", "text": "O'zbekistonda tug'ilib, o'sganmiz — har bir chekkasini bilamiz." },
+    "flex": { "title": "Moslashuvchan", "text": "Har bir tur sizning sana, tezlik va byudjetga moslashadi." },
+    "safe": { "title": "Xavfsiz", "text": "Ishonchli hamkorlar, litsenziyali gidlar va 24/7 yordam." },
+    "value": { "title": "Halol narx", "text": "Yashirin to'lovlar yo'q. To'g'ridan-to'g'ri buyurtma — eng yaxshi narx." }
+  },
+  "stats": {
+    "years": "Yillik tajriba",
+    "travellers": "Mamnun sayohatchilar",
+    "tours": "Tur dasturlari",
+    "rating": "O'rtacha reyting"
+  },
+  "about": {
+    "eyebrow": "Biz haqimizda",
+    "title": "Buyuk Ipak yo'li uchun mahalliy jamoa",
+    "p1": "ZiyaraTour — Toshkentda joylashgan sayohat agentligi. Biz O'zbekiston bo'ylab madaniy, tarixiy va ziyorat turlariga ixtisoslashganmiz. Chuqur mahalliy bilim va zamonaviy qulaylikni birlashtiramiz.",
+    "p2": "Jamoamizda litsenziyali gidlar, haydovchilar va har bir shahardagi ishonchli hamkorlar bor. Xalqaro Markaziy Osiyo tadqiqotlari instituti bilan rasmiy hamkormiz.",
+    "partnersTitle": "Hamkorlarimiz",
+    "officialPartner": "Rasmiy hamkor:"
+  },
+  "contact": {
+    "eyebrow": "Bog'lanish",
+    "title": "Jonli inson bilan gaplashing",
+    "subtitle": "Odatda bir necha soat ichida javob beramiz. Shoshilinch savollar uchun Telegram — eng tez usul.",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Manzil",
+    "socials": "Ijtimoiy tarmoqlar"
+  },
+  "footer": {
+    "tagline": "Toshkent (O'zbekiston) shahridagi tur operator.",
+    "explore": "Bo'limlar",
+    "company": "Kompaniya",
+    "follow": "Bizni kuzating",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "made": "O'zbekistonda mehr bilan yaratildi."
+  },
+  "categories": {
+    "all": "Barcha turlar",
+    "cultural": "Madaniy",
+    "pilgrimage": "Ziyorat",
+    "city": "Shahar sayohati",
+    "adventure": "Sarguzasht"
+  },
+  "destinations": {
+    "explore": "Ko'rish",
+    "toursCount": "tur"
+  },
+  "misc": {
+    "loading": "Yuklanmoqda…",
+    "notFound": "Tur topilmadi",
+    "backHome": "Bosh sahifa"
+  },
+  "card": {
+    "bestseller": "Eng ommabop",
+    "hotdeal": "Chegirma",
+    "new": "Yangi",
+    "wishlist": "Sevimlilarga qo'shish",
+    "person": "/ kishi"
+  },
+  "deals": {
+    "eyebrow": "Cheklangan taklif",
+    "title": "Hafta turi",
+    "subtitle": "Ipak yo'li paketimizga 25% gacha chegirma.",
+    "save": "Tejash",
+    "cta": "Chegirmani olish",
+    "ends": "Taklif tez orada tugaydi"
+  },
+  "counter": {
+    "eyebrow": "Raqamlarda",
+    "title": "Butun dunyodan sayohatchilar bizga ishonadi"
+  },
+  "blog": {
+    "eyebrow": "Sayohat jurnali",
+    "title": "Hikoyalar va maslahatlar",
+    "subtitle": "Mahalliy jamoamiz tomonidan yozilgan qo'llanmalar.",
+    "readMore": "Batafsil o'qish",
+    "min": "daqiqalik o'qish",
+    "all": "Barcha maqolalar"
+  },
+  "newsletter": {
+    "eyebrow": "Yangiliklar",
+    "title": "Sayohat g'oyalari — pochtangizga",
+    "subtitle": "Oyiga bir marta — yangi turlar, mavsumiy takliflar, maslahatlar. Spam yo'q.",
+    "placeholder": "sizning@email.com",
+    "cta": "Obuna bo'lish",
+    "success": "Rahmat! Obuna bo'ldingiz.",
+    "invalid": "To'g'ri email kiriting."
+  }
+}

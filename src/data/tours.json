@@ -1,0 +1,327 @@
+[
+  {
+    "id": "tour-package-7-days",
+    "slug": "tour-package-7-days",
+    "featured": true,
+    "badge": "bestseller",
+    "category": "cultural",
+    "duration": { "days": 7, "nights": 7 },
+    "route": ["Tashkent", "Khiva", "Bukhara", "Samarkand", "Tashkent"],
+    "groupSize": { "min": 3, "max": 45 },
+    "priceFrom": 750,
+    "oldPrice": 900,
+    "currency": "USD",
+    "rating": 4.9,
+    "reviews": 128,
+    "cover": "/images/tours/silk-road.jpg",
+    "gallery": [
+      "/images/tours/silk-road.jpg",
+      "/images/tours/middle-ages.jpg",
+      "/images/tours/middle-ages-8.jpg"
+    ],
+    "destinations": ["tashkent", "khiva", "bukhara", "samarkand"],
+    "priceTiers": [
+      { "group": "3–5",  "price": 900 },
+      { "group": "7–15", "price": 850 },
+      { "group": "16–26","price": 800 },
+      { "group": "35+",  "price": 750 }
+    ],
+    "highlights": {
+      "en": ["Khast-Imam Complex & Chorsu Bazaar", "Ichan-Qala fortress in Khiva", "Poi-Kalyan & Ark Fortress in Bukhara", "Registan Square & Gur-Emir", "Afrosiyob high-speed train", "15+ museums & mausoleums included"],
+      "ru": ["Комплекс Хазрати Имам и Чорсу", "Ичан-Кала в Хиве", "Пои-Калян и крепость Арк в Бухаре", "Регистан и Гур-Эмир", "Скоростной поезд Афросиёб", "Более 15 музеев и мавзолеев"],
+      "uz": ["Hazrati Imom majmuasi va Chorsu", "Xivadagi Ichan-Qal'a", "Buxorodagi Poi-Kalon va Ark qal'asi", "Registon va Go'ri Amir", "Afrosiyob tezyurar poyezdi", "15 dan ortiq muzey va maqbara"],
+      "uzc": ["Ҳазрати Имом мажмуаси ва Чорсу", "Хивадаги Ичан-Қалъа", "Бухородаги Пои-Калон ва Арк қалъаси", "Регистон ва Гўри Амир", "Афросиёб тезюрар поезди", "15 дан ортиқ музей ва мақбара"]
+    },
+    "title": {
+      "en": "Tour package — 7 Days & 7 Nights",
+      "ru": "Тур-пакет — 7 дней и 7 ночей",
+      "uz": "Tur paket — 7 kun va 7 kecha",
+      "uzc": "Тур пакет — 7 кун ва 7 кеча"
+    },
+    "shortDescription": {
+      "en": "Tashkent → Khiva → Bukhara → Samarkand → Tashkent — the classic Uzbekistan Silk Road route with 15+ monuments.",
+      "ru": "Ташкент → Хива → Бухара → Самарканд → Ташкент — классический маршрут по Шёлковому пути и более 15 памятников.",
+      "uz": "Toshkent → Xiva → Buxoro → Samarqand → Toshkent — klassik Ipak yo'li marshruti va 15 dan ortiq yodgorlik.",
+      "uzc": "Тошкент → Хива → Бухоро → Самарқанд → Тошкент — классик Ипак йўли маршрути ва 15 дан ортиқ ёдгорлик."
+    },
+    "description": {
+      "en": "Uzbekistan was named Capital of Islamic Culture in 2020 — a country of ancient centres like Samarkand, Bukhara, Khiva and Tashkent, home to majestic mosques, madrasahs and lively bazaars. This 7-day programme takes you across all four cities, from the world-famous Quran of Caliph Uthman in Tashkent to the Registan Square in Samarkand.",
+      "ru": "В 2020 году Узбекистан был назван столицей исламской культуры — страна древних культурных центров Самарканд, Бухара, Хива и Ташкент с величественными мечетями, медресе и живыми базарами. За 7 дней вы посетите все четыре города — от знаменитого Корана Халифа Усмана в Ташкенте до Регистана в Самарканде.",
+      "uz": "2020-yilda O'zbekiston islom madaniyati poytaxti deb tan olindi — Samarqand, Buxoro, Xiva va Toshkent kabi qadimiy madaniy markazlar, ulug'vor masjidlar, madrasalar va gavjum bozorlar mamlakati. 7 kunlik dastur to'rttala shahar bo'ylab — Toshkentdagi mashhur Usmon Xalifa Qur'onidan Samarqanddagi Registongacha olib boradi.",
+      "uzc": "2020-йилда Ўзбекистон ислом маданияти пойтахти деб тан олинди — Самарқанд, Бухоро, Хива ва Тошкент каби қадимий маданий марказлар, улуғвор масжидлар, мадрасалар ва гавжум бозорлар мамлакати. 7 кунлик дастур тўрттала шаҳар бўйлаб — Тошкентдаги машҳур Усмон Халифа Қуръонидан Самарқанддаги Регистонгача олиб боради."
+    },
+    "included": {
+      "en": ["7 nights hotels (Lake Side, Orient Star Khiva, Ark Bukhara, Siab)", "All domestic transfers — train, plane, ground", "Entrance to 15+ museums & mausoleums", "Professional guided tours in every city", "2 bottles of water per person daily", "Airport pickup & drop-off"],
+      "ru": ["7 ночей в отелях (Lake Side, Orient Star Khiva, Ark Bukhara, Siab)", "Все внутренние трансферы — поезд, самолёт, авто", "Билеты в 15+ музеев и мавзолеев", "Экскурсии с местными гидами", "2 бутылки воды на человека в день", "Встреча и проводы в аэропорт"],
+      "uz": ["7 kecha mehmonxonalar (Lake Side, Orient Star Khiva, Ark Bukhara, Siab)", "Barcha ichki transferlar — poyezd, samolyot, avtomobil", "15 dan ortiq muzey va maqbaraga chiptalar", "Mahalliy gidlar bilan ekskursiyalar", "Har kuni har bir kishiga 2 shisha suv", "Aeroportdan kutib olish va uzatish"],
+      "uzc": ["7 кеча меҳмонхоналар (Lake Side, Orient Star Khiva, Ark Bukhara, Siab)", "Барча ички трансферлар — поезд, самолёт, автомобиль", "15 дан ортиқ музей ва мақбарага чипталар", "Маҳаллий гидлар билан экскурсиялар", "Ҳар куни ҳар бир кишига 2 шиша сув", "Аэропортдан кутиб олиш ва узатиш"]
+    },
+    "excluded": {
+      "en": ["International flights", "Uzbekistan visa (if applicable)", "Lunch & dinner", "Personal expenses & tips"],
+      "ru": ["Международные перелёты", "Виза в Узбекистан (при необходимости)", "Обеды и ужины", "Личные расходы и чаевые"],
+      "uz": ["Xalqaro parvozlar", "O'zbekiston vizasi (kerak bo'lsa)", "Tushlik va kechki ovqat", "Shaxsiy xarajatlar va chaqilar"],
+      "uzc": ["Халқаро парвозлар", "Ўзбекистон визаси (керак бўлса)", "Тушлик ва кечки овқат", "Шахсий харажатлар ва чақилар"]
+    },
+    "itinerary": [
+      {
+        "day": 1,
+        "title": { "en": "Tashkent — arrival", "ru": "Ташкент — прибытие", "uz": "Toshkent — kelish", "uzc": "Тошкент — келиш" },
+        "text": {
+          "en": "Airport meet-and-greet by a ZiyaraTour guide. Check-in at Lake Side Hotel. From 12:00 — guided tour of Tashkent: Khast-Imam Complex (Quran of Caliph Uthman), Barak-Khan Madrasah, Tillya Sheikh Mosque, Kaffal Shashi Mausoleum, Chorsu Bazaar, Tashkent Metro, Amir Timur & Independence Squares.",
+          "ru": "Встреча в аэропорту гидом ZiyaraTour. Заселение в Lake Side Hotel. С 12:00 — обзорный тур: комплекс Хазрати Имам (Коран Халифа Усмана), Барак-хан, мечеть Тилля-Шейх, мавзолей Каффаль-Шаши, базар Чорсу, ташкентское метро, площади Амира Темура и Независимости.",
+          "uz": "Aeroportda ZiyaraTour gidi kutib oladi. Lake Side Hotelga joylashish. Soat 12:00 dan — Toshkent ekskursiyasi: Hazrati Imom majmuasi (Usmon Qur'oni), Baroqxon madrasasi, Tillashayx masjidi, Kaffol Shoshiy maqbarasi, Chorsu bozori, Toshkent metrosi, Amir Temur va Mustaqillik maydonlari.",
+          "uzc": "Аэропортда ZiyaraTour гиди кутиб олади. Lake Side Hotel'га жойлашиш. Соат 12:00 дан — Тошкент экскурсияси: Ҳазрати Имом мажмуаси (Усмон Қуръони), Бароқхон мадрасаси, Тиллашайх масжиди, Каффол Шоший мақбараси, Чорсу бозори, Тошкент метроси, Амир Темур ва Мустақиллик майдонлари."
+        }
+      },
+      {
+        "day": 2,
+        "title": { "en": "Tashkent → Khiva", "ru": "Ташкент → Хива", "uz": "Toshkent → Xiva", "uzc": "Тошкент → Хива" },
+        "text": {
+          "en": "Early transfer at 5:30. Flight Tashkent → Urgench 07:00–08:30. Check-in at Orient Star Khiva Hotel. City tour: Ichan-Qala Fortress, Juma Mosque, Tosh-Hovli Palace, Pahlavon Mahmud Mausoleum. Overnight in Khiva.",
+          "ru": "Ранний трансфер в 5:30. Рейс Ташкент–Ургенч 07:00–08:30. Заселение в Orient Star Khiva. Экскурсия: крепость Ичан-Кала, Джума-мечеть, дворец Тош-Ховли, мавзолей Пахлавана Махмуда. Ночь в Хиве.",
+          "uz": "Ertalab 5:30 da transfer. Toshkent–Urganch parvozi 07:00–08:30. Orient Star Khiva Hotelga joylashish. Ekskursiya: Ichan-Qal'a qal'asi, Juma masjidi, Toshhovli saroyi, Pahlavon Mahmud maqbarasi. Xivada tunash.",
+          "uzc": "Эрталаб 5:30 да трансфер. Тошкент–Урганч парвози 07:00–08:30. Orient Star Khiva Hotel'га жойлашиш. Экскурсия: Ичан-Қалъа қалъаси, Жума масжиди, Тошҳовли саройи, Паҳлавон Маҳмуд мақбараси. Хивада тунаш."
+        }
+      },
+      {
+        "day": 3,
+        "title": { "en": "Khiva → Bukhara", "ru": "Хива → Бухара", "uz": "Xiva → Buxoro", "uzc": "Хива → Бухоро" },
+        "text": {
+          "en": "6–7 hour transfer by minivan to Bukhara. Check-in at Ark Bukhara Hotel. Afternoon walking tour: Lyabi-Hauz Ensemble, Ark Fortress, Magoki Attori Mosque, Trade Domes, Kalyan Minaret & Mosque, Miri-Arab, Ulugbek & Abdulazizkhan Madrasahs, Bolo-Hauz Mosque, Ismail Samani & Chashma-Ayub Mausoleums.",
+          "ru": "6–7 часов на минивэне в Бухару. Заселение в Ark Bukhara Hotel. Прогулка по старому городу: ансамбль Ляби-Хауз, крепость Арк, мечеть Магоки-Аттори, торговые купола, Калян, Мири-Араб, Улугбек и Абдулазизхан, Боло-Хауз, мавзолеи Исмаила Самани и Чашма-Аюб.",
+          "uz": "Buxorogacha minibusda 6–7 soat. Ark Bukhara Hotelga joylashish. Piyoda ekskursiya: Labi Hovuz majmuasi, Ark qal'asi, Magoki Attori masjidi, savdo gumbazlari, Kalon minorasi va masjidi, Miri Arab, Ulug'bek va Abdulazizxon madrasalari, Bolo Hovuz, Ismoil Somoniy va Chashma Ayyub maqbaralari.",
+          "uzc": "Бухорогача минибусда 6–7 соат. Ark Bukhara Hotel'га жойлашиш. Пиёда экскурсия: Лаби Ҳовуз мажмуаси, Арк қалъаси, Магоки Аттори масжиди, савдо гумбазлари, Калон минораси ва масжиди, Мири Араб, Улуғбек ва Абдулазизхон мадрасалари, Боло Ҳовуз, Исмоил Сомоний ва Чашма Айюб мақбаралари."
+        }
+      },
+      {
+        "day": 4,
+        "title": { "en": "Bukhara → Samarkand", "ru": "Бухара → Самарканд", "uz": "Buxoro → Samarqand", "uzc": "Бухоро → Самарқанд" },
+        "text": {
+          "en": "Morning visits: Char-Bakr Necropolis, Naqshbandi Memorial, Sitorai Mokhi-Khosa Palace, Chor-Minor. Afternoon high-speed train to Samarkand (16:46 → 19:10). Check-in at Siab Hotel. Optional Registan by night.",
+          "ru": "Утром: Чор-Бакр, мемориал Накшбанди, Ситораи Мохи-Хоса, Чор-Минор. Днём — скоростной поезд в Самарканд (16:46–19:10). Заселение в Siab Hotel. Ночной Регистан по желанию.",
+          "uz": "Ertalab: Chor-Bakr, Naqshbandiy majmuasi, Sitorai Mohixosa, Chor Minor. Peshindan keyin tezyurar poyezdda Samarqandga (16:46–19:10). Siab Hotelga joylashish. Ixtiyoriy — kechki Registon.",
+          "uzc": "Эрталаб: Чор-Бакр, Нақшбандий мажмуаси, Ситораи Моҳихоса, Чор Минор. Пешиндан кейин тезюрар поездда Самарқандга (16:46–19:10). Siab Hotel'га жойлашиш. Ихтиёрий — кечки Регистон."
+        }
+      },
+      {
+        "day": 5,
+        "title": { "en": "Full day in Samarkand", "ru": "Полный день в Самарканде", "uz": "Samarqandda to'liq kun", "uzc": "Самарқандда тўлиқ кун" },
+        "text": {
+          "en": "Registan Square, Bibi-Khanum Mosque, Siyob Bazaar, Shakhi-Zinda Necropolis, Gur-Emir Mausoleum (Tamerlane's resting place).",
+          "ru": "Регистан, мечеть Биби-Ханым, базар Сиёб, некрополь Шахи-Зинда, мавзолей Гур-Эмир (гробница Тамерлана).",
+          "uz": "Registon, Bibixonim masjidi, Siyob bozori, Shohi Zinda maqbaralar majmuasi, Go'ri Amir maqbarasi (Amir Temurning oxirgi maskani).",
+          "uzc": "Регистон, Бибихоним масжиди, Сиёб бозори, Шоҳи Зинда мақбаралар мажмуаси, Гўри Амир мақбараси (Амир Темурнинг охирги маскани)."
+        }
+      },
+      {
+        "day": 6,
+        "title": { "en": "Samarkand → Tashkent", "ru": "Самарканд → Ташкент", "uz": "Samarqand → Toshkent", "uzc": "Самарқанд → Тошкент" },
+        "text": {
+          "en": "Morning train Samarkand → Tashkent (08:07 → 12:14). Check-in Lake Side Hotel. Free afternoon at Chorsu Bazaar or Tashkent City Mall.",
+          "ru": "Утренний поезд Самарканд → Ташкент (08:07–12:14). Заселение в Lake Side Hotel. Свободное время: Чорсу или Tashkent City Mall.",
+          "uz": "Ertalabki poyezd Samarqand → Toshkent (08:07–12:14). Lake Side Hotelga joylashish. Bo'sh vaqt: Chorsu yoki Tashkent City Mall.",
+          "uzc": "Эрталабки поезд Самарқанд → Тошкент (08:07–12:14). Lake Side Hotel'га жойлашиш. Бўш вақт: Чорсу ёки Tashkent City Mall."
+        }
+      },
+      {
+        "day": 7,
+        "title": { "en": "Departure", "ru": "Отъезд", "uz": "Jo'nash", "uzc": "Жўнаш" },
+        "text": {
+          "en": "Breakfast and transfer to Tashkent International Airport.",
+          "ru": "Завтрак и трансфер в аэропорт Ташкента.",
+          "uz": "Nonushta va Toshkent xalqaro aeroportiga transfer.",
+          "uzc": "Нонушта ва Тошкент халқаро аэропортига трансфер."
+        }
+      }
+    ]
+  },
+  {
+    "id": "middle-ages-6-days",
+    "slug": "journey-to-middle-ages-6-days",
+    "featured": true,
+    "badge": "hotdeal",
+    "category": "cultural",
+    "duration": { "days": 6, "nights": 5 },
+    "route": ["Tashkent", "Bukhara", "Samarkand", "Tashkent"],
+    "groupSize": { "min": 24, "max": 45 },
+    "priceFrom": 690,
+    "oldPrice": 820,
+    "currency": "USD",
+    "rating": 4.8,
+    "reviews": 87,
+    "cover": "/images/tours/middle-ages.jpg",
+    "gallery": [
+      "/images/tours/middle-ages.jpg",
+      "/images/tours/silk-road.jpg"
+    ],
+    "destinations": ["tashkent", "bukhara", "samarkand"],
+    "highlights": {
+      "en": ["High-speed train Tashkent → Bukhara", "Bukhara old-town walking tour", "Plov master-class at Laziz guest house", "Char-Bakr & Naqshbandi complexes", "Registan & Gur-Emir in Samarkand", "51-seat comfort bus throughout"],
+      "ru": ["Скоростной поезд Ташкент → Бухара", "Пешеходный тур по старой Бухаре", "Мастер-класс по плову в гестхаусе Laziz", "Чор-Бакр и мемориал Накшбанди", "Регистан и Гур-Эмир в Самарканде", "51-местный автобус на весь тур"],
+      "uz": ["Tezyurar poyezd Toshkent → Buxoro", "Buxoroning eski shahri bo'ylab piyoda ekskursiya", "Laziz mehmon uyida palov ustaxonasi", "Chor-Bakr va Naqshbandiy majmualari", "Samarqandda Registon va Go'ri Amir", "Tur davomida 51 o'rinli qulay avtobus"],
+      "uzc": ["Тезюрар поезд Тошкент → Бухоро", "Бухоронинг эски шаҳри бўйлаб пиёда экскурсия", "Laziz меҳмон уйида палов устахонаси", "Чор-Бакр ва Нақшбандий мажмуалари", "Самарқандда Регистон ва Гўри Амир", "Тур давомида 51 ўринли қулай автобус"]
+    },
+    "title": {
+      "en": "Journey to the Middle Ages — 6 Days",
+      "ru": "Путешествие в Средневековье — 6 дней",
+      "uz": "O'rta asrlar bo'ylab sayohat — 6 kun",
+      "uzc": "Ўрта асрлар бўйлаб саёҳат — 6 кун"
+    },
+    "shortDescription": {
+      "en": "Tashkent → Bukhara → Samarkand → Tashkent. A compact 6-day cultural programme with real hotels and hands-on Uzbek cooking.",
+      "ru": "Ташкент → Бухара → Самарканд → Ташкент. Компактная 6-дневная культурная программа с проверенными отелями и мастер-классом.",
+      "uz": "Toshkent → Buxoro → Samarqand → Toshkent. 6 kunlik ixcham madaniy dastur va o'zbek taomlari ustaxonasi.",
+      "uzc": "Тошкент → Бухоро → Самарқанд → Тошкент. 6 кунлик ихчам маданий дастур ва ўзбек таомлари устахонаси."
+    },
+    "description": {
+      "en": "A shorter version of the classic Silk Road route, this 6-day programme visits Tashkent, Bukhara and Samarkand with a hands-on plov master-class in Bukhara. Designed for groups of 24–45 travellers.",
+      "ru": "Сокращённая версия классического маршрута по Шёлковому пути: Ташкент, Бухара и Самарканд с мастер-классом по плову в Бухаре. Рассчитан на группы 24–45 человек.",
+      "uz": "Klassik Ipak yo'li marshrutining qisqartirilgan varianti: Toshkent, Buxoro va Samarqand — Buxoroda palov ustaxonasi bilan. 24–45 kishilik guruhlar uchun.",
+      "uzc": "Классик Ипак йўли маршрутининг қисқартирилган варианти: Тошкент, Бухоро ва Самарқанд — Бухорода палов устахонаси билан. 24–45 кишилик гуруҳлар учун."
+    },
+    "included": {
+      "en": ["Hotels: Inspira-S / Simma / Reikartz Sote (or similar) in Tashkent; Modarixon / Bakhor / Edem Plaza in Bukhara; Alexander / Hilton Garden Inn in Samarkand", "51-seat bus for all ground transfers", "Economy train tickets Bukhara → Samarkand → Tashkent", "Sightseeing programme with local guides in every city", "Entrance tickets per itinerary", "Breakfasts", "Plov master-class in Bukhara + dinner show in Khiva"],
+      "ru": ["Отели: Inspira-S / Simma / Reikartz Sote (или подобные) в Ташкенте; Modarixon / Bakhor / Edem Plaza в Бухаре; Alexander / Hilton Garden Inn в Самарканде", "51-местный автобус — все трансферы", "Билеты эконом-класса Бухара → Самарканд → Ташкент", "Экскурсии с местными гидами", "Входные билеты по программе", "Завтраки", "Мастер-класс по плову в Бухаре + шоу-ужин в Хиве"],
+      "uz": ["Mehmonxonalar: Toshkentda Inspira-S / Simma / Reikartz Sote (yoki shunga o'xshash); Buxoroda Modarixon / Bakhor / Edem Plaza; Samarqandda Alexander / Hilton Garden Inn", "51 o'rinli avtobus — barcha transferlar", "Ekonom sinf poyezd chiptalari Buxoro → Samarqand → Toshkent", "Har bir shaharda mahalliy gid bilan ekskursiya", "Dastur bo'yicha kirish chiptalari", "Nonushta", "Buxoroda palov ustaxonasi + Xivada shou-kechki ovqat"],
+      "uzc": ["Меҳмонхоналар: Тошкентда Inspira-S / Simma / Reikartz Sote (ёки шунга ўхшаш); Бухорода Modarixon / Bakhor / Edem Plaza; Самарқандда Alexander / Hilton Garden Inn", "51 ўринли автобус — барча трансферлар", "Эконом синф поезд чипталари Бухоро → Самарқанд → Тошкент", "Ҳар бир шаҳарда маҳаллий гид билан экскурсия", "Дастур бўйича кириш чипталари", "Нонушта", "Бухорода палов устахонаси + Хивада шоу-кечки овқат"]
+    },
+    "excluded": {
+      "en": ["International flights", "Visa fees", "Lunches & dinners (except mentioned)", "Personal expenses"],
+      "ru": ["Международные перелёты", "Виза", "Обеды и ужины (кроме указанных)", "Личные расходы"],
+      "uz": ["Xalqaro parvozlar", "Viza to'lovi", "Tushlik va kechki ovqat (aytilganlaridan tashqari)", "Shaxsiy xarajatlar"],
+      "uzc": ["Халқаро парвозлар", "Виза тўлови", "Тушлик ва кечки овқат (айтилганларидан ташқари)", "Шахсий харажатлар"]
+    },
+    "itinerary": [
+      { "day": 1, "title": { "en": "Tashkent — arrival & city tour", "ru": "Ташкент — прибытие", "uz": "Toshkent — kelish", "uzc": "Тошкент — келиш" },
+        "text": { "en": "Airport meet, hotel check-in. From 11:00 — Khast-Imam Complex (Quran of Caliph Uthman), Chorsu Bazaar, Tashkent Metro, Amir Timur & Independence Squares, Applied Arts Museum.",
+          "ru": "Встреча в аэропорту. С 11:00 — Хазрати Имам (Коран Усмана), Чорсу, ташкентское метро, площади Амира Темура и Независимости, музей прикладного искусства.",
+          "uz": "Aeroportda kutib olish. Soat 11:00 dan — Hazrati Imom (Usmon Qur'oni), Chorsu, Toshkent metrosi, Amir Temur va Mustaqillik maydonlari, Amaliy san'at muzeyi.",
+          "uzc": "Аэропортда кутиб олиш. Соат 11:00 дан — Ҳазрати Имом (Усмон Қуръони), Чорсу, Тошкент метроси, Амир Темур ва Мустақиллик майдонлари, Амалий санъат музейи." } },
+      { "day": 2, "title": { "en": "Tashkent → Bukhara", "ru": "Ташкент → Бухара", "uz": "Toshkent → Buxoro", "uzc": "Тошкент → Бухоро" },
+        "text": { "en": "High-speed train (08:00–12:29) or 80-minute flight. Evening walk at Lyabi-Hauz Ensemble.",
+          "ru": "Скоростной поезд (08:00–12:29) или 1ч 20мин самолёт. Вечерняя прогулка у Ляби-Хауза.",
+          "uz": "Tezyurar poyezd (08:00–12:29) yoki 1 soat 20 minutlik parvoz. Kechki sayr Labi Hovuzda.",
+          "uzc": "Тезюрар поезд (08:00–12:29) ёки 1 соат 20 минутлик парвоз. Кечки сайр Лаби Ҳовузда." } },
+      { "day": 3, "title": { "en": "Bukhara — full day + plov class", "ru": "Бухара — полный день + плов", "uz": "Buxoro — to'liq kun + palov", "uzc": "Бухоро — тўлиқ кун + палов" },
+        "text": { "en": "Full walking tour: Lyabi-Hauz, Magoki-Attori, Chor-Minor, Trade Domes, Kalyan Minaret & Mosque, Miri-Arab, Ulugbek & Abdulazizkhan, Ark Fortress, Bolo-Hauz, Ismail Samani & Chashma-Ayub. Plov master-class at Laziz guest house. Char-Bakr, Naqshbandi, Sitorai Mokhi-Khosa. Train to Samarkand.",
+          "ru": "Пешеходный тур: Ляби-Хауз, Магоки-Аттори, Чор-Минор, торговые купола, Калян, Мири-Араб, Улугбек и Абдулазизхан, Арк, Боло-Хауз, Исмаил Самани, Чашма-Аюб. Мастер-класс по плову в Laziz. Чор-Бакр, Накшбанди, Ситораи Мохи-Хоса. Поезд в Самарканд.",
+          "uz": "Piyoda ekskursiya: Labi Hovuz, Magoki Attori, Chor Minor, savdo gumbazlari, Kalon, Miri Arab, Ulug'bek va Abdulazizxon, Ark, Bolo Hovuz, Ismoil Somoniy, Chashma Ayyub. Laziz'da palov ustaxonasi. Chor-Bakr, Naqshbandiy, Sitorai Mohixosa. Samarqandga poyezd.",
+          "uzc": "Пиёда экскурсия: Лаби Ҳовуз, Магоки Аттори, Чор Минор, савдо гумбазлари, Калон, Мири Араб, Улуғбек ва Абдулазизхон, Арк, Боло Ҳовуз, Исмоил Сомоний, Чашма Айюб. Laziz'да палов устахонаси. Чор-Бакр, Нақшбандий, Ситораи Моҳихоса. Самарқандга поезд." } },
+      { "day": 4, "title": { "en": "Samarkand", "ru": "Самарканд", "uz": "Samarqand", "uzc": "Самарқанд" },
+        "text": { "en": "Registan Square, Bibi-Khanum Mosque, Siab Bazaar, Shakhi-Zinda Necropolis, Gur-Emir Mausoleum. Free evening. Duration: 6–7 hours.",
+          "ru": "Регистан, Биби-Ханым, Сиаб-базар, Шахи-Зинда, Гур-Эмир. Свободный вечер. Продолжительность: 6–7 часов.",
+          "uz": "Registon, Bibixonim, Siyob bozori, Shohi Zinda, Go'ri Amir. Kechki bo'sh vaqt. Davomiyligi: 6–7 soat.",
+          "uzc": "Регистон, Бибихоним, Сиёб бозори, Шоҳи Зинда, Гўри Амир. Кечки бўш вақт. Давомийлиги: 6–7 соат." } },
+      { "day": 5, "title": { "en": "Samarkand → Tashkent", "ru": "Самарканд → Ташкент", "uz": "Samarqand → Toshkent", "uzc": "Самарқанд → Тошкент" },
+        "text": { "en": "High-speed train back to Tashkent. Rest and free time.",
+          "ru": "Скоростной поезд обратно в Ташкент. Отдых и свободное время.",
+          "uz": "Toshkentga qaytish tezyurar poyezdda. Dam olish va bo'sh vaqt.",
+          "uzc": "Тошкентга қайтиш тезюрар поездда. Дам олиш ва бўш вақт." } },
+      { "day": 6, "title": { "en": "Departure", "ru": "Отъезд", "uz": "Jo'nash", "uzc": "Жўнаш" },
+        "text": { "en": "Free shopping morning, check-out by noon, transfer to Tashkent International Airport.",
+          "ru": "Утро — шопинг, выезд из отеля до полудня, трансфер в аэропорт.",
+          "uz": "Ertalab xarid, tushga qadar mehmonxonadan chiqish, aeroportga transfer.",
+          "uzc": "Эрталаб харид, тушга қадар меҳмонхонадан чиқиш, аэропортга трансфер." } }
+    ]
+  },
+  {
+    "id": "middle-ages-8-days",
+    "slug": "journey-to-middle-ages-8-days",
+    "featured": true,
+    "badge": "new",
+    "category": "cultural",
+    "duration": { "days": 8, "nights": 7 },
+    "route": ["Tashkent", "Khiva", "Bukhara", "Gijduvan", "Samarkand", "Tashkent"],
+    "groupSize": { "min": 2, "max": 45 },
+    "priceFrom": 990,
+    "oldPrice": 1150,
+    "currency": "USD",
+    "rating": 4.9,
+    "reviews": 63,
+    "cover": "/images/tours/middle-ages-8.jpg",
+    "gallery": [
+      "/images/tours/middle-ages-8.jpg",
+      "/images/tours/silk-road.jpg",
+      "/images/tours/middle-ages.jpg"
+    ],
+    "destinations": ["tashkent", "khiva", "bukhara", "samarkand"],
+    "highlights": {
+      "en": ["All four UNESCO cities", "Ichan-Kala UNESCO fortress in Khiva", "Islam Khoja Minaret climb", "Gijduvan pottery master-class (6th-generation Narzullayev family)", "Afrosiyob high-speed train", "Full-service programme with hotels & meals"],
+      "ru": ["Все четыре города ЮНЕСКО", "Ичан-Кала — объект ЮНЕСКО в Хиве", "Подъём на минарет Ислам-Ходжа", "Мастер-класс керамики в Гиждуване (династия Нарзуллаевых)", "Скоростной поезд Афросиёб", "Полный пакет — отели и питание"],
+      "uz": ["Barcha to'rt YuNESKO shahri", "Xivadagi Ichan-Qal'a — YuNESKO obyekti", "Islom Xo'ja minorasiga chiqish", "G'ijduvondagi sopol ustaxonasi (Narzullayevlar sulolasi)", "Afrosiyob tezyurar poyezdi", "To'liq paket — mehmonxona va ovqat"],
+      "uzc": ["Барча тўрт ЮНЕСКО шаҳри", "Хивадаги Ичан-Қалъа — ЮНЕСКО объекти", "Ислом Хўжа минорасига чиқиш", "Ғиждувондаги сопол устахонаси (Нарзуллаевлар сулоласи)", "Афросиёб тезюрар поезди", "Тўлиқ пакет — меҳмонхона ва овқат"]
+    },
+    "title": {
+      "en": "Journey to the Middle Ages — 8 Days",
+      "ru": "Путешествие в Средневековье — 8 дней",
+      "uz": "O'rta asrlar bo'ylab sayohat — 8 kun",
+      "uzc": "Ўрта асрлар бўйлаб саёҳат — 8 кун"
+    },
+    "shortDescription": {
+      "en": "The full Uzbekistan story — Tashkent, Khiva, Bukhara (with Gijduvan pottery day) and Samarkand.",
+      "ru": "Полная история Узбекистана — Ташкент, Хива, Бухара с заездом в Гиждуван и Самарканд.",
+      "uz": "O'zbekiston to'liq tarixi — Toshkent, Xiva, Buxoro (G'ijduvon kuni bilan) va Samarqand.",
+      "uzc": "Ўзбекистон тўлиқ тарихи — Тошкент, Хива, Бухоро (Ғиждувон куни билан) ва Самарқанд."
+    },
+    "description": {
+      "en": "The most complete of our programmes, covering all four historic cities plus a day trip to Gijduvan — home of the sixth-generation Narzullayev family potters. Includes climbing Uzbekistan's tallest minaret and dinner in Khiva's Ichan-Kala.",
+      "ru": "Самая полная из наших программ: все четыре исторических города плюс поездка в Гиждуван к династии гончаров Нарзуллаевых. Включён подъём на самый высокий минарет Узбекистана и ужин в Ичан-Кале.",
+      "uz": "Bizning eng to'liq dasturimiz: barcha to'rt tarixiy shahar va G'ijduvondagi Narzullayevlar sulolasi ustaxonasi. O'zbekistondagi eng baland minoraga chiqish va Ichan-Qal'ada kechki ovqat kiritilgan.",
+      "uzc": "Бизнинг энг тўлиқ дастуримиз: барча тўрт тарихий шаҳар ва Ғиждувондаги Нарзуллаевлар сулоласи устахонаси. Ўзбекистондаги энг баланд минорага чиқиш ва Ичан-Қалъада кечки овқат киритилган."
+    },
+    "included": {
+      "en": ["7 nights hotels (4* level)", "Domestic flight Tashkent → Urgench", "All transfers & Afrosiyob train tickets", "Guided tours in every city", "Islam Khoja Minaret climb", "Gijduvan pottery master-class + lunch", "Plov master-class at Laziz in Bukhara", "Breakfasts"],
+      "ru": ["7 ночей в отелях 4*", "Внутренний рейс Ташкент → Ургенч", "Все трансферы и билеты на Афросиёб", "Экскурсии с гидами", "Подъём на минарет Ислам-Ходжа", "Мастер-класс керамики в Гиждуване + обед", "Мастер-класс по плову в Laziz (Бухара)", "Завтраки"],
+      "uz": ["7 kecha 4* mehmonxonalarda", "Ichki reys Toshkent → Urganch", "Barcha transferlar va Afrosiyob chiptalari", "Gidlar bilan ekskursiya", "Islom Xo'ja minorasiga chiqish", "G'ijduvondagi sopol ustaxonasi + tushlik", "Buxoroda Laziz'da palov ustaxonasi", "Nonushtalar"],
+      "uzc": ["7 кеча 4* меҳмонхоналарда", "Ички рейс Тошкент → Урганч", "Барча трансферлар ва Афросиёб чипталари", "Гидлар билан экскурсия", "Ислом Хўжа минорасига чиқиш", "Ғиждувондаги сопол устахонаси + тушлик", "Бухорода Laziz'да палов устахонаси", "Нонушталар"]
+    },
+    "excluded": {
+      "en": ["International flights", "Visa (if applicable)", "Lunches & dinners (except mentioned)", "Tips"],
+      "ru": ["Международные перелёты", "Виза (при необходимости)", "Обеды и ужины (кроме указанных)", "Чаевые"],
+      "uz": ["Xalqaro parvozlar", "Viza (kerak bo'lsa)", "Tushlik va kechki ovqat (aytilganlaridan tashqari)", "Chaqilar"],
+      "uzc": ["Халқаро парвозлар", "Виза (керак бўлса)", "Тушлик ва кечки овқат (айтилганларидан ташқари)", "Чақилар"]
+    },
+    "itinerary": [
+      { "day": 1, "title": { "en": "Tashkent — arrival, transit to Khiva", "ru": "Ташкент — прибытие, переезд в Хиву", "uz": "Toshkent — kelish, Xivaga o'tish", "uzc": "Тошкент — келиш, Хивага ўтиш" },
+        "text": { "en": "Airport meet, hotel check-in. Domestic flight Tashkent → Urgench at 07:00 (2h 20m), transfer to Khiva (30 km, 35 min).",
+          "ru": "Встреча в аэропорту. Внутренний рейс Ташкент → Ургенч в 07:00 (2ч 20мин), трансфер в Хиву (30 км, 35 мин).",
+          "uz": "Aeroportda kutib olish. Ichki reys Toshkent → Urganch soat 07:00 (2s 20d), Xivaga transfer (30 km, 35 daq).",
+          "uzc": "Аэропортда кутиб олиш. Ички рейс Тошкент → Урганч соат 07:00 (2с 20д), Хивага трансфер (30 км, 35 дақ)." } },
+      { "day": 2, "title": { "en": "Khiva — Ichan-Kala day", "ru": "Хива — день в Ичан-Кале", "uz": "Xiva — Ichan-Qal'ada kun", "uzc": "Хива — Ичан-Қалъада кун" },
+        "text": { "en": "Ichan-Kala UNESCO Fortress: Muhammad Amin Khan Madrasah, Muhammad Rahimkhan Madrasah, Kalta Minor, Juma Mosque, Tosh-Hovli Palace, Pahlavon Mahmud Mausoleum. Climb Islam Khoja Minaret. Panorama from Kunya-Ark.",
+          "ru": "Ичан-Кала: медресе Мухаммад Амин-хана, Мухаммад Рахим-хана, Кальта-Минор, Джума-мечеть, Тош-Ховли, мавзолей Пахлавана Махмуда. Подъём на минарет Ислам-Ходжа. Панорама с Куня-Арка.",
+          "uz": "Ichan-Qal'a: Muhammad Aminxon madrasasi, Muhammad Rahimxon madrasasi, Kalta Minor, Juma masjidi, Toshhovli, Pahlavon Mahmud maqbarasi. Islom Xo'ja minorasiga chiqish. Ko'hna Arkdan panorama.",
+          "uzc": "Ичан-Қалъа: Муҳаммад Аминхон мадрасаси, Муҳаммад Раҳимхон мадрасаси, Калта Минор, Жума масжиди, Тошҳовли, Паҳлавон Маҳмуд мақбараси. Ислом Хўжа минорасига чиқиш. Кўҳна Аркдан панорама." } },
+      { "day": 3, "title": { "en": "Khiva → Bukhara", "ru": "Хива → Бухара", "uz": "Xiva → Buxoro", "uzc": "Хива → Бухоро" },
+        "text": { "en": "6–7 hour transfer to Bukhara. Evening walk at Lyabi-Hauz.",
+          "ru": "6–7 часов до Бухары. Вечерняя прогулка у Ляби-Хауза.",
+          "uz": "Buxorogacha 6–7 soat. Kechki sayr Labi Hovuzda.",
+          "uzc": "Бухорогача 6–7 соат. Кечки сайр Лаби Ҳовузда." } },
+      { "day": 4, "title": { "en": "Bukhara — full walking tour + plov class", "ru": "Бухара — пешеходный тур и плов", "uz": "Buxoro — piyoda ekskursiya va palov", "uzc": "Бухоро — пиёда экскурсия ва палов" },
+        "text": { "en": "Lyabi-Hauz, Magoki-Attori, Chor-Minor, Trade Domes, Kalyan, Miri-Arab, Ulugbek & Abdulazizkhan, Ark, Bolo-Hauz, Samani & Chashma-Ayub. Plov master-class at Laziz.",
+          "ru": "Ляби-Хауз, Магоки-Аттори, Чор-Минор, купола, Калян, Мири-Араб, Улугбек и Абдулазизхан, Арк, Боло-Хауз, Самани, Чашма-Аюб. Мастер-класс по плову.",
+          "uz": "Labi Hovuz, Magoki Attori, Chor Minor, savdo gumbazlari, Kalon, Miri Arab, Ulug'bek va Abdulazizxon, Ark, Bolo Hovuz, Ismoil Somoniy, Chashma Ayyub. Palov ustaxonasi.",
+          "uzc": "Лаби Ҳовуз, Магоки Аттори, Чор Минор, савдо гумбазлари, Калон, Мири Араб, Улуғбек ва Абдулазизхон, Арк, Боло Ҳовуз, Исмоил Сомоний, Чашма Айюб. Палов устахонаси." } },
+      { "day": 5, "title": { "en": "Bukhara → Gijduvan → Bukhara", "ru": "Бухара → Гиждуван → Бухара", "uz": "Buxoro → G'ijduvon → Buxoro", "uzc": "Бухоро → Ғиждувон → Бухоро" },
+        "text": { "en": "Day trip to Gijduvan (~1 hour): ceramics master-class and lunch with the 6th-generation Narzullayev family. Return to Bukhara: Char-Bakr Necropolis, Naqshbandi Memorial, Sitorai Mokhi-Khosa.",
+          "ru": "Поездка в Гиждуван (~1 час): мастер-класс керамики и обед с династией Нарзуллаевых (6-е поколение). Возврат в Бухару: Чор-Бакр, Накшбанди, Ситораи Мохи-Хоса.",
+          "uz": "G'ijduvonga bir kunlik sayohat (~1 soat): Narzullayevlar sulolasi bilan sopol ustaxonasi va tushlik. Buxoroga qaytish: Chor-Bakr, Naqshbandiy, Sitorai Mohixosa.",
+          "uzc": "Ғиждувонга бир кунлик саёҳат (~1 соат): Нарзуллаевлар сулоласи билан сопол устахонаси ва тушлик. Бухорога қайтиш: Чор-Бакр, Нақшбандий, Ситораи Моҳихоса." } },
+      { "day": 6, "title": { "en": "Bukhara → Samarkand", "ru": "Бухара → Самарканд", "uz": "Buxoro → Samarqand", "uzc": "Бухоро → Самарқанд" },
+        "text": { "en": "Afrosiyob train 10:46 → 12:29. Samarkand city tour: Registan, Bibi-Khanum, Siab Bazaar, Shakhi-Zinda, Gur-Emir.",
+          "ru": "Афросиёб 10:46–12:29. Экскурсия по Самарканду: Регистан, Биби-Ханым, Сиаб-базар, Шахи-Зинда, Гур-Эмир.",
+          "uz": "Afrosiyob 10:46–12:29. Samarqand ekskursiyasi: Registon, Bibixonim, Siyob bozori, Shohi Zinda, Go'ri Amir.",
+          "uzc": "Афросиёб 10:46–12:29. Самарқанд экскурсияси: Регистон, Бибихоним, Сиёб бозори, Шоҳи Зинда, Гўри Амир." } },
+      { "day": 7, "title": { "en": "Samarkand → Tashkent", "ru": "Самарканд → Ташкент", "uz": "Samarqand → Toshkent", "uzc": "Самарқанд → Тошкент" },
+        "text": { "en": "Morning train back to Tashkent. Free time.",
+          "ru": "Утренний поезд обратно в Ташкент. Свободное время.",
+          "uz": "Ertalabki poyezd Toshkentga. Bo'sh vaqt.",
+          "uzc": "Эрталабки поезд Тошкентга. Бўш вақт." } },
+      { "day": 8, "title": { "en": "Departure", "ru": "Отъезд", "uz": "Jo'nash", "uzc": "Жўнаш" },
+        "text": { "en": "Transfer to Tashkent International Airport.",
+          "ru": "Трансфер в аэропорт Ташкента.",
+          "uz": "Toshkent xalqaro aeroportiga transfer.",
+          "uzc": "Тошкент халқаро аэропортига трансфер." } }
+    ]
+  }
+]

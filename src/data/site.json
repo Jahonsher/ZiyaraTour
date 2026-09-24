@@ -1,0 +1,150 @@
+{
+  "brand": "ZiyaraTour",
+  "logo": "/images/logo.png",
+  "contact": {
+    "email": "ziyaratour@gmail.com",
+    "phone": "+998 93 050 70 77",
+    "phone2": "+998 94 379 27 72",
+    "telegram": "https://t.me/ziyaratours",
+    "instagram": "https://instagram.com/ziyarattour",
+    "facebook": "https://facebook.com/groups/189272465642838/",
+    "address": {
+      "en": "Tashkent, Uzbekistan",
+      "ru": "Ташкент, Узбекистан",
+      "uz": "Toshkent, O'zbekiston",
+      "uzc": "Тошкент, Ўзбекистон"
+    }
+  },
+  "partners": [
+    {
+      "id": "iiau",
+      "name": "International Institute for Central Asian Studies (IICAS)",
+      "logo": "/images/iiau-partner.png",
+      "url": "https://unesco-iicas.org/"
+    }
+  ],
+  "stats": [
+    { "value": "15+", "labelKey": "stats.years" },
+    { "value": "20K+", "labelKey": "stats.travellers" },
+    { "value": "60+", "labelKey": "stats.tours" },
+    { "value": "4.9", "labelKey": "stats.rating" }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Anna K.",
+      "country": { "en": "Germany", "ru": "Германия", "uz": "Germaniya", "uzc": "Германия" },
+      "avatar": "https://i.pravatar.cc/120?img=47",
+      "rating": 5,
+      "text": {
+        "en": "Journey to the Middle Ages exceeded every expectation. The Registan and Ichan-Kala are unforgettable.",
+        "ru": "Тур «Путешествие в Средневековье» превзошёл все ожидания. Регистан и Ичан-Кала — незабываемо.",
+        "uz": "«O'rta asrlarga sayohat» barcha kutganlarimdan oshib tushdi. Registon va Ichan-Qal'a unutilmas.",
+        "uzc": "«Ўрта асрларга саёҳат» барча кутганларимдан ошиб тушди. Регистон ва Ичан-Қалъа унутилмас."
+      }
+    },
+    {
+      "id": "t2",
+      "name": "Rustam T.",
+      "country": { "en": "USA", "ru": "США", "uz": "AQSh", "uzc": "АҚШ" },
+      "avatar": "https://i.pravatar.cc/120?img=12",
+      "rating": 5,
+      "text": {
+        "en": "Perfect organization from arrival to departure. Every hotel and transfer was exactly as promised.",
+        "ru": "Идеальная организация от прилёта до отъезда. Отели и трансферы — точно как обещали.",
+        "uz": "Kelishdan jo'nab ketishgacha barchasi mukammal. Mehmonxona va transferlar — aynan va'da qilinganidek.",
+        "uzc": "Келишдан жўнаб кетишгача барчаси мукаммал. Меҳмонхона ва трансферлар — айнан ваъда қилинганидек."
+      }
+    },
+    {
+      "id": "t3",
+      "name": "Sophie L.",
+      "country": { "en": "France", "ru": "Франция", "uz": "Fransiya", "uzc": "Франция" },
+      "avatar": "https://i.pravatar.cc/120?img=32",
+      "rating": 5,
+      "text": {
+        "en": "The Gijduvan pottery masterclass and plov class in Bukhara were the highlights. Highly recommended.",
+        "ru": "Мастер-класс по керамике в Гиждуване и плов в Бухаре — лучшие моменты. Очень рекомендую.",
+        "uz": "G'ijduvondagi sopol ustaxonasi va Buxorodagi palov ustaxonasi eng yorqin daqiqalar bo'ldi. Tavsiya qilaman.",
+        "uzc": "Ғиждувондаги сопол устахонаси ва Бухородаги палов устахонаси энг ёрқин дақиқалар бўлди. Тавсия қиламан."
+      }
+    }
+  ],
+  "blog": [
+    {
+      "id": "n1",
+      "slug": "new-train-bukhara-khiva",
+      "image": "/images/tours/middle-ages-8.jpg",
+      "readMin": 3,
+      "date": "2019-04-12",
+      "author": "ZiyaraTour",
+      "category": { "en": "News", "ru": "Новости", "uz": "Yangiliklar", "uzc": "Янгиликлар" },
+      "title": {
+        "en": "New passenger train between Bukhara and Khiva",
+        "ru": "Новый пассажирский поезд между Бухарой и Хивой",
+        "uz": "Buxoro va Xiva o'rtasida yangi yo'lovchi poyezdi",
+        "uzc": "Бухоро ва Хива ўртасида янги йўловчи поезди"
+      },
+      "excerpt": {
+        "en": "A direct passenger train now connects Bukhara and Khiva, cutting travel time between the two heritage cities and making the classic Silk Road route easier than ever.",
+        "ru": "Прямой пассажирский поезд соединил Бухару и Хиву — время в пути между двумя историческими городами сократилось, а классический маршрут по Шёлковому пути стал ещё удобнее.",
+        "uz": "Buxoro va Xivani bevosita bog'laydigan yo'lovchi poyezdi ishga tushdi — ikki tarixiy shahar orasidagi yo'l qisqardi va Ipak yo'li marshruti yanada qulay bo'ldi.",
+        "uzc": "Бухоро ва Хивани бевосита боғлайдиган йўловчи поезди ишга тушди — икки тарихий шаҳар орасидаги йўл қисқарди ва Ипак йўли маршрути янада қулай бўлди."
+      }
+    },
+    {
+      "id": "n2",
+      "slug": "uzbekistan-safest-country-solo-travellers",
+      "image": "/images/tours/silk-road.jpg",
+      "readMin": 3,
+      "date": "2019-04-12",
+      "author": "ZiyaraTour",
+      "category": { "en": "News", "ru": "Новости", "uz": "Yangiliklar", "uzc": "Янгиликлар" },
+      "title": {
+        "en": "Uzbekistan ranked the 5th safest country for solo travellers",
+        "ru": "Узбекистан вошёл в топ-5 самых безопасных стран для одиночных путешественников",
+        "uz": "O'zbekiston yakka sayohatchilar uchun eng xavfsiz 5 talik davlatlar qatoriga kirdi",
+        "uzc": "Ўзбекистон якка саёҳатчилар учун энг хавфсиз 5 талик давлатлар қаторига кирди"
+      },
+      "excerpt": {
+        "en": "Uzbekistan has been recognised among the top five safest destinations worldwide for solo travellers — a testament to its warm hospitality and low crime rate.",
+        "ru": "Узбекистан признан одной из пяти самых безопасных стран мира для одиночных путешественников — благодаря гостеприимству и низкому уровню преступности.",
+        "uz": "O'zbekiston yakka sayohatchilar uchun jahon bo'yicha eng xavfsiz 5 ta davlat qatoridan joy oldi — mehmondo'stligi va past jinoyatchilik darajasi tufayli.",
+        "uzc": "Ўзбекистон якка саёҳатчилар учун жаҳон бўйича энг хавфсиз 5 та давлат қаторидан жой олди — меҳмондўстлиги ва паст жиноятчилик даражаси туфайли."
+      }
+    },
+    {
+      "id": "n3",
+      "slug": "uzbekistan-capital-of-islamic-culture-2020",
+      "image": "/images/tours/middle-ages.jpg",
+      "readMin": 4,
+      "date": "2020-01-15",
+      "author": "ZiyaraTour",
+      "category": { "en": "Culture", "ru": "Культура", "uz": "Madaniyat", "uzc": "Маданият" },
+      "title": {
+        "en": "Uzbekistan named Capital of Islamic Culture 2020",
+        "ru": "Узбекистан — столица исламской культуры 2020 года",
+        "uz": "O'zbekiston — 2020-yilgi islom madaniyati poytaxti",
+        "uzc": "Ўзбекистон — 2020-йилги ислом маданияти пойтахти"
+      },
+      "excerpt": {
+        "en": "In 2020, Uzbekistan was proudly named the Capital of Islamic Culture — recognition of its rich history, deep-rooted traditions and breathtaking architecture across Samarkand, Bukhara, Khiva and Tashkent.",
+        "ru": "В 2020 году Узбекистан был назван столицей исламской культуры — признание богатой истории, глубоких традиций и удивительной архитектуры Самарканда, Бухары, Хивы и Ташкента.",
+        "uz": "2020-yilda O'zbekiston islom madaniyati poytaxti deb tan olindi — Samarqand, Buxoro, Xiva va Toshkentning boy tarixi va ajoyib me'morchiligiga baho.",
+        "uzc": "2020-йилда Ўзбекистон ислом маданияти пойтахти деб тан олинди — Самарқанд, Бухоро, Хива ва Тошкентнинг бой тарихи ва ажойиб меъморчилигига баҳо."
+      }
+    }
+  ],
+  "deal": {
+    "tourSlug": "tour-package-7-days",
+    "discountPct": 17,
+    "endsInDays": 6,
+    "image": "/images/tours/silk-road.jpg"
+  },
+  "priceNote": {
+    "en": "Prices depend on group size and season. Confirm on booking.",
+    "ru": "Цены зависят от размера группы и сезона. Уточняются при бронировании.",
+    "uz": "Narxlar guruh hajmi va mavsumga bog'liq. Buyurtmada aniqlashtiriladi.",
+    "uzc": "Нархлар гуруҳ ҳажми ва мавсумга боғлиқ. Буюртмада аниқлаштирилади."
+  }
+}
