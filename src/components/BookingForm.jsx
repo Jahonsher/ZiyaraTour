@@ -6,13 +6,25 @@ import { isTelegramConfigured, sendBookingToTelegram } from '../lib/telegram.js'
 
 const initial = {
   name: '',
-  phone: '',
-  email: '',
+  phone: '+998 ',
   tour: '',
-  date: '',
-  guests: 2,
   message: '',
-  agree: true,
+}
+
+function formatPhone(value) {
+  const digits = value.replace(/\D/g, '')
+  if (!digits) return ''
+  const rest = digits.startsWith('998') ? digits.slice(3) : digits
+  const p1 = rest.slice(0, 2)
+  const p2 = rest.slice(2, 5)
+  const p3 = rest.slice(5, 7)
+  const p4 = rest.slice(7, 9)
+  let out = '+998'
+  if (p1) out += ' ' + p1
+  if (p2) out += ' ' + p2
+  if (p3) out += ' ' + p3
+  if (p4) out += ' ' + p4
+  return out
 }
 
 export default function BookingForm({ preselect = '' }) {
@@ -27,7 +39,8 @@ export default function BookingForm({ preselect = '' }) {
 
   async function submit(e) {
     e.preventDefault()
-    if (!form.name.trim() || !form.phone.trim() || !form.agree) return
+    const phoneDigits = form.phone.replace(/\D/g, '')
+    if (!form.name.trim() || phoneDigits.length < 12) return
 
     if (!isTelegramConfigured()) {
       setStatus({ state: 'error', message: t('book.form.missingConfig') })
@@ -65,17 +78,17 @@ export default function BookingForm({ preselect = '' }) {
       </div>
       <div>
         <label className="label">{t('book.form.phone')} *</label>
-        <input required disabled={disabled} type="tel" className="input" value={form.phone}
-          onChange={(e) => update('phone', e.target.value)}
+        <input required disabled={disabled} type="tel" inputMode="tel" className="input" value={form.phone}
+          onChange={(e) => update('phone', formatPhone(e.target.value))}
+          onFocus={(e) => { if (!form.phone) update('phone', '+998 '); requestAnimationFrame(() => e.target.setSelectionRange(e.target.value.length, e.target.value.length)) }}
+          onKeyDown={(e) => {
+            const allowed = ['Backspace','Delete','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Tab','Home','End']
+            if (allowed.includes(e.key) || e.ctrlKey || e.metaKey) return
+            if (!/[0-9+\s]/.test(e.key)) e.preventDefault()
+          }}
           placeholder={t('book.form.phonePh')} />
       </div>
-      <div>
-        <label className="label">{t('book.form.email')}</label>
-        <input disabled={disabled} type="email" className="input" value={form.email}
-          onChange={(e) => update('email', e.target.value)}
-          placeholder={t('book.form.emailPh')} />
-      </div>
-      <div>
+      <div className="sm:col-span-2">
         <label className="label">{t('book.form.tour')}</label>
         <select disabled={disabled} className="input" value={form.tour}
           onChange={(e) => update('tour', e.target.value)}>
@@ -85,16 +98,6 @@ export default function BookingForm({ preselect = '' }) {
           ))}
         </select>
       </div>
-      <div>
-        <label className="label">{t('book.form.date')}</label>
-        <input disabled={disabled} type="date" className="input" value={form.date}
-          onChange={(e) => update('date', e.target.value)} />
-      </div>
-      <div>
-        <label className="label">{t('book.form.guests')}</label>
-        <input disabled={disabled} type="number" min="1" max="30" className="input" value={form.guests}
-          onChange={(e) => update('guests', Number(e.target.value))} />
-      </div>
       <div className="sm:col-span-2">
         <label className="label">{t('book.form.message')}</label>
         <textarea disabled={disabled} rows="4" className="input" value={form.message}
@@ -102,14 +105,8 @@ export default function BookingForm({ preselect = '' }) {
           placeholder={t('book.form.messagePh')} />
       </div>
 
-      <div className="sm:col-span-2 flex items-start gap-2 text-sm text-slate-600">
-        <input id="agree" type="checkbox" checked={form.agree} onChange={(e) => update('agree', e.target.checked)}
-          className="mt-1 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-        <label htmlFor="agree">{t('book.form.agree')}</label>
-      </div>
-
       <div className="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-4">
-        <button type="submit" disabled={disabled || !form.agree}
+        <button type="submit" disabled={disabled}
           className="btn-primary disabled:opacity-60 disabled:cursor-not-allowed">
           {status.state === 'sending' ? t('book.form.sending') : t('book.form.submit')}
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
