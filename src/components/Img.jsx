@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 /**
  * <img> with a graceful gradient fallback if the source fails to load.
@@ -7,6 +7,7 @@ import { useState } from 'react'
  */
 export default function Img({ src, alt, label = '', className = '', ...rest }) {
   const [failed, setFailed] = useState(false)
+  useEffect(() => setFailed(false), [src])
 
   if (failed || !src) {
     return (

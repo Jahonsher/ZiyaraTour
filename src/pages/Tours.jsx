@@ -1,15 +1,17 @@
 import { useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import TourCard from '../components/TourCard.jsx'
 import Reveal from '../components/Reveal.jsx'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import tours from '../data/tours.json'
 import destinations from '../data/destinations.json'
+import { experience } from '../data/experience.js'
 
-const CATEGORIES = ['all', 'cultural', 'pilgrimage', 'city', 'adventure']
+const CATEGORIES = ['all', ...new Set(tours.map(tour => tour.category))]
 
 export default function Tours() {
-  const { t, localize } = useI18n()
+  const { t, lang, localize } = useI18n()
+  const copy = experience[lang]
   const [params, setParams] = useSearchParams()
   const [category, setCategory] = useState('all')
 
@@ -25,7 +27,7 @@ export default function Tours() {
         if (duration === '1-3' && !(d >= 1 && d <= 3)) return false
         if (duration === '4-6' && !(d >= 4 && d <= 6)) return false
         if (duration === '7-10' && !(d >= 7 && d <= 10)) return false
-        if (duration === '10+' && !(d > 10)) return false
+        if (duration === '10+' && !(d >= 10)) return false
       }
       return true
     })
@@ -47,6 +49,11 @@ export default function Tours() {
           <p className="mt-3 text-slate-600 max-w-2xl">{t('sections.featured.subtitle')}</p>
         </Reveal>
 
+        <div className="grid sm:grid-cols-2 gap-4 mb-7 max-w-2xl">
+          <label className="label">{t('search.destination')}<select className="input mt-2" value={destination} onChange={event => { const next = new URLSearchParams(params); event.target.value ? next.set('destination', event.target.value) : next.delete('destination'); setParams(next) }}><option value="">{t('search.any')}</option>{destinations.map(d => <option key={d.id} value={d.id}>{localize(d.name)}</option>)}</select></label>
+          <label className="label">{t('search.duration')}<select className="input mt-2" value={duration} onChange={event => { const next = new URLSearchParams(params); event.target.value ? next.set('duration', event.target.value) : next.delete('duration'); setParams(next) }}><option value="">{t('search.any')}</option>{['1-3', '4-6', '7-10', '10+'].map(value => <option key={value} value={value}>{value} {t('tour.days')}</option>)}</select></label>
+        </div>
+
         <Reveal className="flex flex-wrap items-center gap-2 mb-8" delay={120}>
           {CATEGORIES.map((c) => (
             <button
@@ -63,7 +70,7 @@ export default function Tours() {
           ))}
           {(destination || duration) && (
             <button onClick={clear} className="ml-auto text-sm text-brand-700 font-semibold underline underline-offset-4 hover:text-accent-600 transition">
-              Clear filters
+              {copy.clear}
             </button>
           )}
         </Reveal>
@@ -91,6 +98,7 @@ export default function Tours() {
           <div className="text-center py-24 text-slate-500 animate-fade-up">
             <p className="text-5xl animate-bounce-soft">😕</p>
             <p className="mt-3">{t('misc.notFound')}</p>
+            <Link to="/book" className="btn-primary mt-6">{copy.consult}</Link>
           </div>
         )}
       </div>

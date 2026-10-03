@@ -5,17 +5,19 @@ import tours from '../data/tours.json'
 import Img from '../components/Img.jsx'
 import BookingForm from '../components/BookingForm.jsx'
 import Reveal from '../components/Reveal.jsx'
+import { experience } from '../data/experience.js'
 
 export default function TourDetail() {
   const { slug } = useParams()
-  const { t, localize } = useI18n()
+  const { t, lang, localize } = useI18n()
+  const c = experience[lang]
   const tour = tours.find((tt) => tt.slug === slug)
   const [activeImg, setActiveImg] = useState(0)
 
   if (!tour) return <Navigate to="/tours" replace />
 
   return (
-    <div className="pt-24 sm:pt-28 pb-20">
+    <div className="pt-24 sm:pt-28 pb-20 overflow-x-clip">
       {/* Hero image */}
       <section className="relative">
         <div className="relative h-[52vh] min-h-[380px]">
@@ -23,6 +25,8 @@ export default function TourDetail() {
             src={tour.gallery?.[activeImg] || tour.cover}
             alt={localize(tour.title)}
             label={localize(tour.title)}
+            loading="eager"
+            fetchPriority="high"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-900/85 via-ink-900/30 to-transparent" />
@@ -50,6 +54,8 @@ export default function TourDetail() {
               {tour.gallery.map((g, i) => (
                 <button
                   key={i}
+                  aria-label={`${t('tour.gallery')} ${i + 1}`}
+                  aria-pressed={activeImg === i}
                   onClick={() => setActiveImg(i)}
                   className={`relative flex-shrink-0 w-24 h-16 rounded-xl overflow-hidden border-2 transition-all duration-300 hover:scale-105 ${
                     activeImg === i ? 'border-white ring-2 ring-brand-500 scale-105' : 'border-white/60'
@@ -70,8 +76,8 @@ export default function TourDetail() {
           <Reveal className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <Fact icon="⏱️" label={t('tour.days')} value={`${tour.duration.days} / ${tour.duration.nights}`} />
             <Fact icon="👥" label={t('search.guests')} value={`${tour.groupSize.min}–${tour.groupSize.max}`} />
-            <Fact icon="🗺️" label="Cities" value={tour.destinations.length} />
-            <Fact icon="⭐" label="Rating" value={tour.rating} />
+            <Fact icon="🗺️" label={c.cities} value={tour.destinations.length} />
+            <Fact icon="⭐" label={c.rating} value={tour.rating} />
           </Reveal>
 
           <Reveal as="section">
@@ -89,7 +95,7 @@ export default function TourDetail() {
           </Reveal>
 
           <Reveal as="section">
-            <h2 className="font-display font-bold text-2xl text-ink-900">About the trip</h2>
+            <h2 className="font-display font-bold text-2xl text-ink-900">{c.tripAbout}</h2>
             <p className="mt-3 text-slate-700 leading-relaxed">{localize(tour.description)}</p>
           </Reveal>
 
@@ -103,7 +109,7 @@ export default function TourDetail() {
                   <Reveal key={d.day} variant="right" delay={i * 100}>
                     <li className="flex gap-4 group">
                       <div className="relative w-12 h-12 rounded-2xl bg-brand-600 text-white flex flex-col items-center justify-center flex-shrink-0 shadow-cta transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-accent-500">
-                        <span className="text-[10px] uppercase tracking-wider opacity-80">Day</span>
+                        <span className="text-[10px] uppercase tracking-wider opacity-80">{c.day}</span>
                         <span className="font-bold leading-none">{d.day}</span>
                       </div>
                       <div>
@@ -119,19 +125,19 @@ export default function TourDetail() {
 
           {tour.priceTiers && tour.priceTiers.length > 0 && (
             <Reveal as="section">
-              <h2 className="font-display font-bold text-2xl text-ink-900">Group pricing</h2>
+              <h2 className="font-display font-bold text-2xl text-ink-900">{c.groupPricing}</h2>
               <div className="mt-4 overflow-hidden rounded-2xl border border-slate-100 shadow-card">
                 <table className="w-full text-sm">
                   <thead className="bg-slate-50 text-slate-600">
                     <tr>
-                      <th className="text-left px-4 py-3 font-semibold">Group size</th>
-                      <th className="text-right px-4 py-3 font-semibold">Price / person</th>
+                      <th className="text-left px-4 py-3 font-semibold">{c.groupSize}</th>
+                      <th className="text-right px-4 py-3 font-semibold">{c.pricePerson}</th>
                     </tr>
                   </thead>
                   <tbody>
                     {tour.priceTiers.map((row) => (
                       <tr key={row.group} className="border-t border-slate-100 hover:bg-brand-50/50 transition-colors">
-                        <td className="px-4 py-3 font-medium">{row.group} persons</td>
+                        <td className="px-4 py-3 font-medium">{row.group} {c.people}</td>
                         <td className="px-4 py-3 text-right font-display font-bold text-accent-600">${row.price}</td>
                       </tr>
                     ))}
@@ -161,8 +167,8 @@ export default function TourDetail() {
                 <span className="text-sm text-slate-500 font-medium ml-1">/ {t('tour.person')}</span>
               </div>
               <div className="mt-5 pt-5 border-t border-slate-100">
-                <h3 className="font-semibold text-ink-900 mb-3">{t('book.title')}</h3>
-                <BookingForm preselect={tour.slug} />
+                <h3 className="font-semibold text-ink-900 mb-3">{c.leadHeading}</h3>
+                <BookingForm key={tour.slug} preselect={tour.slug} />
               </div>
             </div>
           </Reveal>

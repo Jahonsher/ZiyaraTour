@@ -15,6 +15,12 @@ export default function LanguageSwitcher({ variant = 'light' }) {
     return () => document.removeEventListener('mousedown', onDoc)
   }, [])
 
+  useEffect(() => {
+    function onKey(event) { if (event.key === 'Escape') { setOpen(false); if (open) ref.current?.querySelector('button')?.focus() } }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [open])
+
   const trigger =
     variant === 'dark'
       ? 'text-white/90 hover:text-white'
@@ -26,7 +32,7 @@ export default function LanguageSwitcher({ variant = 'light' }) {
         type="button"
         onClick={() => setOpen((v) => !v)}
         className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-semibold transition ${trigger}`}
-        aria-haspopup="listbox"
+        aria-label="Language"
         aria-expanded={open}
       >
         <span className="text-base leading-none">🌐</span>
@@ -37,12 +43,12 @@ export default function LanguageSwitcher({ variant = 'light' }) {
       </button>
       {open && (
         <ul
-          role="listbox"
           className="absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-card border border-slate-100 py-1 z-50 animate-fade-up"
         >
           {langs.map((l) => (
             <li key={l.code}>
               <button
+                aria-pressed={l.code === lang}
                 onClick={() => {
                   setLang(l.code)
                   setOpen(false)

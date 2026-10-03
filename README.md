@@ -1,159 +1,80 @@
-# ZiyaraTour — Travel Booking Website
+# ZiyaraTour
 
-Modern, multilingual (uz / uzc / ru / en) travel booking site built with
-**React + Vite + TailwindCSS**. Tour cards are JSON-driven, and booking
-submissions go directly from the browser to your **Telegram group** via
-the Bot API — no backend server required.
+A multilingual travel website focused on collecting enquiries. Visitors explore tours, leave their contact details, and the team receives the enquiry in Telegram. Submitting a form does not reserve a place or take a payment.
 
----
+## Local development
 
-## 1. Quick start
+Requires Node.js 20.19+ (Node.js 22 or 24 recommended).
 
-```bash
-# 1. Install dependencies
+```sh
 npm install
+```
 
-# 2. Configure the Telegram bot (see below)
-cp .env.example .env
-# then edit .env with your token & chat_id
+Copy `.env.example` to `.env` and fill in the server-only variables:
 
-# 3. Run in dev mode
+```env
+TELEGRAM_BOT_TOKEN=your-bot-token
+TELEGRAM_CHAT_ID=your-group-chat-id
+BRAND_NAME=ZiyaraTour
+```
+
+Create a bot with Telegram's BotFather, add it to the target group, and allow it to send messages. Restart the development server after editing environment variables.
+
+```sh
 npm run dev
-# → open http://localhost:5173
+```
 
-# 4. Production build
+Vite serves both the website and the local `/api/lead` endpoint. Without Telegram credentials, the website still runs; sending the form displays an honest configuration error and direct phone/Telegram links. It never simulates successful delivery.
+
+## Lead flow
+
+1. The visitor supplies a name, international phone number and consent to be contacted. Tour, travel date, group size and a message are optional.
+2. The browser sends JSON to `/api/lead` on the same origin.
+3. The server validates field types and lengths, rejects the hidden spam field, and sends the enquiry to Telegram with a 10-second timeout.
+4. A confirmation appears only after Telegram returns `ok: true`. Failed submissions keep the form contents so the visitor can retry or contact the team directly.
+
+Messages include the selected tour, preferred date, party size, interface language, source page and `utm_source` when present on the submission page. Leads are delivered to Telegram; there is no separate CRM or database in this implementation.
+
+The endpoint has an in-memory limit of five attempts per address per ten minutes. This is best-effort per server instance, not a shared global limiter. For larger campaigns, configure deployment-level WAF/rate limits or a shared store. The `x-vercel-forwarded-for` address is trusted only in the intended Vercel deployment; the local server uses the socket address.
+
+**Credentials must never use a `VITE_` prefix.** If a previous deployment exposed `VITE_TELEGRAM_BOT_TOKEN`, revoke that token in BotFather, create a replacement, and remove the old variable. See [Vite's environment variable documentation](https://vite.dev/guide/env-and-mode.html).
+
+## Deployment
+
+Deploy the repository to Vercel with the Vite preset. Add the three server variables above in project settings, then deploy. `api/lead.js` becomes a Vercel Function, while `vercel.json` handles client-side routes separately from the API. This follows [Vercel's Vite integration](https://vercel.com/docs/frameworks/frontend/vite).
+
+```sh
 npm run build
 npm run preview
 ```
 
----
+The local preview also mounts the lead endpoint. Uploading only `dist/` to a static host will **not** deploy the lead endpoint; such hosting needs a separately implemented server endpoint.
 
-## 2. Telegram bot setup (5 minutes)
+## Editing content
 
-1. Open [@BotFather](https://t.me/BotFather) → `/newbot` → follow the
-   prompts. Copy the **HTTP API token** (looks like `1234567890:AAExxxxx`).
-2. Create a **Telegram group** for incoming bookings, add your new bot
-   to it, and promote it to **admin** (only needs "Send Messages" permission).
-3. Get the group's `chat_id`:
-   - Send any message in the group.
-   - Open in a browser:
-     `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates`
-   - Look for `"chat":{"id":-1001234567890, ...}` — that negative number
-     is the `chat_id`.
-4. Paste both values into `.env`:
+- `src/data/tours.json`: tour descriptions, photos, prices and itineraries.
+- `src/data/destinations.json`: destination names and photographs.
+- `src/data/site.json`: contact information and company information.
+- `src/data/translations/*.json`: existing interface copy.
+- `src/data/experience.js`: new hero, enquiry, process and FAQ copy in Uzbek Latin, Uzbek Cyrillic, Russian and English.
+- `src/experience.css`: the new visual system and responsive layouts.
 
-```env
-VITE_TELEGRAM_BOT_TOKEN=1234567890:AAExxxxxxxx
-VITE_TELEGRAM_CHAT_ID=-1001234567890
-VITE_BRAND_NAME=ZiyaraTour
+The home page uses existing local photographs. Replace the tour collage images with clean, text-free destination photographs when those assets are available.
+
+## Motion and accessibility
+
+The hero includes a real Three.js globe with procedural dotted continents and an orbiting marker. The library is loaded in a separate asynchronous chunk. Canvas resolution is capped, rendering pauses off-screen and in hidden tabs, and reduced-motion users see a static scene. A CSS globe remains if WebGL cannot initialise. See [Three.js responsive rendering](https://threejs.org/manual/pages/responsive.html).
+
+Photo layers and tour cards respond to desktop pointer movement with CSS perspective. Touch devices retain scrolling without drag handlers. The redesign includes labelled inputs, keyboard focus indicators, error announcements, a keyboard-dismissable mobile menu, and reduced-motion support.
+
+## Verification
+
+```sh
+npm test
+npm run test:ui
+npm run build
 ```
 
-5. Restart the dev server (`npm run dev`) — that's it. Submissions from
-   the site will now land in your Telegram group.
+Server tests use mocked Telegram responses and send no real messages. Browser tests use an installed Chrome (`channel: 'chrome'` in `playwright.config.js`) and a local Vite server. They cover desktop/mobile rendering, four languages, 320/768/1440px widths, a WebGL scene, catalogue filtering, form validation, pending/success/failure states, and reduced motion. Browser delivery is mocked, so these tests do not contact Telegram.
 
-> **Security note.** Since there is no backend, the bot token is
-> embedded in the frontend bundle. That is fine for a booking-only bot
-> that just sends leads to a private group — but do **not** grant this
-> bot any admin powers beyond sending messages. If you ever want to
-> hide the token, move the `sendBookingToTelegram` call to a Vercel /
-> Cloudflare serverless function (30 lines).
-
----
-
-## 3. Adding, editing, or removing tour cards
-
-All tours live in **[`src/data/tours.json`](src/data/tours.json)** — a
-plain JSON array. To add a new tour, copy an existing object and
-change the fields. Every text field supports all four languages:
-
-```json
-{
-  "id": "my-new-tour",
-  "slug": "my-new-tour",
-  "featured": true,
-  "category": "cultural",
-  "duration": { "days": 5, "nights": 4 },
-  "groupSize": { "min": 2, "max": 15 },
-  "priceFrom": 599,
-  "currency": "USD",
-  "rating": 4.8,
-  "reviews": 20,
-  "cover":   "https://your-cdn.com/cover.jpg",
-  "gallery": ["https://your-cdn.com/1.jpg", "https://your-cdn.com/2.jpg"],
-  "destinations": ["samarkand", "bukhara"],
-  "title":            { "en": "…", "ru": "…", "uz": "…", "uzc": "…" },
-  "shortDescription": { "en": "…", "ru": "…", "uz": "…", "uzc": "…" },
-  "description":      { "en": "…", "ru": "…", "uz": "…", "uzc": "…" },
-  "highlights":       { "en": ["…"], "ru": ["…"], "uz": ["…"], "uzc": ["…"] },
-  "included":         { "en": ["…"], "ru": ["…"], "uz": ["…"], "uzc": ["…"] },
-  "excluded":         { "en": ["…"], "ru": ["…"], "uz": ["…"], "uzc": ["…"] },
-  "itinerary": []
-}
-```
-
-Categories: `cultural`, `pilgrimage`, `city`, `adventure`.
-Set `"featured": true` to show it on the homepage.
-
-## 4. Adding translations / editing site text
-
-- UI strings → `src/data/translations/{en,ru,uz,uzc}.json`
-- Site-wide info (contacts, testimonials, stats) → `src/data/site.json`
-- City tiles → `src/data/destinations.json`
-
-To add another language, drop a new JSON file into `translations/` and
-register it in `src/i18n/I18nContext.jsx` (the `LANGS` array).
-
-## 5. Images
-
-Placeholder images are served from **picsum.photos** so the site works
-out of the box. To swap in your own photos, just replace the URLs in
-`tours.json`, `destinations.json`, and `About.jsx`. Any CDN or hosted
-folder works. If any URL fails, the `<Img>` component falls back to a
-branded gradient card automatically.
-
-## 6. Deploying to Vercel (recommended)
-
-```bash
-# 1. Push this folder to a GitHub repo
-# 2. In Vercel: Add New Project → Import your repo
-# 3. Settings → Environment Variables — add:
-#      VITE_TELEGRAM_BOT_TOKEN
-#      VITE_TELEGRAM_CHAT_ID
-#      VITE_BRAND_NAME  (optional)
-# 4. Deploy. That's it.
-```
-
-`vercel.json` already handles SPA routing (rewrites all paths to `/`).
-
-### GitHub Pages
-
-Since the app uses client-side routing, deploy with a hash-router
-adapter or use the `dist/` folder from `npm run build`. Vercel or
-Netlify are far easier for React SPAs and offer the same free tier.
-
-## 7. Project structure
-
-```
-src/
-├── App.jsx                # Router
-├── main.jsx               # Entry
-├── index.css              # Tailwind base + components
-├── components/            # UI building blocks
-├── pages/                 # Home, Tours, TourDetail, Book, About, Contact
-├── data/
-│   ├── tours.json         # ⭐ Edit tours here
-│   ├── destinations.json
-│   ├── site.json          # Contact info, testimonials, stats
-│   └── translations/      # en / ru / uz / uzc
-├── i18n/I18nContext.jsx   # Language provider + <LanguageSwitcher>
-└── lib/telegram.js        # Booking → Telegram Bot API
-```
-
-## 8. Tech stack
-
-- **React 18** + **React Router 6**
-- **Vite 5** — dev server + build
-- **TailwindCSS 3** — utility styling
-- Zero backend, zero database.
-
-Made with care in Uzbekistan.
+Screenshots are written to the ignored `artifacts/` directory. To use Playwright's bundled Chromium instead, install its browser and remove the `channel` setting.
