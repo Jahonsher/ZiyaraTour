@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import TourCard from './TourCard.jsx'
 import Reveal from './Reveal.jsx'
-import tours from '../data/tours.json'
-
-const TABS = ['all', 'cultural', 'pilgrimage', 'city', 'adventure']
+import tours from '../data/tours.js'
+import { categories as TABS } from '../data/tours.js'
 
 export default function FeaturedTours() {
   const { t } = useI18n()
   const [tab, setTab] = useState('all')
 
   const list = useMemo(() => {
-    const base = tours.filter((tt) => tt.featured || tab !== 'all')
     return tab === 'all' ? tours.filter((tt) => tt.featured) : tours.filter((tt) => tt.category === tab)
   }, [tab])
 

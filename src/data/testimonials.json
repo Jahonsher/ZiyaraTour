@@ -1,0 +1,103 @@
+[
+  {
+    "id": "munzareen", "name": "Munzareen", "initials": "M",
+    "context": { "uz": "Toshkent bo‘ylab sayohat", "uzc": "Тошкент бўйлаб саёҳат", "ru": "Поездка по Ташкенту", "en": "Tashkent trip" },
+    "sources": ["photo_5348561841191327571_y.jpg", "photo_5348561841191327574_y.jpg", "photo_5348561841191327575_y.jpg"],
+    "text": {
+      "uz": "Sayohatimiz juda yaxshi o‘tdi: ko‘p joylarni ko‘rdik va ko‘p narsalarni o‘rgandik. Maqsuda opa hamma ishni ajoyib muvofiqlashtirdi. Bekzod, Doniyor va butun jamoa bizga juda samimiy munosabatda bo‘ldi. Barchangizga rahmat!",
+      "uzc": "Саёҳатимиз жуда яхши ўтди: кўп жойларни кўрдик ва кўп нарсаларни ўргандик. Мақсуда опа ҳамма ишни ажойиб мувофиқлаштирди. Бекзод, Дониёр ва бутун жамоа бизга жуда самимий муносабатда бўлди. Барчангизга раҳмат!",
+      "ru": "Мы прекрасно провели время: многое увидели и узнали. Максуда замечательно всё организовала. Бекзод, Дониёр и вся команда были очень доброжелательны. Спасибо вам всем!",
+      "en": "We had a lovely time, with so much to see and learn. Maqsuda did a wonderful job coordinating everything. Bekzod, Doniyor and the whole team were so friendly. Thank you all!"
+    }
+  },
+  {
+    "id": "suleiman", "name": "Suleiman", "initials": "S",
+    "context": { "uz": "Toshkent va Chorvoq", "uzc": "Тошкент ва Чорвоқ", "ru": "Ташкент и Чарвак", "en": "Tashkent and Charvak" },
+    "sources": ["photo_5348561841191327572_y.jpg", "photo_5348561841191327574_y.jpg"],
+    "text": {
+      "uz": "Bekzod, ajoyib sayohat kuni uchun rahmat! Bo‘sh vaqtimizni ham mazmunli o‘tkazishimizga yordam berdingiz va aeroportga o‘z vaqtida, hech qanday tashvishsiz yetkazdingiz. Bergan maslahatlaringiz ham juda foydali bo‘ldi. Inshaalloh, yana ko‘rishamiz!",
+      "uzc": "Бекзод, ажойиб саёҳат куни учун раҳмат! Бўш вақтимизни ҳам мазмунли ўтказишимизга ёрдам бердингиз ва аэропортга ўз вақтида, ҳеч қандай ташвишсиз етказдингиз. Берган маслаҳатларингиз ҳам жуда фойдали бўлди. Иншааллоҳ, яна кўришамиз!",
+      "ru": "Бекзод, спасибо за прекрасный день! Вы помогли с пользой провести свободное время и доставили нас в аэропорт вовремя, без лишних переживаний. Ваши советы тоже очень пригодились. Иншааллах, скоро увидимся снова!",
+      "en": "Bekzod, thank you for a great day of sightseeing, for making the most of our spare time and for getting us to the airport on time without stress. Your advice was very helpful too. We hope to see you again soon, inshaAllah!"
+    }
+  },
+  {
+    "id": "arshad-fakir", "name": "Ml. Arshad Fakir", "initials": "AF",
+    "context": { "uz": "Janubiy Afrika guruhi · O‘zbekiston", "uzc": "Жанубий Африка гуруҳи · Ўзбекистон", "ru": "Группа из ЮАР · Узбекистан", "en": "South African group · Uzbekistan" },
+    "sources": ["photo_5348561841191327589_y.jpg", "photo_5348561841191327590_y.jpg"],
+    "text": {
+      "uz": "O‘zbekistonga sayohatimiz juda ajoyib o‘tdi. ZiyaraTour bilan butun guruhimiz vaqtini maroqli o‘tkazdi. Yana boshqa guruh bilan kelib, tez orada ko‘rishishga umid qilamiz!",
+      "uzc": "Ўзбекистонга саёҳатимиз жуда ажойиб ўтди. ZiyaraTour билан бутун гуруҳимиз вақтини мароқли ўтказди. Яна бошқа гуруҳ билан келиб, тез орада кўришишга умид қиламиз!",
+      "ru": "Мы прекрасно провели время в Узбекистане. Поездка с ZiyaraTour очень понравилась всей нашей группе. Надеемся скоро вернуться с другой группой и снова встретиться!",
+      "en": "We had a great time and a wonderful trip to Uzbekistan. ZiyaraTour were great, and our whole group enjoyed themselves. We hope to meet again soon with another group!"
+    }
+  },
+  {
+    "id": "zaid-kavsar", "name": "Zaid Kavsar", "initials": "ZK",
+    "context": { "uz": "Guruh sayohati", "uzc": "Гуруҳ саёҳати", "ru": "Групповая поездка", "en": "Group trip" },
+    "sources": ["photo_5348561841191327577_y.jpg"],
+    "text": {
+      "uz": "Mehmonxona juda yaxshi, Hamza ham juda yaxshi inson. Alhamdulillah, hamma juda xursand. Hozirgacha hammasi 10/10! Qaytganimdan keyin navbatdagi guruhlar haqida gaplashamiz. Inshaalloh, keyingi safar kattaroq guruh bilan kelamiz.",
+      "uzc": "Меҳмонхона жуда яхши, Ҳамза ҳам жуда яхши инсон. Алҳамдулиллаҳ, ҳамма жуда хурсанд. Ҳозиргача ҳаммаси 10/10! Қайтганимдан кейин навбатдаги гуруҳлар ҳақида гаплашамиз. Иншааллоҳ, кейинги сафар каттароқ гуруҳ билан келамиз.",
+      "ru": "Очень хороший отель, и Хамза — замечательный человек. Альхамдулиллях, все очень довольны. Пока всё на 10/10! Когда вернусь, обсудим следующие группы. Иншааллах, в следующий раз приедем большей группой.",
+      "en": "A very nice hotel, and Hamza is a good man. Alhamdulillah, everyone is very happy. So far everything is 10/10! When I return, we will discuss the next groups. InshaAllah, we will bring a bigger group next time."
+    }
+  },
+  {
+    "id": "omar", "name": "omaraysra276", "initials": "O",
+    "context": { "uz": "Fransuz guruhi", "uzc": "Француз гуруҳи", "ru": "Французская группа", "en": "French group" },
+    "sources": ["photo_5348561841191327576_y.jpg"],
+    "text": {
+      "uz": "Hammasi a’lo! Qilgan mehnatingiz va barcha sa’y-harakatlaringiz uchun katta rahmat. Barakalla!",
+      "uzc": "Ҳаммаси аъло! Қилган меҳнатингиз ва барча саъй-ҳаракатларингиз учун катта раҳмат. Баракалла!",
+      "ru": "Всё отлично! Большое спасибо за ваш труд и старания. Браво!",
+      "en": "Perfect! Thank you for all your efforts. Bravo!"
+    }
+  },
+  {
+    "id": "uzbekistan-kazakhstan-guest",
+    "name": { "uz": "Sayohat ishtirokchisi", "uzc": "Саёҳат иштирокчиси", "ru": "Участник поездки", "en": "Tour guest" }, "initials": "ZT",
+    "context": { "uz": "O‘zbekiston va Qozog‘iston", "uzc": "Ўзбекистон ва Қозоғистон", "ru": "Узбекистан и Казахстан", "en": "Uzbekistan and Kazakhstan" },
+    "sources": ["photo_5348561841191327582_y.jpg", "photo_5348561841191327583_y.jpg", "photo_5348561841191327584_y.jpg"],
+    "text": {
+      "uz": "O‘zbekiston va Qozog‘istonda vaqtimiz juda ajoyib o‘tdi. Butun guruh sayohatdan, ayniqsa palov tayyorlash mahorat darsidan zavq oldi. Biz uchun qilgan barcha ishlaringiz uchun rahmat! Sovg‘a qilgan holvangiz ham juda mazali edi. Alloh sizga va oilangizga baraka bersin.",
+      "uzc": "Ўзбекистон ва Қозоғистонда вақтимиз жуда ажойиб ўтди. Бутун гуруҳ саёҳатдан, айниқса палов тайёрлаш маҳорат дарсидан завқ олди. Биз учун қилган барча ишларингиз учун раҳмат! Совға қилган ҳолвангиз ҳам жуда мазали эди. Аллоҳ сизга ва оилангизга барака берсин.",
+      "ru": "Мы замечательно провели время в Узбекистане и Казахстане. Вся группа получила удовольствие от поездки, особенно от мастер-класса по приготовлению плова. Спасибо за всё, что вы для нас сделали! Подаренная вами халва была очень вкусной. Пусть Аллах благословит вас и вашу семью.",
+      "en": "We had an amazing time in Uzbekistan and Kazakhstan. Everyone enjoyed the whole trip, especially the plov masterclass. Thank you for everything you did for us! The halva you gifted us was delicious too. May Allah bless you and your family."
+    }
+  },
+  {
+    "id": "tashkent-guest",
+    "name": { "uz": "Sayohat ishtirokchisi", "uzc": "Саёҳат иштирокчиси", "ru": "Участник поездки", "en": "Tour guest" }, "initials": "ZT",
+    "context": { "uz": "Toshkent bo‘ylab sayohat", "uzc": "Тошкент бўйлаб саёҳат", "ru": "Поездка по Ташкенту", "en": "Tashkent trip" },
+    "sources": ["photo_5348561841191327578_y.jpg"],
+    "text": {
+      "uz": "Alhamdulillah, biz juda xursandmiz. Sayohat ajoyib o‘tdi! Behzod juda yaxshi inson.",
+      "uzc": "Алҳамдулиллаҳ, биз жуда хурсандмиз. Саёҳат ажойиб ўтди! Беҳзод жуда яхши инсон.",
+      "ru": "Альхамдулиллях, мы очень довольны. Отличная поездка! Бехзод — замечательный человек.",
+      "en": "Alhamdulillah, we are very happy. An excellent trip! Behzad is a good man."
+    }
+  },
+  {
+    "id": "muhammad-faraz", "name": "Muhammad Faraz", "initials": "MF",
+    "context": { "uz": "Keyingi guruh sayohati", "uzc": "Кейинги гуруҳ саёҳати", "ru": "Следующая групповая поездка", "en": "Planning another group trip" },
+    "sources": ["photo_5348561841191327585_y.jpg"],
+    "text": {
+      "uz": "Alhamdulillah, hammasi yaxshi. Keyingi guruhim uchun ham shu mehmonxonalarda 8 kechalik sayohat narxini bilmoqchiman.",
+      "uzc": "Алҳамдулиллаҳ, ҳаммаси яхши. Кейинги гуруҳим учун ҳам шу меҳмонхоналарда 8 кечалик саёҳат нархини билмоқчиман.",
+      "ru": "Альхамдулиллях, всё хорошо. Хотел бы узнать стоимость поездки на 8 ночей для следующей группы в тех же отелях.",
+      "en": "Alhamdulillah, all is good. I would like a quote for my next group for eight nights at the same hotels."
+    }
+  },
+  {
+    "id": "nageebkhan", "name": "Nageebkhan", "initials": "N",
+    "context": { "uz": "Janubiy Afrika guruhi · O‘zbekiston", "uzc": "Жанубий Африка гуруҳи · Ўзбекистон", "ru": "Группа из ЮАР · Узбекистан", "en": "South African group · Uzbekistan" },
+    "sources": ["photo_5348561841191327590_y.jpg"],
+    "text": {
+      "uz": "Rahmat! Siz O‘zbekistondagi eng yaxshi sayohat hamkorimizsiz.",
+      "uzc": "Раҳмат! Сиз Ўзбекистондаги энг яхши саёҳат ҳамкоримизсиз.",
+      "ru": "Спасибо! Вы наш лучший партнёр по поездкам в Узбекистан.",
+      "en": "Thank you! You are our best travel agent for Uzbekistan."
+    }
+  }
+]

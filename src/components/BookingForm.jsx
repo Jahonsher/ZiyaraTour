@@ -1,129 +1,103 @@
-import { useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useId, useState } from 'react'
+import { useLocation, useSearchParams } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
-import tours from '../data/tours.json'
-import { isTelegramConfigured, sendBookingToTelegram } from '../lib/telegram.js'
-
-const initial = {
-  name: '',
-  phone: '+998 ',
-  tour: '',
-  message: '',
-}
-
-function formatPhone(value) {
-  const digits = value.replace(/\D/g, '')
-  if (!digits) return ''
-  const rest = digits.startsWith('998') ? digits.slice(3) : digits
-  const p1 = rest.slice(0, 2)
-  const p2 = rest.slice(2, 5)
-  const p3 = rest.slice(5, 7)
-  const p4 = rest.slice(7, 9)
-  let out = '+998'
-  if (p1) out += ' ' + p1
-  if (p2) out += ' ' + p2
-  if (p3) out += ' ' + p3
-  if (p4) out += ' ' + p4
-  return out
-}
+import tours from '../data/tours.js'
+import site from '../data/site.json'
+import { sendBookingToTelegram } from '../lib/telegram.js'
+import { formatPhone, isValidPhone, todayLocal } from '../lib/booking.js'
 
 export default function BookingForm({ preselect = '' }) {
   const { t, lang, localize } = useI18n()
   const loc = useLocation()
-  const [form, setForm] = useState({ ...initial, tour: preselect })
-  const [status, setStatus] = useState({ state: 'idle', message: '' })
-
-  function update(k, v) {
-    setForm((f) => ({ ...f, [k]: v }))
+  const [params] = useSearchParams()
+  const id = useId()
+  const requestedDate = params.get('date') || ''
+  const requestedGuests = Number(params.get('guests'))
+  const initial = {
+    name: '', phone: '+998 ', tour: preselect, message: '', consent: false, website: '',
+    date: /^\d{4}-\d{2}-\d{2}$/.test(requestedDate) && requestedDate >= todayLocal() ? requestedDate : '',
+    guests: Number.isInteger(requestedGuests) && requestedGuests > 0 && requestedGuests <= 100 ? String(requestedGuests) : '',
   }
-
-  async function submit(e) {
-    e.preventDefault()
-    const phoneDigits = form.phone.replace(/\D/g, '')
-    if (!form.name.trim() || phoneDigits.length < 12) return
-
-    if (!isTelegramConfigured()) {
-      setStatus({ state: 'error', message: t('book.form.missingConfig') })
-      return
-    }
-
-    setStatus({ state: 'sending', message: '' })
-    const selected = tours.find((tt) => tt.slug === form.tour || tt.id === form.tour)
-    const tourLabel = selected ? localize(selected.title) : form.tour
-
-    const res = await sendBookingToTelegram({
-      ...form,
-      tour: tourLabel,
-      lang,
-      page: loc.pathname,
-    })
-
-    if (res.ok) {
-      setStatus({ state: 'success', message: t('book.form.success') })
-      setForm({ ...initial, tour: preselect })
-    } else {
-      setStatus({ state: 'error', message: res.reason === 'not-configured' ? t('book.form.missingConfig') : t('book.form.error') })
-    }
-  }
-
+  const [form, setForm] = useState(initial)
+  const [status, setStatus] = useState({ state: 'idle', key: '' })
   const disabled = status.state === 'sending'
 
+  function update(key, value) {
+    setForm(current => ({ ...current, [key]: value }))
+    if (status.state !== 'sending') setStatus({ state: 'idle', key: '' })
+  }
+
+  async function submit(event) {
+    event.preventDefault()
+    if (disabled) return
+    const fail = key => setStatus({ state: 'error', key })
+    if (form.name.trim().length < 2) return fail('book.form.invalidName')
+    if (!isValidPhone(form.phone)) return fail('book.form.invalidPhone')
+    if (form.date && form.date < todayLocal()) return fail('book.form.invalidDate')
+    if (!form.consent) return fail('book.form.consentRequired')
+    setStatus({ state: 'sending', key: '' })
+    const selected = tours.find(tour => tour.slug === form.tour || tour.id === form.tour)
+    const result = await sendBookingToTelegram({
+      ...form, name: form.name.trim(), tour: selected ? localize(selected.title) : form.tour,
+      lang, page: loc.pathname, source: selected?.sourceUrl || 'Website',
+    })
+    if (result.ok) {
+      setStatus({ state: 'success', key: 'book.form.success' })
+      setForm(initial)
+    } else {
+      fail(result.reason === 'not-configured' ? 'book.form.missingConfig' : 'book.form.error')
+    }
+  }
+
   return (
-    <form onSubmit={submit} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <form onSubmit={submit} className="grid grid-cols-1 sm:grid-cols-2 gap-4" data-testid="booking-form">
       <div>
-        <label className="label">{t('book.form.name')} *</label>
-        <input required disabled={disabled} className="input" value={form.name}
-          onChange={(e) => update('name', e.target.value)}
-          placeholder={t('book.form.namePh')} />
+        <label htmlFor={`${id}-name`} className="label">{t('book.form.name')} *</label>
+        <input id={`${id}-name`} name="name" autoComplete="name" required minLength={2} maxLength={80} disabled={disabled} className="input" value={form.name}
+          onChange={event => update('name', event.target.value)} placeholder={t('book.form.namePh')} />
       </div>
       <div>
-        <label className="label">{t('book.form.phone')} *</label>
-        <input required disabled={disabled} type="tel" inputMode="tel" className="input" value={form.phone}
-          onChange={(e) => update('phone', formatPhone(e.target.value))}
-          onFocus={(e) => { if (!form.phone) update('phone', '+998 '); requestAnimationFrame(() => e.target.setSelectionRange(e.target.value.length, e.target.value.length)) }}
-          onKeyDown={(e) => {
-            const allowed = ['Backspace','Delete','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Tab','Home','End']
-            if (allowed.includes(e.key) || e.ctrlKey || e.metaKey) return
-            if (!/[0-9+\s]/.test(e.key)) e.preventDefault()
-          }}
-          placeholder={t('book.form.phonePh')} />
+        <label htmlFor={`${id}-phone`} className="label">{t('book.form.phone')} *</label>
+        <input id={`${id}-phone`} name="phone" autoComplete="tel" required disabled={disabled} type="tel" inputMode="tel" maxLength={30} className="input" value={form.phone}
+          onChange={event => update('phone', formatPhone(event.target.value))} placeholder={t('book.form.phonePh')}
+          aria-invalid={status.key === 'book.form.invalidPhone'} aria-describedby={status.state === 'error' ? `${id}-error` : undefined} />
       </div>
       <div className="sm:col-span-2">
-        <label className="label">{t('book.form.tour')}</label>
-        <select disabled={disabled} className="input" value={form.tour}
-          onChange={(e) => update('tour', e.target.value)}>
+        <label htmlFor={`${id}-tour`} className="label">{t('book.form.tour')}</label>
+        <select id={`${id}-tour`} name="tour" disabled={disabled} className="input" value={form.tour} onChange={event => update('tour', event.target.value)}>
           <option value="">{t('book.form.tourPh')}</option>
-          {tours.map((tt) => (
-            <option key={tt.id} value={tt.slug}>{localize(tt.title)}</option>
-          ))}
+          {tours.map(tour => <option key={tour.id} value={tour.slug}>{localize(tour.title)}</option>)}
         </select>
       </div>
-      <div className="sm:col-span-2">
-        <label className="label">{t('book.form.message')}</label>
-        <textarea disabled={disabled} rows="4" className="input" value={form.message}
-          onChange={(e) => update('message', e.target.value)}
-          placeholder={t('book.form.messagePh')} />
+      <div>
+        <label htmlFor={`${id}-date`} className="label">{t('book.form.date')}</label>
+        <input id={`${id}-date`} name="date" type="date" min={todayLocal()} disabled={disabled} className="input" value={form.date} onChange={event => update('date', event.target.value)} />
       </div>
-
-      <div className="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-4">
-        <button type="submit" disabled={disabled}
-          className="btn-primary disabled:opacity-60 disabled:cursor-not-allowed">
-          {status.state === 'sending' ? t('book.form.sending') : t('book.form.submit')}
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      <div>
+        <label htmlFor={`${id}-guests`} className="label">{t('book.form.guests')}</label>
+        <input id={`${id}-guests`} name="guests" type="number" min="1" max="100" step="1" disabled={disabled} className="input" value={form.guests} onChange={event => update('guests', event.target.value)} />
+      </div>
+      <div className="sm:col-span-2">
+        <label htmlFor={`${id}-message`} className="label">{t('book.form.message')}</label>
+        <textarea id={`${id}-message`} name="message" disabled={disabled} rows="4" maxLength={1000} className="input" value={form.message}
+          onChange={event => update('message', event.target.value)} placeholder={t('book.form.messagePh')} />
+      </div>
+      <input className="hidden" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" value={form.website} onChange={event => update('website', event.target.value)} />
+      <label className="sm:col-span-2 flex items-start gap-2 text-sm text-slate-600">
+        <input name="consent" type="checkbox" required disabled={disabled} checked={form.consent} onChange={event => update('consent', event.target.checked)} className="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+        <span>{t('book.form.agree')}</span>
+      </label>
+      <div className="sm:col-span-2 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3">
+        <button type="submit" disabled={disabled} className="btn-primary disabled:opacity-60 disabled:cursor-not-allowed">
+          {t(disabled ? 'book.form.sending' : 'book.form.submit')}
         </button>
         <span className="text-xs text-slate-500">{t('book.form.requiredHint')}</span>
       </div>
-
-      {status.state === 'success' && (
-        <div className="sm:col-span-2 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 text-sm">
-          {status.message}
-        </div>
-      )}
-      {status.state === 'error' && (
-        <div className="sm:col-span-2 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 p-4 text-sm">
-          {status.message}
-        </div>
-      )}
+      {status.state === 'success' && <div role="status" className="sm:col-span-2 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 text-sm">{t(status.key)}</div>}
+      {status.state === 'error' && <div id={`${id}-error`} role="alert" className="sm:col-span-2 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 p-4 text-sm">
+        <p>{t(status.key)}</p>
+        {(status.key === 'book.form.missingConfig' || status.key === 'book.form.error') && <a href={site.contact.telegram} target="_blank" rel="noreferrer" className="mt-2 inline-flex font-semibold underline">{t('book.form.directContact')}</a>}
+      </div>}
     </form>
   )
 }

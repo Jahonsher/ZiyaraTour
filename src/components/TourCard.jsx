@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import Img from './Img.jsx'
-import destinations from '../data/destinations.json'
+import destinations from '../data/destinations.js'
 
 const BADGE_STYLES = {
   bestseller: 'bg-accent-500 text-white',
@@ -13,11 +13,17 @@ const BADGE_STYLES = {
 export default function TourCard({ tour }) {
   const { t, localize } = useI18n()
   const [liked, setLiked] = useState(false)
+  const [params] = useSearchParams()
+  const bookingParams = new URLSearchParams()
+  for (const key of ['date', 'guests']) {
+    if (params.get(key)) bookingParams.set(key, params.get(key))
+  }
+  const tourUrl = `/tours/${tour.slug}${bookingParams.size ? `?${bookingParams}` : ''}`
 
   const firstCity = destinations.find((d) => d.id === tour.destinations?.[0])
   const cityLabel = firstCity ? localize(firstCity.name) : ''
 
-  const discount = tour.oldPrice
+  const discount = tour.oldPrice && tour.priceFrom
     ? Math.round(100 - (tour.priceFrom / tour.oldPrice) * 100)
     : null
 
@@ -28,7 +34,7 @@ export default function TourCard({ tour }) {
   }
 
   return (
-    <Link to={`/tours/${tour.slug}`} className="card group flex flex-col relative tilt-hover">
+    <Link to={tourUrl} className="card group flex flex-col relative tilt-hover">
       <div className="relative aspect-[5/4] overflow-hidden rounded-t-2xl">
         <Img
           src={tour.cover}
@@ -61,7 +67,8 @@ export default function TourCard({ tour }) {
         </div>
 
         {/* top-right wishlist */}
-        <button onClick={toggleLike}
+        <button type="button" onClick={toggleLike}
+          aria-pressed={liked}
           aria-label={t('card.wishlist')}
           className={`absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center shadow-sm transition ${
             liked ? 'bg-rose-500 text-white' : 'bg-white/95 text-slate-600 hover:text-rose-500'
@@ -82,7 +89,7 @@ export default function TourCard({ tour }) {
 
       <div className="p-5 flex flex-col flex-1">
         {/* rating row */}
-        <div className="flex items-center gap-2 text-xs text-slate-500">
+        {tour.rating != null && <div className="flex items-center gap-2 text-xs text-slate-500">
           <div className="flex text-accent-500">
             {Array.from({ length: 5 }).map((_, i) => (
               <svg key={i} width="12" height="12" viewBox="0 0 24 24" fill={i < Math.round(tour.rating) ? 'currentColor' : '#e2e8f0'}>
@@ -92,7 +99,7 @@ export default function TourCard({ tour }) {
           </div>
           <span className="font-semibold text-ink-800">{tour.rating}</span>
           <span>({tour.reviews})</span>
-        </div>
+        </div>}
 
         <h3 className="mt-2 font-display font-bold text-lg text-ink-900 group-hover:text-brand-700 transition line-clamp-2 min-h-[3.25rem]">
           {localize(tour.title)}
@@ -102,11 +109,11 @@ export default function TourCard({ tour }) {
         <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-slate-600">
           <span className="inline-flex items-center gap-1.5">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            {tour.duration.days} {t('tour.days')}
+            {tour.duration ? `${tour.duration.days} ${t('tour.days')}` : t('tour.flexibleDuration')}
           </span>
           <span className="inline-flex items-center gap-1.5">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-            {tour.groupSize.min}–{tour.groupSize.max}
+            {tour.groupSize ? `${tour.groupSize.min}–${tour.groupSize.max}` : t('tour.flexibleGroup')}
           </span>
           <span className="inline-flex items-center gap-1.5">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 20l-5.4 2.8 1-6L.2 12.4l6-.9L9 6l2.8 5.5 6 .9-4.4 4.4 1 6z"/></svg>
@@ -116,16 +123,16 @@ export default function TourCard({ tour }) {
 
         <div className="mt-auto pt-4 border-t border-slate-100 flex items-end justify-between">
           <div>
-            <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">{t('tour.from')}</div>
+            {tour.priceFrom != null && <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">{t('tour.from')}</div>}
             <div className="flex items-baseline gap-2">
-              <span className="font-display font-extrabold text-2xl text-accent-600">
-                ${tour.priceFrom}
+              <span className={`font-display font-extrabold text-accent-600 ${tour.priceFrom == null ? 'text-lg' : 'text-2xl'}`}>
+                {tour.priceFrom == null ? t('tour.priceOnRequest') : `$${tour.priceFrom}`}
               </span>
-              {tour.oldPrice && (
+              {tour.oldPrice && tour.priceFrom != null && (
                 <span className="text-sm text-slate-400 line-through">${tour.oldPrice}</span>
               )}
             </div>
-            <div className="text-[11px] text-slate-500">{t('card.person')}</div>
+            <div className="text-[11px] text-slate-500">{tour.priceFrom == null ? t('tour.confirmDates') : t('card.person')}</div>
           </div>
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-50 text-brand-700 group-hover:bg-brand-600 group-hover:text-white group-hover:scale-110 transition-all duration-300">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-0.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>

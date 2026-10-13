@@ -3,8 +3,14 @@ import site from '../data/site.json'
 import Img from './Img.jsx'
 import Reveal from './Reveal.jsx'
 
+const sources = {
+  n1: 'https://ziyaratour.uz/news/new-passenger-train-between-bukhara-and-khiva/',
+  n2: 'https://ziyaratour.uz/news/uzbekistan-ranked-the-fifth-safest-country-in-the-world-for-solo-travellers/',
+}
+const locales = { uz: 'uz-Latn', uzc: 'uz-Cyrl', ru: 'ru', en: 'en' }
+
 export default function BlogSection() {
-  const { t, localize } = useI18n()
+  const { t, localize, lang } = useI18n()
   const posts = site.blog || []
   if (posts.length === 0) return null
 
@@ -33,7 +39,7 @@ export default function BlogSection() {
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-3 text-xs text-slate-500">
-                  <span>{new Date(p.date).toLocaleDateString()}</span>
+                  <span>{new Date(`${p.date}T12:00:00`).toLocaleDateString(locales[lang])}</span>
                   <span className="w-1 h-1 rounded-full bg-slate-300" />
                   <span>{p.readMin} {t('blog.min')}</span>
                 </div>
@@ -48,10 +54,10 @@ export default function BlogSection() {
                     </div>
                     <span>{p.author}</span>
                   </div>
-                  <span className="text-brand-700 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  {(p.url || sources[p.id]) && <a href={p.url || sources[p.id]} target="_blank" rel="noreferrer" className="text-brand-700 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                     {t('blog.readMore')}
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                  </span>
+                  </a>}
                 </div>
               </div>
             </article>

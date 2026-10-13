@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useI18n } from '../i18n/I18nContext.jsx'
 
 export default function LanguageSwitcher({ variant = 'light' }) {
-  const { lang, setLang, langs } = useI18n()
+  const { lang, setLang, langs, t } = useI18n()
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
   const current = langs.find((l) => l.code === lang) || langs[0]
@@ -12,7 +12,12 @@ export default function LanguageSwitcher({ variant = 'light' }) {
       if (ref.current && !ref.current.contains(e.target)) setOpen(false)
     }
     document.addEventListener('mousedown', onDoc)
-    return () => document.removeEventListener('mousedown', onDoc)
+    function onKey(event) { if (event.key === 'Escape') setOpen(false) }
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('mousedown', onDoc)
+      document.removeEventListener('keydown', onKey)
+    }
   }, [])
 
   const trigger =
@@ -27,6 +32,7 @@ export default function LanguageSwitcher({ variant = 'light' }) {
         onClick={() => setOpen((v) => !v)}
         className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-semibold transition ${trigger}`}
         aria-haspopup="listbox"
+        aria-label={t('misc.language')}
         aria-expanded={open}
       >
         <span className="text-base leading-none">🌐</span>
@@ -43,6 +49,9 @@ export default function LanguageSwitcher({ variant = 'light' }) {
           {langs.map((l) => (
             <li key={l.code}>
               <button
+                type="button"
+                role="option"
+                aria-selected={l.code === lang}
                 onClick={() => {
                   setLang(l.code)
                   setOpen(false)

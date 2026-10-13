@@ -44,11 +44,11 @@ export default function Contact() {
         </Reveal>
 
         <Reveal className="mt-12 flex justify-center gap-3" delay={200}>
-          <a href={site.contact.telegram} target="_blank" rel="noreferrer"
+          <a href={site.contact.telegram} target="_blank" rel="noreferrer" aria-label="Telegram"
             className="w-11 h-11 rounded-full bg-brand-100 text-brand-700 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-all hover:scale-110 hover:-translate-y-1">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 15.8l-.4 5.1c.6 0 .8-.2 1.1-.5l2.4-2.3 5 3.7c1 .5 1.6.3 1.9-.9l3.3-15.5c.3-1.4-.5-1.9-1.4-1.6L1 9.3c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5L17 5.3c.5-.4 1-.2.6.2z"/></svg>
           </a>
-          <a href={site.contact.instagram} target="_blank" rel="noreferrer"
+          <a href={site.contact.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"
             className="w-11 h-11 rounded-full bg-accent-100 text-accent-700 hover:bg-accent-500 hover:text-white flex items-center justify-center transition-all hover:scale-110 hover:-translate-y-1">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.9 1.7 5 5 .1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.3-1.7 4.9-5 5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.9-1.7-5-5-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-3.3 1.7-4.9 5-5 1.2-.1 1.6-.1 4.8-.1zm0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 100 2.8 1.4 1.4 0 000-2.8z"/></svg>
           </a>

@@ -26,3 +26,9 @@ Thumbs.db
 .cache/
 .parcel-cache/
 .vite/
+
+# Local verification output and original review screenshots
+artifacts/
+test-results/
+playwright-report/
+public/Commentary/

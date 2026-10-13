@@ -46,7 +46,11 @@
     },
     "testimonials": {
       "eyebrow": "Reviews",
-      "title": "Stories from our travellers"
+      "title": "Stories from our travellers",
+      "subtitle": "Personal reflections from our guests after their journeys.",
+      "guestReview": "Guest review",
+      "showAll": "View all reviews",
+      "showLess": "Show fewer reviews"
     },
     "cta": {
       "title": "Your custom tour, in 24 hours",

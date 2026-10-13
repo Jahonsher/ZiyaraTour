@@ -46,7 +46,11 @@
     },
     "testimonials": {
       "eyebrow": "Fikrlar",
-      "title": "Sayohatchilarimizning hikoyalari"
+      "title": "Sayohatchilarimizning hikoyalari",
+      "subtitle": "Mehmonlarimizning sayohatdan keyingi samimiy taassurotlari.",
+      "guestReview": "Mehmon fikri",
+      "showAll": "Barcha sharhlarni ko‘rish",
+      "showLess": "Kamroq ko‘rsatish"
     },
     "cta": {
       "title": "Shaxsiy tur — 24 soat ichida",

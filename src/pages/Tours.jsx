@@ -3,10 +3,9 @@ import { useSearchParams } from 'react-router-dom'
 import TourCard from '../components/TourCard.jsx'
 import Reveal from '../components/Reveal.jsx'
 import { useI18n } from '../i18n/I18nContext.jsx'
-import tours from '../data/tours.json'
-import destinations from '../data/destinations.json'
-
-const CATEGORIES = ['all', 'cultural', 'pilgrimage', 'city', 'adventure']
+import tours from '../data/tours.js'
+import { categories as CATEGORIES } from '../data/tours.js'
+import destinations from '../data/destinations.js'
 
 export default function Tours() {
   const { t, localize } = useI18n()
@@ -15,13 +14,17 @@ export default function Tours() {
 
   const destination = params.get('destination') || ''
   const duration = params.get('duration') || ''
+  const guests = Number(params.get('guests')) || 0
+  const date = params.get('date') || ''
 
   const filtered = useMemo(() => {
     return tours.filter((tour) => {
       if (category !== 'all' && tour.category !== category) return false
       if (destination && !tour.destinations.includes(destination)) return false
+      if (guests && tour.groupSize && (guests < tour.groupSize.min || guests > tour.groupSize.max)) return false
       if (duration) {
-        const d = tour.duration.days
+        const d = tour.duration?.days
+        if (d == null) return true
         if (duration === '1-3' && !(d >= 1 && d <= 3)) return false
         if (duration === '4-6' && !(d >= 4 && d <= 6)) return false
         if (duration === '7-10' && !(d >= 7 && d <= 10)) return false
@@ -29,7 +32,7 @@ export default function Tours() {
       }
       return true
     })
-  }, [category, destination, duration])
+  }, [category, destination, duration, guests])
 
   function clear() {
     setParams({})
@@ -61,14 +64,14 @@ export default function Tours() {
               {t(`categories.${c}`)}
             </button>
           ))}
-          {(destination || duration) && (
+          {(destination || duration || guests || date) && (
             <button onClick={clear} className="ml-auto text-sm text-brand-700 font-semibold underline underline-offset-4 hover:text-accent-600 transition">
-              Clear filters
+              {t('search.clearFilters')}
             </button>
           )}
         </Reveal>
 
-        {(destination || duration) && (
+        {(destination || duration || guests || date) && (
           <div className="flex flex-wrap gap-2 mb-6 animate-fade-up">
             {destination && (
               <span className="chip bg-brand-50 text-brand-800">
@@ -76,8 +79,11 @@ export default function Tours() {
               </span>
             )}
             {duration && <span className="chip bg-brand-50 text-brand-800">{duration} {t('tour.days')}</span>}
+            {guests > 0 && <span className="chip bg-brand-50 text-brand-800">{guests} {t('search.guests')}</span>}
+            {date && <span className="chip bg-brand-50 text-brand-800">{date}</span>}
           </div>
         )}
+        {date && <p className="mb-6 text-sm text-slate-500">{t('search.dateNote')}</p>}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((tour, i) => (

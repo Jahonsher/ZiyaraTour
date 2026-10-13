@@ -1,16 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
-import tours from '../data/tours.json'
+import tours from '../data/tours.js'
 import Img from '../components/Img.jsx'
 import BookingForm from '../components/BookingForm.jsx'
 import Reveal from '../components/Reveal.jsx'
+import InstagramClips from '../components/InstagramClips.jsx'
+import site from '../data/site.json'
 
 export default function TourDetail() {
   const { slug } = useParams()
   const { t, localize } = useI18n()
   const tour = tours.find((tt) => tt.slug === slug)
   const [activeImg, setActiveImg] = useState(0)
+
+  useEffect(() => { setActiveImg(0) }, [slug])
 
   if (!tour) return <Navigate to="/tours" replace />
 
@@ -34,10 +38,10 @@ export default function TourDetail() {
               </Link>
               <div className="flex flex-wrap items-center gap-2 mb-3 animate-fade-up" style={{ animationDelay: '120ms' }}>
                 <span className="chip bg-white/95 text-brand-800">{t(`categories.${tour.category}`)}</span>
-                <span className="chip bg-accent-500/90 text-white">
+                {tour.rating != null && <span className="chip bg-accent-500/90 text-white">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.8L18 22l-6-3.5L6 22l1.5-7.2L2 10l7.1-1.1z"/></svg>
                   {tour.rating} · {tour.reviews} {t('tour.reviews')}
-                </span>
+                </span>}
               </div>
               <h1 className="font-display font-extrabold text-3xl sm:text-5xl max-w-3xl animate-fade-up" style={{ animationDelay: '240ms' }}>{localize(tour.title)}</h1>
               <p className="mt-3 text-white/85 max-w-2xl animate-fade-up" style={{ animationDelay: '360ms' }}>{localize(tour.shortDescription)}</p>
@@ -51,6 +55,9 @@ export default function TourDetail() {
                 <button
                   key={i}
                   onClick={() => setActiveImg(i)}
+                  type="button"
+                  aria-label={`${t('tour.gallery')} ${i + 1}`}
+                  aria-pressed={activeImg === i}
                   className={`relative flex-shrink-0 w-24 h-16 rounded-xl overflow-hidden border-2 transition-all duration-300 hover:scale-105 ${
                     activeImg === i ? 'border-white ring-2 ring-brand-500 scale-105' : 'border-white/60'
                   }`}
@@ -68,10 +75,10 @@ export default function TourDetail() {
         <div className="lg:col-span-2 space-y-10">
           {/* Quick facts */}
           <Reveal className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <Fact icon="⏱️" label={t('tour.days')} value={`${tour.duration.days} / ${tour.duration.nights}`} />
-            <Fact icon="👥" label={t('search.guests')} value={`${tour.groupSize.min}–${tour.groupSize.max}`} />
-            <Fact icon="🗺️" label="Cities" value={tour.destinations.length} />
-            <Fact icon="⭐" label="Rating" value={tour.rating} />
+            <Fact icon="⏱️" label={t('search.duration')} value={tour.duration ? `${tour.duration.days} ${t('tour.days')} / ${tour.duration.nights} ${t('tour.nights')}` : t('tour.flexibleDuration')} />
+            <Fact icon="👥" label={t('search.guests')} value={tour.groupSize ? `${tour.groupSize.min}–${tour.groupSize.max}` : t('tour.flexibleGroup')} />
+            <Fact icon="🗺️" label={t('tour.cities')} value={tour.destinations.length} />
+            <Fact icon="⭐" label={tour.rating != null ? t('tour.rating') : t('tour.category')} value={tour.rating ?? t(`categories.${tour.category}`)} />
           </Reveal>
 
           <Reveal as="section">
@@ -89,8 +96,9 @@ export default function TourDetail() {
           </Reveal>
 
           <Reveal as="section">
-            <h2 className="font-display font-bold text-2xl text-ink-900">About the trip</h2>
+            <h2 className="font-display font-bold text-2xl text-ink-900">{t('tour.aboutTrip')}</h2>
             <p className="mt-3 text-slate-700 leading-relaxed">{localize(tour.description)}</p>
+            {tour.availabilityNote && <p className="mt-4 rounded-xl bg-brand-50 border border-brand-100 p-4 text-sm text-brand-800 leading-relaxed">{localize(tour.availabilityNote)}</p>}
           </Reveal>
 
           {tour.itinerary && tour.itinerary.length > 0 && (
@@ -103,7 +111,7 @@ export default function TourDetail() {
                   <Reveal key={d.day} variant="right" delay={i * 100}>
                     <li className="flex gap-4 group">
                       <div className="relative w-12 h-12 rounded-2xl bg-brand-600 text-white flex flex-col items-center justify-center flex-shrink-0 shadow-cta transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-accent-500">
-                        <span className="text-[10px] uppercase tracking-wider opacity-80">Day</span>
+                        <span className="text-[10px] uppercase tracking-wider opacity-80">{t('tour.day')}</span>
                         <span className="font-bold leading-none">{d.day}</span>
                       </div>
                       <div>
@@ -119,19 +127,19 @@ export default function TourDetail() {
 
           {tour.priceTiers && tour.priceTiers.length > 0 && (
             <Reveal as="section">
-              <h2 className="font-display font-bold text-2xl text-ink-900">Group pricing</h2>
+              <h2 className="font-display font-bold text-2xl text-ink-900">{t('tour.groupPricing')}</h2>
               <div className="mt-4 overflow-hidden rounded-2xl border border-slate-100 shadow-card">
                 <table className="w-full text-sm">
                   <thead className="bg-slate-50 text-slate-600">
                     <tr>
-                      <th className="text-left px-4 py-3 font-semibold">Group size</th>
-                      <th className="text-right px-4 py-3 font-semibold">Price / person</th>
+                      <th className="text-left px-4 py-3 font-semibold">{t('tour.groupSize')}</th>
+                      <th className="text-right px-4 py-3 font-semibold">{t('tour.pricePerPerson')}</th>
                     </tr>
                   </thead>
                   <tbody>
                     {tour.priceTiers.map((row) => (
                       <tr key={row.group} className="border-t border-slate-100 hover:bg-brand-50/50 transition-colors">
-                        <td className="px-4 py-3 font-medium">{row.group} persons</td>
+                        <td className="px-4 py-3 font-medium">{row.group} {t('tour.people')}</td>
                         <td className="px-4 py-3 text-right font-display font-bold text-accent-600">${row.price}</td>
                       </tr>
                     ))}
@@ -141,28 +149,42 @@ export default function TourDetail() {
             </Reveal>
           )}
 
+          {tour.packageOptions && <Reveal as="section">
+            <h2 className="font-display font-bold text-2xl text-ink-900">{t('tour.packageOptions')}</h2>
+            <div className="mt-4 grid sm:grid-cols-2 gap-4">
+              {tour.packageOptions.map(option => <div key={option.name} className="rounded-2xl border border-slate-100 p-5">
+                <h3 className="font-semibold text-ink-900">{t(`tour.${option.name}`)}</h3>
+                <p className="mt-2 font-display font-bold text-2xl text-accent-600">${option.price} <span className="text-sm font-normal text-slate-500">/ {t('tour.person')}</span></p>
+              </div>)}
+            </div>
+          </Reveal>}
+
           <div className="grid sm:grid-cols-2 gap-6">
+            {tour.included &&
             <Reveal variant="right">
               <List title={t('tour.included')} items={localize(tour.included)} tone="ok" />
-            </Reveal>
+            </Reveal>}
+            {tour.excluded &&
             <Reveal variant="left" delay={120}>
               <List title={t('tour.excluded')} items={localize(tour.excluded)} tone="no" />
-            </Reveal>
+            </Reveal>}
           </div>
+          <InstagramClips key={tour.slug} clips={tour.instagram} />
         </div>
 
         {/* Sidebar */}
         <aside className="lg:sticky lg:top-24 h-fit space-y-6">
           <Reveal variant="left" delay={100}>
             <div className="rounded-3xl bg-white shadow-card border border-slate-100 p-6 hover:shadow-pop transition-shadow">
-              <div className="text-xs uppercase tracking-widest text-slate-400 font-semibold">{t('tour.from')}</div>
-              <div className="font-display font-extrabold text-4xl text-ink-900">
-                ${tour.priceFrom}
-                <span className="text-sm text-slate-500 font-medium ml-1">/ {t('tour.person')}</span>
+              {tour.priceFrom != null && <div className="text-xs uppercase tracking-widest text-slate-400 font-semibold">{t('tour.from')}</div>}
+              <div className={`font-display font-extrabold text-ink-900 ${tour.priceFrom == null ? 'text-2xl' : 'text-4xl'}`}>
+                {tour.priceFrom == null ? t('tour.priceOnRequest') : `$${tour.priceFrom}`}
+                {tour.priceFrom != null && <span className="text-sm text-slate-500 font-medium ml-1">/ {t('tour.person')}</span>}
               </div>
+              <p className="mt-3 text-xs text-slate-500 leading-relaxed">{localize(site.priceNote)}</p>
               <div className="mt-5 pt-5 border-t border-slate-100">
                 <h3 className="font-semibold text-ink-900 mb-3">{t('book.title')}</h3>
-                <BookingForm preselect={tour.slug} />
+                <BookingForm key={tour.slug} preselect={tour.slug} />
               </div>
             </div>
           </Reveal>

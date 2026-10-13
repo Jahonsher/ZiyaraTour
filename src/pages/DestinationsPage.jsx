@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
-import destinations from '../data/destinations.json'
+import destinations from '../data/destinations.js'
 import Img from '../components/Img.jsx'
 import Reveal from '../components/Reveal.jsx'
 

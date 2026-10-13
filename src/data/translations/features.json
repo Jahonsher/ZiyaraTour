@@ -1,0 +1,50 @@
+{
+  "uz": {
+    "tour": { "flexibleDuration": "Shaxsiy dastur", "flexibleGroup": "Guruh kelishiladi", "priceOnRequest": "Narx so‘rov asosida", "confirmDates": "Sana va narxni aniqlashtiring", "cities": "Yo‘nalishlar", "rating": "Baho", "category": "Tur turi", "aboutTrip": "Sayohat haqida", "day": "Kun", "groupPricing": "Guruhlar uchun narx", "groupSize": "Guruh hajmi", "pricePerPerson": "Bir kishi uchun", "people": "kishi", "packageOptions": "Paket variantlari", "standard": "Standart", "comfort": "Comfort +" },
+    "instagram": { "title": "Sayohat lavhalari", "subtitle": "Yo‘nalish va mehmonlar taassurotlarini Instagram videolarida ko‘ring.", "play": "Videoni ko‘rish", "open": "Instagram’da ochish" },
+    "search": { "clearFilters": "Filtrlarni tozalash", "dateNote": "Tanlangan sana bo‘yicha mavjudlik buyurtma vaqtida tasdiqlanadi." },
+    "categories": { "beach": "Dengiz bo‘yida" },
+    "book": { "form": { "invalidPhone": "Telefon raqamini mamlakat kodi bilan kiriting. Masalan: +998 90 123 45 67.", "invalidName": "Ismingizni kiriting (kamida 2 ta belgi).", "consentRequired": "Siz bilan bog‘lanishimizga rozilik bildiring.", "directContact": "Telegram orqali bog‘lanish", "invalidDate": "Bugungi yoki kelajakdagi sanani tanlang." } },
+    "hero": { "trending": "Ommabop yo‘nalishlar", "happyTravellers": "20 000 dan ortiq mamnun sayohatchi" },
+    "footer": { "partners": "Hamkorlar" },
+    "deals": { "eyebrow": "Ipak yo‘li sayohati", "title": "O‘zbekistonning to‘rt tarixiy shahri", "subtitle": "Toshkent, Xiva, Buxoro va Samarqand bo‘ylab 7 kunlik dastur. Guruh hajmi va sanangizga mos narxni tanlang.", "cta": "Sayohat uchun so‘rov berish" },
+    "newsletter": { "eyebrow": "Biz bilan sayohat qiling", "title": "Yangi yo‘nalishlar va sayohat lavhalari", "subtitle": "Tur takliflari, videolar va mehmonlar taassurotlarini Instagram sahifamizda kuzatib boring.", "cta": "Instagram’da kuzatish" },
+    "misc": { "menu": "Menyu", "language": "Tilni tanlash" }
+  },
+  "uzc": {
+    "tour": { "flexibleDuration": "Шахсий дастур", "flexibleGroup": "Гуруҳ келишилади", "priceOnRequest": "Нарх сўров асосида", "confirmDates": "Сана ва нархни аниқлаштиринг", "cities": "Йўналишлар", "rating": "Баҳо", "category": "Тур тури", "aboutTrip": "Саёҳат ҳақида", "day": "Кун", "groupPricing": "Гуруҳлар учун нарх", "groupSize": "Гуруҳ ҳажми", "pricePerPerson": "Бир киши учун", "people": "киши", "packageOptions": "Пакет вариантлари", "standard": "Стандарт", "comfort": "Comfort +" },
+    "instagram": { "title": "Саёҳат лавҳалари", "subtitle": "Йўналиш ва меҳмонлар таассуротларини Instagram видеоларида кўринг.", "play": "Видеони кўриш", "open": "Instagram’да очиш" },
+    "search": { "clearFilters": "Фильтрларни тозалаш", "dateNote": "Танланган сана бўйича мавжудлик буюртма вақтида тасдиқланади." },
+    "categories": { "beach": "Денгиз бўйида" },
+    "book": { "form": { "invalidPhone": "Телефон рақамини мамлакат коди билан киритинг. Масалан: +998 90 123 45 67.", "invalidName": "Исмингизни киритинг (камида 2 та белги).", "consentRequired": "Сиз билан боғланишимизга розилик билдиринг.", "directContact": "Telegram орқали боғланиш", "invalidDate": "Бугунги ёки келажакдаги санани танланг." } },
+    "hero": { "trending": "Оммабоп йўналишлар", "happyTravellers": "20 000 дан ортиқ мамнун саёҳатчи" },
+    "footer": { "partners": "Ҳамкорлар" },
+    "deals": { "eyebrow": "Ипак йўли саёҳати", "title": "Ўзбекистоннинг тўрт тарихий шаҳри", "subtitle": "Тошкент, Хива, Бухоро ва Самарқанд бўйлаб 7 кунлик дастур. Гуруҳ ҳажми ва санангизга мос нархни танланг.", "cta": "Саёҳат учун сўров бериш" },
+    "newsletter": { "eyebrow": "Биз билан саёҳат қилинг", "title": "Янги йўналишлар ва саёҳат лавҳалари", "subtitle": "Тур таклифлари, видеолар ва меҳмонлар таассуротларини Instagram саҳифамизда кузатиб боринг.", "cta": "Instagram’да кузатиш" },
+    "misc": { "menu": "Меню", "language": "Тилни танлаш" }
+  },
+  "ru": {
+    "tour": { "flexibleDuration": "Индивидуальная программа", "flexibleGroup": "Группа по запросу", "priceOnRequest": "Цена по запросу", "confirmDates": "Уточните даты и стоимость", "cities": "Направления", "rating": "Рейтинг", "category": "Тип тура", "aboutTrip": "О поездке", "day": "День", "groupPricing": "Цены для групп", "groupSize": "Размер группы", "pricePerPerson": "За человека", "people": "чел.", "packageOptions": "Варианты пакета", "standard": "Стандарт", "comfort": "Комфорт +" },
+    "instagram": { "title": "Моменты путешествия", "subtitle": "Посмотрите маршрут и впечатления гостей в наших Instagram-видео.", "play": "Смотреть видео", "open": "Открыть в Instagram" },
+    "search": { "clearFilters": "Сбросить фильтры", "dateNote": "Наличие мест на выбранную дату подтверждается при бронировании." },
+    "categories": { "beach": "Пляжный отдых" },
+    "book": { "form": { "invalidPhone": "Введите телефон с кодом страны. Например: +998 90 123 45 67.", "invalidName": "Введите имя (не менее 2 символов).", "consentRequired": "Подтвердите согласие на обратную связь.", "directContact": "Связаться через Telegram", "invalidDate": "Выберите сегодняшнюю или будущую дату." } },
+    "hero": { "trending": "Популярные направления", "happyTravellers": "Более 20 000 довольных путешественников" },
+    "footer": { "partners": "Партнёры" },
+    "deals": { "eyebrow": "Путешествие по Шёлковому пути", "title": "Четыре исторических города Узбекистана", "subtitle": "7 дней в Ташкенте, Хиве, Бухаре и Самарканде. Выберите стоимость для вашей группы и дат.", "cta": "Запросить поездку" },
+    "newsletter": { "eyebrow": "Путешествуйте с нами", "title": "Новые маршруты и моменты путешествий", "subtitle": "Следите за предложениями туров, видео и впечатлениями гостей на нашей странице в Instagram.", "cta": "Подписаться в Instagram" },
+    "misc": { "menu": "Меню", "language": "Выбрать язык" }
+  },
+  "en": {
+    "tour": { "flexibleDuration": "Tailored itinerary", "flexibleGroup": "Group on request", "priceOnRequest": "Price on request", "confirmDates": "Confirm dates and price", "cities": "Destinations", "rating": "Rating", "category": "Tour type", "aboutTrip": "About the trip", "day": "Day", "groupPricing": "Group pricing", "groupSize": "Group size", "pricePerPerson": "Price per person", "people": "people", "packageOptions": "Package options", "standard": "Standard", "comfort": "Comfort +" },
+    "instagram": { "title": "Moments from the journey", "subtitle": "Explore the destination and our guests’ impressions in our Instagram videos.", "play": "Watch video", "open": "Open on Instagram" },
+    "search": { "clearFilters": "Clear filters", "dateNote": "Availability for your selected date is confirmed when booking." },
+    "categories": { "beach": "Beach getaway" },
+    "book": { "form": { "invalidPhone": "Enter a phone number with its country code, e.g. +998 90 123 45 67.", "invalidName": "Enter your name (at least 2 characters).", "consentRequired": "Please agree to be contacted about your enquiry.", "directContact": "Contact us on Telegram", "invalidDate": "Choose today or a future date." } },
+    "hero": { "trending": "Popular destinations", "happyTravellers": "Over 20,000 happy travellers" },
+    "footer": { "partners": "Partners" },
+    "deals": { "eyebrow": "A Silk Road journey", "title": "Four historic cities of Uzbekistan", "subtitle": "7 days in Tashkent, Khiva, Bukhara and Samarkand. Find the price for your group and travel dates.", "cta": "Enquire about this journey" },
+    "newsletter": { "eyebrow": "Travel with us", "title": "New routes and travel moments", "subtitle": "Follow our Instagram page for tour offers, videos and our guests’ impressions.", "cta": "Follow on Instagram" },
+    "misc": { "menu": "Menu", "language": "Choose language" }
+  }
+}

@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
+const landscapePosters = new Set(['/images/instagram/samarkand.jpg', '/images/instagram/samarkand-heritage.jpg'])
 
 /**
  * <img> with a graceful gradient fallback if the source fails to load.
@@ -7,6 +9,7 @@ import { useState } from 'react'
  */
 export default function Img({ src, alt, label = '', className = '', ...rest }) {
   const [failed, setFailed] = useState(false)
+  useEffect(() => { setFailed(false) }, [src])
 
   if (failed || !src) {
     return (
@@ -16,6 +19,14 @@ export default function Img({ src, alt, label = '', className = '', ...rest }) {
       >
         <span className="drop-shadow">{label || alt || 'ZiyaraTour'}</span>
       </div>
+    )
+  }
+
+  if (landscapePosters.has(src)) {
+    return (
+      <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" role={alt ? 'img' : undefined} aria-label={alt || undefined} aria-hidden={!alt || undefined} className={className} {...rest}>
+        <image href={src} width="360" height="640" transform="translate(0 360) rotate(-90)" onError={() => setFailed(true)} />
+      </svg>
     )
   }
 

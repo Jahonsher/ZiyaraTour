@@ -25,7 +25,7 @@ export default function Header({ transparent = false }) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  useEffect(() => { setMobileOpen(false) }, [loc.pathname])
+  useEffect(() => { setMobileOpen(false) }, [loc.key])
 
   const solid = !transparent || scrolled
   const headerClass = solid
@@ -87,7 +87,7 @@ export default function Header({ transparent = false }) {
             {t('nav.book')}
           </Link>
           <button className={`lg:hidden p-2 rounded-lg ${solid ? 'text-ink-800' : 'text-white'}`}
-            onClick={() => setMobileOpen((v) => !v)} aria-label="Menu">
+            onClick={() => setMobileOpen((v) => !v)} aria-label={t('misc.menu')} aria-expanded={mobileOpen}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               {mobileOpen ? (<><path d="M18 6L6 18"/><path d="M6 6l12 12"/></>) : (<><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></>)}
             </svg>
@@ -96,7 +96,7 @@ export default function Header({ transparent = false }) {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-slate-100 shadow-lg">
+        <div className="lg:hidden bg-white border-t border-slate-100 shadow-lg max-h-[calc(100dvh-80px)] overflow-y-auto">
           <div className="container-x py-3 flex flex-col gap-1">
             {NAV.map((item) => (
               <NavLink key={item.to} to={item.to} end={item.to === '/'}

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
-import destinations from '../data/destinations.json'
+import destinations from '../data/destinations.js'
+import { todayLocal } from '../lib/booking.js'
 
 /**
  * `overlap` mode floats the bar up over the hero (with negative margin).
@@ -44,11 +45,11 @@ export default function SearchBar({ overlap = true }) {
               </select>
             </Field>
             <Field icon="📅" label={t('search.date')}>
-              <input type="date" value={q.date} onChange={(e) => setQ({ ...q, date: e.target.value })}
+              <input type="date" min={todayLocal()} value={q.date} onChange={(e) => setQ({ ...q, date: e.target.value })}
                 className="w-full bg-transparent text-ink-900 font-semibold focus:outline-none" />
             </Field>
             <Field icon="👥" label={t('search.guests')}>
-              <input type="number" min="1" max="30" placeholder="2"
+              <input type="number" min="1" max="100" placeholder="2"
                 value={q.guests} onChange={(e) => setQ({ ...q, guests: e.target.value })}
                 className="w-full bg-transparent text-ink-900 font-semibold focus:outline-none placeholder:text-slate-400" />
             </Field>

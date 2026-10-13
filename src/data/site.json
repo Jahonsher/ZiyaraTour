@@ -29,47 +29,6 @@
     { "value": "60+", "labelKey": "stats.tours" },
     { "value": "4.9", "labelKey": "stats.rating" }
   ],
-  "testimonials": [
-    {
-      "id": "t1",
-      "name": "Anna K.",
-      "country": { "en": "Germany", "ru": "Германия", "uz": "Germaniya", "uzc": "Германия" },
-      "avatar": "https://i.pravatar.cc/120?img=47",
-      "rating": 5,
-      "text": {
-        "en": "Journey to the Middle Ages exceeded every expectation. The Registan and Ichan-Kala are unforgettable.",
-        "ru": "Тур «Путешествие в Средневековье» превзошёл все ожидания. Регистан и Ичан-Кала — незабываемо.",
-        "uz": "«O'rta asrlarga sayohat» barcha kutganlarimdan oshib tushdi. Registon va Ichan-Qal'a unutilmas.",
-        "uzc": "«Ўрта асрларга саёҳат» барча кутганларимдан ошиб тушди. Регистон ва Ичан-Қалъа унутилмас."
-      }
-    },
-    {
-      "id": "t2",
-      "name": "Rustam T.",
-      "country": { "en": "USA", "ru": "США", "uz": "AQSh", "uzc": "АҚШ" },
-      "avatar": "https://i.pravatar.cc/120?img=12",
-      "rating": 5,
-      "text": {
-        "en": "Perfect organization from arrival to departure. Every hotel and transfer was exactly as promised.",
-        "ru": "Идеальная организация от прилёта до отъезда. Отели и трансферы — точно как обещали.",
-        "uz": "Kelishdan jo'nab ketishgacha barchasi mukammal. Mehmonxona va transferlar — aynan va'da qilinganidek.",
-        "uzc": "Келишдан жўнаб кетишгача барчаси мукаммал. Меҳмонхона ва трансферлар — айнан ваъда қилинганидек."
-      }
-    },
-    {
-      "id": "t3",
-      "name": "Sophie L.",
-      "country": { "en": "France", "ru": "Франция", "uz": "Fransiya", "uzc": "Франция" },
-      "avatar": "https://i.pravatar.cc/120?img=32",
-      "rating": 5,
-      "text": {
-        "en": "The Gijduvan pottery masterclass and plov class in Bukhara were the highlights. Highly recommended.",
-        "ru": "Мастер-класс по керамике в Гиждуване и плов в Бухаре — лучшие моменты. Очень рекомендую.",
-        "uz": "G'ijduvondagi sopol ustaxonasi va Buxorodagi palov ustaxonasi eng yorqin daqiqalar bo'ldi. Tavsiya qilaman.",
-        "uzc": "Ғиждувондаги сопол устахонаси ва Бухородаги палов устахонаси энг ёрқин дақиқалар бўлди. Тавсия қиламан."
-      }
-    }
-  ],
   "blog": [
     {
       "id": "n1",

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "samarkand-instagram", "slug": "samarkand-heritage", "featured": true, "badge": "new", "category": "city",
+    "duration": null, "groupSize": null, "priceFrom": null, "currency": "USD",
+    "destinations": ["samarkand"], "route": ["Samarkand"],
+    "cover": "/images/instagram/samarkand-heritage.jpg",
+    "gallery": ["/images/instagram/samarkand.jpg", "/images/instagram/samarkand-heritage.jpg"],
+    "sourceUrl": "https://www.instagram.com/ziyarattour/reel/DMpoju9MzBW/",
+    "title": { "uz": "Samarqand — tarix va me’morchilik", "uzc": "Самарқанд — тарих ва меъморчилик", "ru": "Самарканд — история и архитектура", "en": "Samarkand — history and architecture" },
+    "shortDescription": {
+      "uz": "Registon, Shohi Zinda va Ulug‘bek rasadxonasi bo‘ylab shaxsiy sayohat.",
+      "uzc": "Регистон, Шоҳи Зинда ва Улуғбек расадхонаси бўйлаб шахсий саёҳат.",
+      "ru": "Индивидуальная поездка к Регистану, Шахи-Зинде и обсерватории Улугбека.",
+      "en": "A tailored journey to Registan, Shah-i-Zinda and Ulugh Beg’s observatory."
+    },
+    "description": {
+      "uz": "ZiyaraTour’ning Instagram lavhalarida ko‘rsatilgan Samarqand bilan tanishing. Registon me’morchiligi, Shohi Zinda majmuasi va Ulug‘bek rasadxonasi sayohatning asosiy manzillaridir. Dastur davomiyligi, guruh hajmi va xizmatlar sizning so‘rovingizga qarab kelishiladi.",
+      "uzc": "ZiyaraTour’нинг Instagram лавҳаларида кўрсатилган Самарқанд билан танишинг. Регистон меъморчилиги, Шоҳи Зинда мажмуаси ва Улуғбек расадхонаси саёҳатнинг асосий манзилларидир. Дастур давомийлиги, гуруҳ ҳажми ва хизматлар сизнинг сўровингизга қараб келишилади.",
+      "ru": "Познакомьтесь с Самаркандом из Instagram-публикаций ZiyaraTour. Главные места маршрута — Регистан, комплекс Шахи-Зинда и обсерватория Улугбека. Продолжительность, размер группы и набор услуг согласуются по вашему запросу.",
+      "en": "Explore the Samarkand featured in ZiyaraTour’s Instagram stories. The route focuses on Registan, Shah-i-Zinda and Ulugh Beg’s observatory. Duration, group size and services are agreed to suit your enquiry."
+    },
+    "highlights": {
+      "uz": ["Registon maydoni", "Shohi Zinda majmuasi", "Ulug‘bek rasadxonasi"],
+      "uzc": ["Регистон майдони", "Шоҳи Зинда мажмуаси", "Улуғбек расадхонаси"],
+      "ru": ["Площадь Регистан", "Комплекс Шахи-Зинда", "Обсерватория Улугбека"],
+      "en": ["Registan Square", "Shah-i-Zinda complex", "Ulugh Beg’s observatory"]
+    },
+    "availabilityNote": {
+      "uz": "Sayohat sanasi, davomiyligi va narxi so‘rov asosida kelishiladi.",
+      "uzc": "Саёҳат санаси, давомийлиги ва нархи сўров асосида келишилади.",
+      "ru": "Даты, продолжительность и стоимость согласуются по запросу.",
+      "en": "Dates, duration and price are agreed on request."
+    },
+    "instagram": [
+      { "code": "DMpoju9MzBW", "url": "https://www.instagram.com/ziyarattour/reel/DMpoju9MzBW/", "poster": "/images/instagram/samarkand.jpg", "landscape": true, "title": { "uz": "Samarqand bo‘ylab sayohat", "uzc": "Самарқанд бўйлаб саёҳат", "ru": "Путешествие по Самарканду", "en": "A journey through Samarkand" } },
+      { "code": "DMkYZrAsg29", "url": "https://www.instagram.com/ziyarattour/reel/DMkYZrAsg29/", "poster": "/images/instagram/samarkand-heritage.jpg", "landscape": true, "title": { "uz": "Ipak yo‘li merosi", "uzc": "Ипак йўли мероси", "ru": "Наследие Шёлкового пути", "en": "Silk Road heritage" } }
+    ]
+  },
+  {
+    "id": "vietnam-nha-trang", "slug": "vietnam-nha-trang", "featured": true, "badge": "new", "category": "beach",
+    "duration": { "days": 9, "nights": 8 }, "groupSize": null, "priceFrom": null, "currency": "USD",
+    "destinations": ["nha-trang"], "route": ["Tashkent", "Nha Trang", "Tashkent"],
+    "cover": "/images/instagram/vietnam-nha-trang.jpg", "gallery": ["/images/instagram/vietnam-nha-trang.jpg"],
+    "sourceUrl": "https://www.instagram.com/shaxzoda.sayohatchi/reel/DWyHY-qAvs5/",
+    "publishedOffer": { "price": 555, "startDate": "2026-04-11", "endDate": "2026-04-19" },
+    "title": { "uz": "Vyetnam — Nha Trangda dam olish", "uzc": "Вьетнам — Нячангда дам олиш", "ru": "Вьетнам — отдых в Нячанге", "en": "Vietnam — a Nha Trang getaway" },
+    "shortDescription": {
+      "uz": "Dengiz bo‘yidagi 5 yulduzli mehmonxonada 9 kun va 8 kecha. Toshkentdan to‘g‘ridan-to‘g‘ri parvoz.",
+      "uzc": "Денгиз бўйидаги 5 юлдузли меҳмонхонада 9 кун ва 8 кеча. Тошкентдан тўғридан-тўғри парвоз.",
+      "ru": "9 дней и 8 ночей в пятизвёздочном отеле у моря. Прямой перелёт из Ташкента.",
+      "en": "9 days and 8 nights at a five-star seaside hotel, with direct flights from Tashkent."
+    },
+    "description": {
+      "uz": "ZiyaraTour bilan hamkorlikda e’lon qilingan Nha Trang taklifi: Muong Thanh Luxury Vien Trieu 5* mehmonxonasida Deluxe xona, nonushta va aeroport transferi. E’londagi 11–19-aprel 2026 sanalari o‘tgan; yangi sanalar, mehmonxona mavjudligi va yakuniy narxni jamoamizdan so‘rang.",
+      "uzc": "ZiyaraTour билан ҳамкорликда эълон қилинган Нячанг таклифи: Muong Thanh Luxury Vien Trieu 5* меҳмонхонасида Deluxe хона, нонушта ва аэропорт трансфери. Эълондаги 11–19-апрель 2026 саналари ўтган; янги саналар, меҳмонхона мавжудлиги ва якуний нархни жамоамиздан сўранг.",
+      "ru": "Предложение по Нячангу, опубликованное совместно с ZiyaraTour: номер Deluxe в Muong Thanh Luxury Vien Trieu 5*, завтраки и трансфер из аэропорта. Даты 11–19 апреля 2026 года уже прошли; уточните у нашей команды новые даты, наличие мест и итоговую стоимость.",
+      "en": "A Nha Trang offer shared with ZiyaraTour: a Deluxe room at Muong Thanh Luxury Vien Trieu 5*, breakfast and airport transfers. The advertised dates, 11–19 April 2026, have passed; ask our team about new dates, availability and the final price."
+    },
+    "availabilityNote": {
+      "uz": "Oldingi e’londagi narx $555 edi. Yangi sanalar va amaldagi narx so‘rov orqali aniqlanadi.",
+      "uzc": "Олдинги эълондаги нарх $555 эди. Янги саналар ва амалдаги нарх сўров орқали аниқланади.",
+      "ru": "В прежнем объявлении указана цена $555. Новые даты и актуальная стоимость уточняются по запросу.",
+      "en": "The previous offer advertised $555. New dates and current prices are confirmed on request."
+    },
+    "highlights": {
+      "uz": ["Toshkent — Nha Trang — Toshkent parvozi", "Muong Thanh Luxury Vien Trieu 5*", "Deluxe xona", "Nonushta va aeroport transferi"],
+      "uzc": ["Тошкент — Нячанг — Тошкент парвози", "Muong Thanh Luxury Vien Trieu 5*", "Deluxe хона", "Нонушта ва аэропорт трансфери"],
+      "ru": ["Перелёт Ташкент — Нячанг — Ташкент", "Muong Thanh Luxury Vien Trieu 5*", "Номер Deluxe", "Завтраки и трансфер из аэропорта"],
+      "en": ["Tashkent — Nha Trang — Tashkent flights", "Muong Thanh Luxury Vien Trieu 5*", "Deluxe room", "Breakfast and airport transfers"]
+    },
+    "included": {
+      "uz": ["E’londagi paket: borish-qaytish parvozi", "8 kecha Deluxe xonada", "Nonushta (BB)", "Aeroport — mehmonxona — aeroport transferi"],
+      "uzc": ["Эълондаги пакет: бориш-қайтиш парвози", "8 кеча Deluxe хонада", "Нонушта (BB)", "Аэропорт — меҳмонхона — аэропорт трансфери"],
+      "ru": ["В опубликованном пакете: перелёт туда и обратно", "8 ночей в номере Deluxe", "Завтраки (BB)", "Трансфер аэропорт — отель — аэропорт"],
+      "en": ["Published package: return flights", "8 nights in a Deluxe room", "Breakfast (BB)", "Airport — hotel — airport transfers"]
+    },
+    "instagram": [
+      { "code": "DWyHY-qAvs5", "url": "https://www.instagram.com/shaxzoda.sayohatchi/reel/DWyHY-qAvs5/", "poster": "/images/instagram/vietnam-nha-trang.jpg", "title": { "uz": "Nha Trang tur taklifi", "uzc": "Нячанг тур таклифи", "ru": "Тур в Нячанг", "en": "Nha Trang tour offer" } }
+    ]
+  }
+]

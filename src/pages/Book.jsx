@@ -23,7 +23,7 @@ export default function Book() {
               <p className="mt-3 text-slate-600">{t('book.subtitle')}</p>
 
               <div className="mt-8">
-                <BookingForm preselect={preselect} />
+                <BookingForm key={preselect} preselect={preselect} />
               </div>
             </div>
           </Reveal>

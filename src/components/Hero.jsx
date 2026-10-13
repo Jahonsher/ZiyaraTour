@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
             <span className="text-ink-900 font-bold text-sm">4.9 / 5</span>
           </div>
-          <p className="mt-1 text-xs text-ink-700">from 20,000+ happy travellers</p>
+          <p className="mt-1 text-xs text-ink-700">{t('hero.happyTravellers')}</p>
         </div>
       </div>
 
@@ -74,7 +74,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center gap-2 animate-fade-up" style={{ animationDelay: '540ms' }}>
-          <span className="text-white/60 text-sm mr-1">Trending →</span>
+          <span className="text-white/60 text-sm mr-1">{t('hero.trending')} →</span>
           {CHIPS.map((c, i) => (
             <Link key={c} to={`/tours?destination=${c}`}
               style={{ animationDelay: `${640 + i * 80}ms` }}

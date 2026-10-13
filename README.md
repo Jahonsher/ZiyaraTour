@@ -2,8 +2,8 @@
 
 Modern, multilingual (uz / uzc / ru / en) travel booking site built with
 **React + Vite + TailwindCSS**. Tour cards are JSON-driven, and booking
-submissions go directly from the browser to your **Telegram group** via
-the Bot API — no backend server required.
+submissions go through `/api/lead` to your **Telegram group**. The bot
+token stays on the server. Vite provides the same API in development.
 
 ---
 
@@ -43,27 +43,26 @@ npm run preview
 4. Paste both values into `.env`:
 
 ```env
-VITE_TELEGRAM_BOT_TOKEN=1234567890:AAExxxxxxxx
-VITE_TELEGRAM_CHAT_ID=-1001234567890
-VITE_BRAND_NAME=ZiyaraTour
+TELEGRAM_BOT_TOKEN=1234567890:AAExxxxxxxx
+TELEGRAM_CHAT_ID=-1001234567890
+BRAND_NAME=ZiyaraTour
 ```
 
 5. Restart the dev server (`npm run dev`) — that's it. Submissions from
    the site will now land in your Telegram group.
 
-> **Security note.** Since there is no backend, the bot token is
-> embedded in the frontend bundle. That is fine for a booking-only bot
-> that just sends leads to a private group — but do **not** grant this
-> bot any admin powers beyond sending messages. If you ever want to
-> hide the token, move the `sendBookingToTelegram` call to a Vercel /
-> Cloudflare serverless function (30 lines).
+Existing Vercel deployments can keep their previous `VITE_TELEGRAM_*`
+variables during migration: only the server reads them. New deployments
+should use the names above. Booking shows success only after Telegram
+confirms delivery; missing settings show a direct contact link instead.
 
 ---
 
 ## 3. Adding, editing, or removing tour cards
 
-All tours live in **[`src/data/tours.json`](src/data/tours.json)** — a
-plain JSON array. To add a new tour, copy an existing object and
+The catalog is exported by **[`src/data/tours.js`](src/data/tours.js)**,
+combining the original `tours.json` and `instagram-tours.json` with
+verified pricing corrections. To add a new tour, copy an existing object and
 change the fields. Every text field supports all four languages:
 
 ```json
@@ -91,22 +90,27 @@ change the fields. Every text field supports all four languages:
 }
 ```
 
-Categories: `cultural`, `pilgrimage`, `city`, `adventure`.
+Categories: `cultural`, `pilgrimage`, `city`, `adventure`, `beach`.
 Set `"featured": true` to show it on the homepage.
+Use `null` for an unpublished price, duration or group size. The UI then
+shows a request-based option. Instagram clips need `code`, `url`, `poster`
+and a four-language `title`; embeds load when the visitor clicks Play.
 
 ## 4. Adding translations / editing site text
 
 - UI strings → `src/data/translations/{en,ru,uz,uzc}.json`
-- Site-wide info (contacts, testimonials, stats) → `src/data/site.json`
-- City tiles → `src/data/destinations.json`
+- UI additions and corrections → `src/data/translations/features.json`
+- Site-wide info (contacts, stats) → `src/data/site.json`
+- Guest reviews → `src/data/testimonials.json`
+- City tiles → `src/data/destinations.js` (counts derive from the catalog)
 
 To add another language, drop a new JSON file into `translations/` and
 register it in `src/i18n/I18nContext.jsx` (the `LANGS` array).
 
 ## 5. Images
 
-Placeholder images are served from **picsum.photos** so the site works
-out of the box. To swap in your own photos, just replace the URLs in
+Tour and Instagram preview images are served locally from `public/images`.
+To swap in your own photos, replace the URLs in
 `tours.json`, `destinations.json`, and `About.jsx`. Any CDN or hosted
 folder works. If any URL fails, the `<Img>` component falls back to a
 branded gradient card automatically.
@@ -117,9 +121,9 @@ branded gradient card automatically.
 # 1. Push this folder to a GitHub repo
 # 2. In Vercel: Add New Project → Import your repo
 # 3. Settings → Environment Variables — add:
-#      VITE_TELEGRAM_BOT_TOKEN
-#      VITE_TELEGRAM_CHAT_ID
-#      VITE_BRAND_NAME  (optional)
+#      TELEGRAM_BOT_TOKEN
+#      TELEGRAM_CHAT_ID
+#      BRAND_NAME  (optional)
 # 4. Deploy. That's it.
 ```
 
@@ -141,12 +145,15 @@ src/
 ├── components/            # UI building blocks
 ├── pages/                 # Home, Tours, TourDetail, Book, About, Contact
 ├── data/
-│   ├── tours.json         # ⭐ Edit tours here
-│   ├── destinations.json
-│   ├── site.json          # Contact info, testimonials, stats
+│   ├── tours.js           # Combined catalog and verified pricing
+│   ├── tours.json         # Original tour programs
+│   ├── instagram-tours.json
+│   ├── destinations.js   # City tiles and derived tour counts
+│   ├── testimonials.json # Guest reviews in all four languages
+│   ├── site.json          # Contact info and stats
 │   └── translations/      # en / ru / uz / uzc
 ├── i18n/I18nContext.jsx   # Language provider + <LanguageSwitcher>
-└── lib/telegram.js        # Booking → Telegram Bot API
+└── lib/telegram.js        # Booking → /api/lead
 ```
 
 ## 8. Tech stack
@@ -154,6 +161,9 @@ src/
 - **React 18** + **React Router 6**
 - **Vite 5** — dev server + build
 - **TailwindCSS 3** — utility styling
-- Zero backend, zero database.
+- Vercel serverless booking API, without a database.
+
+Run `npm test` for booking validation and delivery tests. Tour sources and
+pricing decisions are recorded in `docs/tour-sources.md`.
 
 Made with care in Uzbekistan.

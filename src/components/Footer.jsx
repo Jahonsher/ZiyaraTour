@@ -39,7 +39,7 @@ export default function Footer() {
           </ul>
           {site.partners && site.partners.length > 0 && (
             <div className="mt-6">
-              <div className="text-xs uppercase tracking-widest text-white/50 mb-3">Partners</div>
+              <div className="text-xs uppercase tracking-widest text-white/50 mb-3">{t('footer.partners')}</div>
               <div className="flex gap-3 flex-wrap items-center">
                 {site.partners.map((p) => (
                   <a key={p.id} href={p.url} target="_blank" rel="noreferrer"
