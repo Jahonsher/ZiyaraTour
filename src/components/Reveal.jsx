@@ -14,10 +14,6 @@ export default function Reveal({
 
   useEffect(() => {
     if (!ref.current) return
-    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setShown(true)
-      return
-    }
     const el = ref.current
     const io = new IntersectionObserver(
       ([entry]) => {

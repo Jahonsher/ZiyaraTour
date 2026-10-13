@@ -20,8 +20,7 @@ const I18nContext = createContext(null)
 
 function resolveInitialLang() {
   if (typeof window === 'undefined') return DEFAULT_LANG
-  let saved
-  try { saved = window.localStorage.getItem(STORAGE_KEY) } catch { /* Storage may be disabled. */ }
+  const saved = window.localStorage.getItem(STORAGE_KEY)
   if (saved && dictionaries[saved]) return saved
   const nav = (navigator.language || '').toLowerCase()
   if (nav.startsWith('ru')) return 'ru'
@@ -37,8 +36,8 @@ export function I18nProvider({ children }) {
   const [lang, setLangState] = useState(resolveInitialLang)
 
   useEffect(() => {
-    document.documentElement.lang = lang === 'uzc' ? 'uz-Cyrl' : lang
-    try { window.localStorage.setItem(STORAGE_KEY, lang) } catch { /* Language still works without storage. */ }
+    document.documentElement.lang = lang
+    window.localStorage.setItem(STORAGE_KEY, lang)
   }, [lang])
 
   const setLang = useCallback((code) => {

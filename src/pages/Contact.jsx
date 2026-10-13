@@ -2,11 +2,9 @@ import { useI18n } from '../i18n/I18nContext.jsx'
 import site from '../data/site.json'
 import BookingForm from '../components/BookingForm.jsx'
 import Reveal from '../components/Reveal.jsx'
-import { experience } from '../data/experience.js'
 
 export default function Contact() {
-  const { t, lang, localize } = useI18n()
-  const c = experience[lang]
+  const { t, localize } = useI18n()
   return (
     <div className="relative pt-28 sm:pt-32 pb-20 overflow-hidden">
       <div className="blob w-[320px] h-[320px] bg-brand-200/40 -top-10 -left-20 animate-blob" />
@@ -37,8 +35,8 @@ export default function Contact() {
 
         <Reveal variant="up" delay={100}>
           <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-card border border-slate-100 p-6 sm:p-10 hover:shadow-pop transition-shadow">
-            <h2 className="font-display font-bold text-2xl text-ink-900">{c.leadHeading}</h2>
-            <p className="mt-2 text-slate-600">{c.leadSubtitle}</p>
+            <h2 className="font-display font-bold text-2xl text-ink-900">{t('book.title')}</h2>
+            <p className="mt-2 text-slate-600">{t('book.subtitle')}</p>
             <div className="mt-6">
               <BookingForm />
             </div>

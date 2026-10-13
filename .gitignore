@@ -26,6 +26,3 @@ Thumbs.db
 .cache/
 .parcel-cache/
 .vite/
-test-results/
-playwright-report/
-artifacts/

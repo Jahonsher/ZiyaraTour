@@ -13,7 +13,7 @@ import DestinationsPage from './pages/DestinationsPage.jsx'
 function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' })
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
   }, [pathname])
   return null
 }
