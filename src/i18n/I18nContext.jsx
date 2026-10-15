@@ -4,6 +4,7 @@ import ru from '../data/translations/ru.json'
 import uz from '../data/translations/uz.json'
 import uzc from '../data/translations/uzc.json'
 import features from '../data/translations/features.json'
+import gallery from '../data/translations/gallery.json'
 
 function merge(base, additions) {
   const result = { ...base }
@@ -14,7 +15,7 @@ function merge(base, additions) {
   }
   return result
 }
-const dictionaries = Object.fromEntries(Object.entries({ en, ru, uz, uzc }).map(([lang, dictionary]) => [lang, merge(dictionary, features[lang])]))
+const dictionaries = Object.fromEntries(Object.entries({ en, ru, uz, uzc }).map(([lang, dictionary]) => [lang, merge(merge(dictionary, features[lang]), gallery[lang])]))
 
 export const LANGS = [
   { code: 'uz',  label: "O'zbekcha", short: 'UZ', flag: '🇺🇿' },

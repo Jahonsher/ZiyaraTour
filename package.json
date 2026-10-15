@@ -5,7 +5,10 @@
   "type": "module",
   "description": "ZiyaraTour — travel agency booking website (React + Tailwind)",
   "scripts": {
+    "gallery:sync": "node scripts/sync-gallery.mjs",
+    "predev": "npm run gallery:sync",
     "dev": "vite",
+    "prebuild": "npm run gallery:sync",
     "build": "vite build",
     "preview": "vite preview",
     "test": "node --test tests/lead-handler.test.js"

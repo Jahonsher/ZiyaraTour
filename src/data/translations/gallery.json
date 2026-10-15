@@ -1,0 +1,53 @@
+{
+  "uz": {
+    "nav": { "gallery": "Galereya" },
+    "gallery": {
+      "eyebrow": "ZiyaraTour bilan birga",
+      "title": "Har bir safar —",
+      "highlight": "bir olam xotira.",
+      "intro": "Qadimiy shaharlar, samimiy tabassumlar va unutilmas uchrashuvlar. Sayohatlarimizni biz bilan qayta his qiling.",
+      "explore": "Lavhalarni ko‘rish", "stamp": "Sayohatdan xotiralar", "collection": "Sayohat kundaligi",
+      "heading": "Lahzalar so‘zlasin.", "description": "Biz ko‘rgan manzillar. Birga kechirgan onlarimiz.",
+      "all": "Barchasi", "photo": "Rasmlar", "video": "Videolar", "heritage": "Tarix va me’morchilik", "culture": "Mahalliy hayot", "moments": "Birgalikdagi lahzalar",
+      "photos": "ta rasm", "videos": "ta video", "open": "Kattalashtirib ko‘rish", "play": "Videoni ko‘rish", "close": "Yopish", "previous": "Oldingi", "next": "Keyingi",
+      "more": "Yana ko‘rsatish", "emptyTitle": "Yangi lavhalar tez orada", "empty": "Sayohatlarimizdan videolar shu yerda jamlanadi. Hozircha foto xotiralarimizni tomosha qiling.",
+      "ctaEyebrow": "Keyingi xotira sizniki bo‘lsin", "ctaTitle": "Suratlardan sayohat sari.", "ctaText": "O‘zingizga yoqqan yo‘nalishni tanlang. Qolganini bizga ishoning.", "cta": "Turlarni tanlash"
+    }
+  },
+  "uzc": {
+    "nav": { "gallery": "Галерея" },
+    "gallery": {
+      "eyebrow": "ZiyaraTour билан бирга", "title": "Ҳар бир сафар —", "highlight": "бир олам хотира.",
+      "intro": "Қадимий шаҳарлар, самимий табассумлар ва унутилмас учрашувлар. Саёҳатларимизни биз билан қайта ҳис қилинг.",
+      "explore": "Лавҳаларни кўриш", "stamp": "Саёҳатдан хотиралар", "collection": "Саёҳат кундалиги", "heading": "Лаҳзалар сўзласин.", "description": "Биз кўрган манзиллар. Бирга кечирган онларимиз.",
+      "all": "Барчаси", "photo": "Расмлар", "video": "Видеолар", "heritage": "Тарих ва меъморчилик", "culture": "Маҳаллий ҳаёт", "moments": "Биргаликдаги лаҳзалар",
+      "photos": "та расм", "videos": "та видео", "open": "Катталаштириб кўриш", "play": "Видеони кўриш", "close": "Ёпиш", "previous": "Олдинги", "next": "Кейинги", "more": "Яна кўрсатиш",
+      "emptyTitle": "Янги лавҳалар тез орада", "empty": "Саёҳатларимиздан видеолар шу ерда жамланади. Ҳозирча фото хотираларимизни томоша қилинг.",
+      "ctaEyebrow": "Кейинги хотира сизники бўлсин", "ctaTitle": "Суратлардан саёҳат сари.", "ctaText": "Ўзингизга ёққан йўналишни танланг. Қолганини бизга ишонинг.", "cta": "Турларни танлаш"
+    }
+  },
+  "en": {
+    "nav": { "gallery": "Gallery" },
+    "gallery": {
+      "eyebrow": "Through the ZiyaraTour lens", "title": "Every journey,", "highlight": "a world of memories.",
+      "intro": "Ancient cities, warm smiles and unforgettable encounters. Experience the moments that make our journeys special.",
+      "explore": "Explore the moments", "stamp": "Memories from the road", "collection": "Our travel journal", "heading": "Let the moments speak.", "description": "Places we discovered. Moments we shared.",
+      "all": "All moments", "photo": "Photos", "video": "Videos", "heritage": "History & architecture", "culture": "Local life", "moments": "Together on the road",
+      "photos": "photos", "videos": "videos", "open": "View full photo", "play": "Play video", "close": "Close", "previous": "Previous", "next": "Next", "more": "Discover more",
+      "emptyTitle": "More stories coming soon", "empty": "Videos from our journeys will appear here. Explore our photo memories in the meantime.",
+      "ctaEyebrow": "Your next memory starts here", "ctaTitle": "From inspiration to exploration.", "ctaText": "Find a journey you love. We’ll take care of the details.", "cta": "Explore our tours"
+    }
+  },
+  "ru": {
+    "nav": { "gallery": "Галерея" },
+    "gallery": {
+      "eyebrow": "В объективе ZiyaraTour", "title": "Каждое путешествие —", "highlight": "мир воспоминаний.",
+      "intro": "Древние города, искренние улыбки и незабываемые встречи. Почувствуйте атмосферу наших путешествий.",
+      "explore": "Смотреть моменты", "stamp": "Воспоминания из поездок", "collection": "Дневник путешествий", "heading": "Пусть моменты говорят.", "description": "Места, которые мы открыли. Мгновения, которые разделили.",
+      "all": "Все моменты", "photo": "Фото", "video": "Видео", "heritage": "История и архитектура", "culture": "Местная жизнь", "moments": "Вместе в путешествии",
+      "photos": "фото", "videos": "видео", "open": "Увеличить фото", "play": "Смотреть видео", "close": "Закрыть", "previous": "Назад", "next": "Далее", "more": "Показать ещё",
+      "emptyTitle": "Новые истории уже скоро", "empty": "Здесь появятся видео из наших путешествий. А пока посмотрите наши фотовоспоминания.",
+      "ctaEyebrow": "Следующее воспоминание — ваше", "ctaTitle": "От фотографий к путешествию.", "ctaText": "Выберите направление по душе. Остальное доверьте нам.", "cta": "Выбрать тур"
+    }
+  }
+}

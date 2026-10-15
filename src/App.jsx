@@ -9,6 +9,7 @@ import Book from './pages/Book.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import DestinationsPage from './pages/DestinationsPage.jsx'
+import Gallery from './pages/Gallery.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/tours" element={<Tours />} />
           <Route path="/tours/:slug" element={<TourDetail />} />
           <Route path="/destinations" element={<DestinationsPage />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<Book />} />
