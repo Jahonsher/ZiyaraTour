@@ -24,7 +24,7 @@
     }
   ],
   "stats": [
-    { "value": "15+", "labelKey": "stats.years" },
+    { "value": "7+", "labelKey": "stats.years" },
     { "value": "20K+", "labelKey": "stats.travellers" },
     { "value": "60+", "labelKey": "stats.tours" },
     { "value": "4.9", "labelKey": "stats.rating" }

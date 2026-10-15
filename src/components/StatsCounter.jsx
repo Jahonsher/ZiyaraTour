@@ -5,7 +5,7 @@ const ITEMS = [
   { icon: '✈️', num: 20000, suffix: '+', labelKey: 'stats.travellers' },
   { icon: '🗺️', num: 60,    suffix: '+', labelKey: 'stats.tours' },
   { icon: '🌟', num: 4.9,   suffix: '',  labelKey: 'stats.rating' },
-  { icon: '🏛️', num: 15,    suffix: '+', labelKey: 'stats.years' },
+  { icon: '🏛️', num: 7,     suffix: '+', labelKey: 'stats.years' },
 ]
 
 function useInView(ref) {
