@@ -6,6 +6,7 @@ import Img from '../components/Img.jsx'
 import BookingForm from '../components/BookingForm.jsx'
 import Reveal from '../components/Reveal.jsx'
 import InstagramClips from '../components/InstagramClips.jsx'
+import DocumentedTourDetails from '../components/DocumentedTourDetails.jsx'
 import site from '../data/site.json'
 
 export default function TourDetail() {
@@ -19,7 +20,7 @@ export default function TourDetail() {
   if (!tour) return <Navigate to="/tours" replace />
 
   return (
-    <div className="pt-24 sm:pt-28 pb-20">
+    <div className="pt-24 sm:pt-28 pb-20 overflow-x-clip">
       {/* Hero image */}
       <section className="relative">
         <div className="relative h-[52vh] min-h-[380px]">
@@ -125,6 +126,8 @@ export default function TourDetail() {
             </section>
           )}
 
+          <DocumentedTourDetails tour={tour} />
+
           {tour.priceTiers && tour.priceTiers.length > 0 && (
             <Reveal as="section">
               <h2 className="font-display font-bold text-2xl text-ink-900">{t('tour.groupPricing')}</h2>
@@ -181,7 +184,7 @@ export default function TourDetail() {
                 {tour.priceFrom == null ? t('tour.priceOnRequest') : `$${tour.priceFrom}`}
                 {tour.priceFrom != null && <span className="text-sm text-slate-500 font-medium ml-1">/ {t('tour.person')}</span>}
               </div>
-              <p className="mt-3 text-xs text-slate-500 leading-relaxed">{localize(site.priceNote)}</p>
+              <p className="mt-3 text-xs text-slate-500 leading-relaxed">{localize(tour.roomPricing ? tour.availabilityNote : site.priceNote)}</p>
               <div className="mt-5 pt-5 border-t border-slate-100">
                 <h3 className="font-semibold text-ink-900 mb-3">{t('book.title')}</h3>
                 <BookingForm key={tour.slug} preselect={tour.slug} />

@@ -121,6 +121,7 @@ export default function TourCard({ tour }) {
           </span>
         </div>
 
+        {tour.priceCaption && <p className="mt-4 mb-3 text-xs text-slate-500 leading-relaxed">{localize(tour.priceCaption)}</p>}
         <div className="mt-auto pt-4 border-t border-slate-100 flex items-end justify-between">
           <div>
             {tour.priceFrom != null && <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">{t('tour.from')}</div>}

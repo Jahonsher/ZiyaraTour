@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
+import tours from '../data/tours.js'
 
 const HERO_IMG = '/images/hero-bg.jpg'
 
-const CHIPS = ['samarkand', 'bukhara', 'khiva', 'tashkent']
+const CHIPS = [...new Set(tours.flatMap(tour => tour.destinations))]
 
 export default function Hero() {
   const { t } = useI18n()
