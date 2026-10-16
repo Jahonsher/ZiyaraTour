@@ -7,7 +7,6 @@ import Services from '../components/Services.jsx'
 import WhyUs from '../components/WhyUs.jsx'
 import StatsCounter from '../components/StatsCounter.jsx'
 import Testimonials from '../components/Testimonials.jsx'
-import BlogSection from '../components/BlogSection.jsx'
 import Newsletter from '../components/Newsletter.jsx'
 import CTA from '../components/CTA.jsx'
 
@@ -23,7 +22,6 @@ export default function Home() {
       <StatsCounter />
       <WhyUs />
       <Testimonials />
-      <BlogSection />
       <Newsletter />
       <CTA />
     </>

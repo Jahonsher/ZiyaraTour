@@ -3,6 +3,7 @@ import site from '../data/site.json'
 import CTA from '../components/CTA.jsx'
 import Testimonials from '../components/Testimonials.jsx'
 import Reveal from '../components/Reveal.jsx'
+import Img from '../components/Img.jsx'
 
 export default function About() {
   const { t } = useI18n()
@@ -36,16 +37,22 @@ export default function About() {
           <Reveal variant="left" delay={150}>
             <div className="relative">
               <div className="rounded-3xl overflow-hidden aspect-[4/5] shadow-card group">
-                <img
-                  src="/images/tours/silk-road.jpg"
-                  alt=""
+                <Img
+                  src="/images/destinations/bukhara.webp"
+                  alt={t('about.imageBukhara')}
+                  width={2400}
+                  height={1480}
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 w-40 h-40 rounded-3xl overflow-hidden shadow-pop hidden sm:block animate-float ring-4 ring-white">
-                <img
-                  src="/images/tours/middle-ages.jpg"
-                  alt=""
+                <Img
+                  src="/images/destinations/samarkand.webp"
+                  alt={t('about.imageSamarkand')}
+                  width={2400}
+                  height={1069}
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>

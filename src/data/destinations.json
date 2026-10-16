@@ -1,7 +1,7 @@
 [
   {
     "id": "tashkent",
-    "image": "/images/hero-bg.jpg",
+    "image": "/images/destinations/tashkent.webp",
     "tours": 3,
     "name": {
       "en": "Tashkent",
@@ -12,7 +12,7 @@
   },
   {
     "id": "samarkand",
-    "image": "/images/tours/silk-road.jpg",
+    "image": "/images/destinations/samarkand.webp",
     "tours": 3,
     "name": {
       "en": "Samarkand",
@@ -23,7 +23,7 @@
   },
   {
     "id": "bukhara",
-    "image": "/images/tours/middle-ages.jpg",
+    "image": "/images/destinations/bukhara.webp",
     "tours": 3,
     "name": {
       "en": "Bukhara",
@@ -34,7 +34,7 @@
   },
   {
     "id": "khiva",
-    "image": "/images/tours/middle-ages-8.jpg",
+    "image": "/images/destinations/khiva.webp",
     "tours": 2,
     "name": {
       "en": "Khiva",
