@@ -10,6 +10,7 @@ const seen = new Set()
 const media = []
 const optimizedDirectory = path.join(directory, 'optimized')
 function addMedia(absolute, relative, type, name) {
+  if (metadata[name]?.hidden) return
   const base = path.parse(name).name
   const hasOptimized = type === 'photo' && existsSync(path.join(optimizedDirectory, `${base}-thumb.jpg`)) && existsSync(path.join(optimizedDirectory, `${base}-full.jpg`))
   const optimized = variant => `/Galery/optimized/${encodeURIComponent(base)}-${variant}.jpg`
@@ -46,6 +47,6 @@ if (existsSync(optimizedDirectory)) {
   }
 }
 // Keep photo IDs and ordering stable when their originals have been cleaned up.
-media.sort((a, b) => a.type.localeCompare(b.type) || a.id.localeCompare(b.id))
+media.sort((a, b) => a.type.localeCompare(b.type) || (a.order ?? 1000) - (b.order ?? 1000) || a.id.localeCompare(b.id))
 writeFileSync(path.join(root, 'src/data/gallery.json'), JSON.stringify(media, null, 2) + '\n')
 console.log(`Gallery: ${media.filter(item => item.type === 'photo').length} photos, ${media.filter(item => item.type === 'video').length} videos`)

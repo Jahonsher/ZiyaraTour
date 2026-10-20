@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import tours from '../data/tours.js'
 
-const HERO_IMG = '/images/hero-bg.jpg'
+const HERO_IMG = '/images/hero-registan.jpg'
 
 const CHIPS = [...new Set(tours.flatMap(tour => tour.destinations))]
 
@@ -13,7 +13,7 @@ export default function Hero() {
     <section className="relative overflow-hidden text-white">
       <div className="absolute inset-0">
         <img src={HERO_IMG} alt="" className="w-full h-full object-cover kenburns" />
-        <div className="absolute inset-0 bg-gradient-to-br from-ink-900/90 via-ink-900/60 to-brand-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-900/85 via-ink-900/55 to-ink-900/20" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_10%,rgba(249,115,22,0.35),transparent_45%)]" />
 
         {/* Animated gradient blobs */}
@@ -31,7 +31,7 @@ export default function Hero() {
                 <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.8L18 22l-6-3.5L6 22l1.5-7.2L2 10l7.1-1.1z"/></svg>
               ))}
             </div>
-            <span className="text-ink-900 font-bold text-sm">4.9 / 5</span>
+            <span className="text-ink-900 font-bold text-sm">5 / 5</span>
           </div>
           <p className="mt-1 text-xs text-ink-700">{t('hero.happyTravellers')}</p>
         </div>
@@ -92,6 +92,9 @@ export default function Hero() {
           <div className="w-[1px] h-8 bg-gradient-to-b from-white/60 to-transparent" />
         </div>
       </div>
+      <a href="https://commons.wikimedia.org/wiki/File:Registan_square_Samarkand,_Uzbekistan,_at_night.jpg" target="_blank" rel="noreferrer" className="absolute bottom-3 right-4 text-[10px] text-white/70 hover:text-white">
+        Registan · Benjamin Goetzinger · CC BY-SA 4.0
+      </a>
     </section>
   )
 }

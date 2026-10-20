@@ -10,6 +10,7 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import DestinationsPage from './pages/DestinationsPage.jsx'
 import Gallery from './pages/Gallery.jsx'
+import Sweets from './pages/Sweets.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -24,7 +25,7 @@ export default function App() {
   const transparentHeader = pathname === '/'
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-clip">
       <ScrollToTop />
       <Header transparent={transparentHeader} />
       <main className="flex-1">
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/destinations" element={<DestinationsPage />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
+          <Route path="/sweets" element={<Sweets />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<Book />} />
           <Route path="*" element={<Home />} />

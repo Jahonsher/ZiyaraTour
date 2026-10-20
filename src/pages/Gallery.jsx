@@ -25,8 +25,8 @@ export default function Gallery() {
   const filtered = media.filter(item => item.type === type && (category === 'all' || item.category === category))
   const activeIndex = filtered.findIndex(item => item.id === activeId)
   const active = filtered[activeIndex]
-  const cover = photos.find(item => item.id.includes('8501714')) || photos[0]
-  const inset = photos.find(item => item.id.includes('8501695')) || photos[1]
+  const cover = photos[0]
+  const inset = photos[1]
   const label = (item) => `${t(`gallery.${item.category}`)} · ${String(media.indexOf(item) + 1).padStart(2, '0')}`
 
   useEffect(() => {

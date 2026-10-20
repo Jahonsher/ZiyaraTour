@@ -15,19 +15,12 @@
       "uzc": "Тошкент, Ўзбекистон"
     }
   },
-  "partners": [
-    {
-      "id": "iiau",
-      "name": "International Institute for Central Asian Studies (IICAS)",
-      "logo": "/images/iiau-partner.png",
-      "url": "https://unesco-iicas.org/"
-    }
-  ],
+  "partners": [],
   "stats": [
     { "value": "7+", "labelKey": "stats.years" },
     { "value": "20K+", "labelKey": "stats.travellers" },
     { "value": "60+", "labelKey": "stats.tours" },
-    { "value": "4.9", "labelKey": "stats.rating" }
+    { "value": "5", "labelKey": "stats.rating" }
   ],
   "blog": [
     {

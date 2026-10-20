@@ -36,6 +36,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">{t('footer.company')}</h4>
           <ul className="space-y-2 text-sm">
             <li><Link to="/about" className="hover:text-white transition">{t('nav.about')}</Link></li>
+            <li><Link to="/sweets" className="hover:text-white transition">{t('nav.sweets')}</Link></li>
             <li><Link to="/contact" className="hover:text-white transition">{t('nav.contact')}</Link></li>
           </ul>
           {site.partners && site.partners.length > 0 && (

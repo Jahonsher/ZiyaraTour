@@ -3,10 +3,8 @@ import Reveal from './Reveal.jsx'
 
 const SERVICES = [
   { key: 'tours',     icon: 'route' },
-  { key: 'hotels',    icon: 'bed' },
   { key: 'visa',      icon: 'passport' },
   { key: 'transport', icon: 'car' },
-  { key: 'flights',   icon: 'plane' },
   { key: 'guides',    icon: 'compass' },
 ]
 
@@ -42,7 +40,7 @@ export default function Services() {
           <p className="mt-3 text-slate-600 max-w-2xl mx-auto">{t('sections.services.subtitle')}</p>
         </Reveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {SERVICES.map((s, i) => (
             <Reveal key={s.key} variant="up" delay={i * 90}>
               <div className="relative p-6 bg-white rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-pop transition-all duration-500 hover:-translate-y-2 group overflow-hidden h-full">

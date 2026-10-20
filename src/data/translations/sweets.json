@@ -1,0 +1,50 @@
+{
+  "uz": {
+    "nav": { "sweets": "Shirinliklar" },
+    "sweets": {
+      "eyebrow": "Sayohatning shirin lahzalari",
+      "title": "Shirinliklar",
+      "subtitle": "O‘zbekistonning shirin ta’mlari bilan shu yerda tanishasiz.",
+      "emptyTitle": "Hozircha bu yerda hech narsa yo‘q",
+      "emptyText": "Bu bo‘limga hali ma’lumot qo‘shilmagan. Keyinroq yana tashrif buyuring.",
+      "badge": "Tez orada",
+      "back": "Bosh sahifaga qaytish"
+    }
+  },
+  "uzc": {
+    "nav": { "sweets": "Ширинликлар" },
+    "sweets": {
+      "eyebrow": "Саёҳатнинг ширин лаҳзалари",
+      "title": "Ширинликлар",
+      "subtitle": "Ўзбекистоннинг ширин таъмлари билан шу ерда танишасиз.",
+      "emptyTitle": "Ҳозирча бу ерда ҳеч нарса йўқ",
+      "emptyText": "Бу бўлимга ҳали маълумот қўшилмаган. Кейинроқ яна ташриф буюринг.",
+      "badge": "Тез орада",
+      "back": "Бош саҳифага қайтиш"
+    }
+  },
+  "ru": {
+    "nav": { "sweets": "Сладости" },
+    "sweets": {
+      "eyebrow": "Сладкие моменты путешествия",
+      "title": "Сладости",
+      "subtitle": "Здесь вы познакомитесь со сладкими вкусами Узбекистана.",
+      "emptyTitle": "Здесь пока ничего нет",
+      "emptyText": "В этом разделе пока нет материалов. Загляните сюда чуть позже.",
+      "badge": "Скоро",
+      "back": "На главную"
+    }
+  },
+  "en": {
+    "nav": { "sweets": "Sweets" },
+    "sweets": {
+      "eyebrow": "The sweeter side of travel",
+      "title": "Sweets",
+      "subtitle": "Discover the sweet flavours of Uzbekistan here.",
+      "emptyTitle": "Nothing here just yet",
+      "emptyText": "There’s no content in this section yet. Come back and visit us soon.",
+      "badge": "Coming soon",
+      "back": "Back to home"
+    }
+  }
+}
