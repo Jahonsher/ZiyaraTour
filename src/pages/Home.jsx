@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <SearchBar overlap />
+      <SearchBar overlap={false} />
       <FeaturedTours />
       <Destinations />
       <DealBanner />

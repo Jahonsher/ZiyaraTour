@@ -4,4 +4,4 @@ import tours from './tours.js'
 export default existing.map(destination => ({
   ...destination,
   tours: tours.filter(tour => tour.destinations.includes(destination.id)).length,
-})).filter(destination => destination.tours > 0)
+})).filter(destination => destination.popular || destination.tours > 0)

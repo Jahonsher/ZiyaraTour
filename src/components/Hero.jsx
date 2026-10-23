@@ -10,7 +10,7 @@ export default function Hero() {
   const { t } = useI18n()
 
   return (
-    <section className="relative overflow-hidden text-white">
+    <section className="relative min-h-screen min-h-[100dvh] flex items-center overflow-hidden text-white">
       <div className="absolute inset-0">
         <img src={HERO_IMG} alt="" className="w-full h-full object-cover kenburns" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink-900/85 via-ink-900/55 to-ink-900/20" />
@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative container-x pt-32 pb-40 sm:pt-40 sm:pb-48 lg:pt-48 lg:pb-56">
+      <div className="relative container-x w-full pt-28 pb-24 sm:pt-36 sm:pb-28 lg:pt-40 lg:pb-32">
         <span className="inline-flex items-center gap-2 chip bg-white/10 backdrop-blur border border-white/20 text-white animate-fade-up" style={{ animationDelay: '0ms' }}>
           <span className="relative flex w-2 h-2">
             <span className="absolute inset-0 rounded-full bg-accent-400 animate-pulse-ring" />
@@ -86,11 +86,11 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Animated scroll indicator */}
-        <div className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-white/70 animate-bounce-soft">
-          <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
-          <div className="w-[1px] h-8 bg-gradient-to-b from-white/60 to-transparent" />
-        </div>
+      </div>
+      {/* Animated scroll indicator */}
+      <div className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-white/70 animate-bounce-soft">
+        <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+        <div className="w-[1px] h-8 bg-gradient-to-b from-white/60 to-transparent" />
       </div>
       <a href="https://commons.wikimedia.org/wiki/File:Registan_square_Samarkand,_Uzbekistan,_at_night.jpg" target="_blank" rel="noreferrer" className="absolute bottom-3 right-4 text-[10px] text-white/70 hover:text-white">
         Registan · Benjamin Goetzinger · CC BY-SA 4.0

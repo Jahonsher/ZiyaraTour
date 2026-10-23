@@ -8,6 +8,13 @@
       "ru": "Ташкент",
       "uz": "Toshkent",
       "uzc": "Тошкент"
+    },
+    "popular": true,
+    "landmark": {
+      "uz": "Hazrati Imom majmuasi",
+      "uzc": "Ҳазрати Имом мажмуаси",
+      "ru": "Комплекс Хазрати Имам",
+      "en": "Hazrati Imam complex"
     }
   },
   {
@@ -19,6 +26,13 @@
       "ru": "Самарканд",
       "uz": "Samarqand",
       "uzc": "Самарқанд"
+    },
+    "popular": true,
+    "landmark": {
+      "uz": "Registon maydoni",
+      "uzc": "Регистон майдони",
+      "ru": "Площадь Регистан",
+      "en": "Registan Square"
     }
   },
   {
@@ -30,6 +44,83 @@
       "ru": "Бухара",
       "uz": "Buxoro",
       "uzc": "Бухоро"
+    },
+    "popular": true,
+    "landmark": {
+      "uz": "Kalon masjidi · Poyi Kalon",
+      "uzc": "Калон масжиди · Пойи Калон",
+      "ru": "Мечеть Калян · Пои-Калян",
+      "en": "Kalyan Mosque · Po-i-Kalyan"
+    }
+  },
+  {
+    "id": "shakhrisabz",
+    "image": "/images/destinations/shakhrisabz.jpg",
+    "tours": 0,
+    "name": {
+      "en": "Shahrisabz",
+      "ru": "Шахрисабз",
+      "uz": "Shahrisabz",
+      "uzc": "Шаҳрисабз"
+    },
+    "popular": true,
+    "landmark": {
+      "uz": "Oqsaroy · Amir Temur maydoni",
+      "uzc": "Оқсарой · Амир Темур майдони",
+      "ru": "Ак-Сарай · Площадь Амира Темура",
+      "en": "Ak-Saray · Amir Temur Square"
+    },
+    "imageCredit": {
+      "author": "Normuratov7",
+      "source": "https://commons.wikimedia.org/wiki/File:Amir_Temur_Statue_and_Ak-Saray_Monument_in_Shahrisabz.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+  },
+  {
+    "id": "termiz",
+    "name": {
+      "uz": "Termiz",
+      "uzc": "Термиз",
+      "ru": "Термез",
+      "en": "Termiz"
+    },
+    "popular": true,
+    "landmark": {
+      "uz": "Sulton Saodat majmuasi",
+      "uzc": "Султон Саодат мажмуаси",
+      "ru": "Комплекс Султан-Саодат",
+      "en": "Sultan Saodat complex"
+    },
+    "image": "/images/destinations/termiz.jpg",
+    "imageCredit": {
+      "author": "Daniel Rogalsky",
+      "source": "https://commons.wikimedia.org/wiki/File:Termez_Sultan-Saodat.jpg",
+      "license": "Public domain",
+      "licenseUrl": null
+    }
+  },
+  {
+    "id": "turkestan",
+    "name": {
+      "uz": "Turkiston",
+      "uzc": "Туркистон",
+      "ru": "Туркестан",
+      "en": "Turkestan"
+    },
+    "popular": true,
+    "landmark": {
+      "uz": "Xoja Ahmad Yassaviy maqbarasi",
+      "uzc": "Хожа Аҳмад Яссавий мақбараси",
+      "ru": "Мавзолей Ходжи Ахмеда Ясави",
+      "en": "Mausoleum of Khoja Ahmed Yasawi"
+    },
+    "image": "/images/destinations/turkestan.jpg",
+    "imageCredit": {
+      "author": "Petar Milošević",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%83%D0%B7%D0%BE%D0%BB%D0%B5%D1%98_%D0%A5%D0%BE%D0%B4%D0%B6%D0%B5_%D0%90%D1%85%D0%BC%D0%B5%D0%B4%D0%B0_%D0%88%D0%B0%D1%81%D0%B0%D0%B2%D0%B8%D1%98%D0%B0_(%D0%B3%D1%80%D0%B0%D0%B4_%D0%A2%D1%83%D1%80%D0%BA%D0%B5%D1%81%D1%82%D0%B0%D0%BD%2C_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD).jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     }
   },
   {
@@ -41,17 +132,6 @@
       "ru": "Хива",
       "uz": "Xiva",
       "uzc": "Хива"
-    }
-  },
-  {
-    "id": "shakhrisabz",
-    "image": "",
-    "tours": 0,
-    "name": {
-      "en": "Shakhrisabz",
-      "ru": "Шахрисабз",
-      "uz": "Shahrisabz",
-      "uzc": "Шаҳрисабз"
     }
   },
   {
