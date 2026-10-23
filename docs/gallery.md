@@ -35,3 +35,17 @@ Posters in `video/posters` are excluded from the photo collection.
 
 Categories: `heritage`, `culture`, `moments`. Unknown media defaults to `moments`.
 Translations are in `src/data/translations/gallery.json` for all four site languages.
+
+## Uploads added on 23 October 2026
+
+Added one group photo and three videos, bringing the collection to 25 photos
+and 14 videos. The photo has an auto-oriented 640 px JPEG thumbnail and a
+1920 px JPEG viewer copy; both omit original camera metadata. Videos use
+H.264/AAC MP4, 30 fps, a maximum 1280 px edge, and fast-start playback, with
+separate JPEG posters so grid browsing does not download the videos.
+The new media appears near the beginning of its collection.
+
+Original uploads totalled 250.1 MB. The three MP4 outputs total 62.6 MB,
+plus lightweight photo variants and posters. Original files are archived
+locally in the Git-ignored `artifacts/gallery-original-uploads` directory;
+they are excluded from public assets and production builds.

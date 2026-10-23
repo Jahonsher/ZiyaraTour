@@ -298,5 +298,23 @@
     "category": "moments",
     "width": 960,
     "height": 1280
+  },
+  "DSC_0003 (2) (1).JPG": {
+    "category": "moments",
+    "width": 1920,
+    "height": 1281,
+    "order": 1
+  },
+  "IMG_4762.mp4": {
+    "category": "moments",
+    "order": 0
+  },
+  "IMG_4993.mp4": {
+    "category": "moments",
+    "order": 1
+  },
+  "document_6014958709996787439.mp4": {
+    "category": "moments",
+    "order": 2
   }
 }

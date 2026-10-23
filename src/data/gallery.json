@@ -10,6 +10,16 @@
     "order": 0
   },
   {
+    "id": "DSC_0003%20(2)%20(1).JPG",
+    "type": "photo",
+    "src": "/Galery/optimized/DSC_0003%20(2)%20(1)-full.jpg",
+    "thumbnail": "/Galery/optimized/DSC_0003%20(2)%20(1)-thumb.jpg",
+    "category": "moments",
+    "width": 1920,
+    "height": 1281,
+    "order": 1
+  },
+  {
     "id": "photo_5192903301438501699_y.jpg",
     "type": "photo",
     "src": "/Galery/optimized/photo_5192903301438501699_y-full.jpg",
@@ -215,6 +225,33 @@
     "category": "moments",
     "width": 960,
     "height": 1280
+  },
+  {
+    "id": "video/IMG_4762.mp4",
+    "type": "video",
+    "src": "/Galery/video/IMG_4762.mp4",
+    "thumbnail": "/Galery/video/IMG_4762.mp4",
+    "poster": "/Galery/video/posters/IMG_4762.jpg",
+    "category": "moments",
+    "order": 0
+  },
+  {
+    "id": "video/IMG_4993.mp4",
+    "type": "video",
+    "src": "/Galery/video/IMG_4993.mp4",
+    "thumbnail": "/Galery/video/IMG_4993.mp4",
+    "poster": "/Galery/video/posters/IMG_4993.jpg",
+    "category": "moments",
+    "order": 1
+  },
+  {
+    "id": "video/document_6014958709996787439.mp4",
+    "type": "video",
+    "src": "/Galery/video/document_6014958709996787439.mp4",
+    "thumbnail": "/Galery/video/document_6014958709996787439.mp4",
+    "poster": "/Galery/video/posters/document_6014958709996787439.jpg",
+    "category": "moments",
+    "order": 2
   },
   {
     "id": "video/IMG_3514.mp4",
