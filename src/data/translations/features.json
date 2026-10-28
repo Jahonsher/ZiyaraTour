@@ -8,7 +8,6 @@
     "hero": {"trending":"Ommabop yo‘nalishlar","happyTravellers":"20 000 dan ortiq mamnun sayohatchi","subtitle":"Toshkent, Samarqand va Buxoro bo‘ylab 8 kun / 7 kecha. Afrosiyob, mehmonxonalar, gid va transferlar bir dasturda."},
     "sections": {"featured":{"subtitle":"Toshkent, Samarqand va Buxoro bo‘ylab 8 kun / 7 kecha. Afrosiyob, mehmonxonalar, gid va transferlar bir dasturda."},"destinations":{"subtitle":"Toshkent, Samarqand, Buxoro, Shahrisabz, Termiz va Turkistonning betakror obidalari va sayr maskanlarini kashf eting."}},
     "destinations": { "enquire": "Sayohatni rejalashtirish" },
-    "footer": { "partners": "Hamkorlar" },
     "deals": {"eyebrow":"Ipak yo‘li sayohati","title":"O‘zbekistonning uch tarixiy shahri","subtitle":"Toshkent, Samarqand va Buxoro bo‘ylab 8 kun / 7 kecha. Afrosiyob, mehmonxonalar, gid va transferlar bir dasturda.","cta":"Sayohat uchun so‘rov berish"},
     "newsletter": { "eyebrow": "Biz bilan sayohat qiling", "title": "Yangi yo‘nalishlar va sayohat lavhalari", "subtitle": "Tur takliflari, videolar va mehmonlar taassurotlarini Instagram sahifamizda kuzatib boring.", "cta": "Instagram’da kuzatish" },
     "misc": { "menu": "Menyu", "language": "Tilni tanlash" }
@@ -22,7 +21,6 @@
     "hero": {"trending":"Оммабоп йўналишлар","happyTravellers":"20 000 дан ортиқ мамнун саёҳатчи","subtitle":"Тошкент, Самарқанд ва Бухоро бўйлаб 8 кун / 7 кеча. Афросиёб, меҳмонхоналар, гид ва трансферлар бир дастурда."},
     "sections": {"featured":{"subtitle":"Тошкент, Самарқанд ва Бухоро бўйлаб 8 кун / 7 кеча. Афросиёб, меҳмонхоналар, гид ва трансферлар бир дастурда."},"destinations":{"subtitle":"Тошкент, Самарқанд, Бухоро, Шаҳрисабз, Термиз ва Туркистоннинг бетакрор обидалари ва сайр масканларини кашф этинг."}},
     "destinations": { "enquire": "Саёҳатни режалаштириш" },
-    "footer": { "partners": "Ҳамкорлар" },
     "deals": {"eyebrow":"Ипак йўли саёҳати","title":"Ўзбекистоннинг уч тарихий шаҳри","subtitle":"Тошкент, Самарқанд ва Бухоро бўйлаб 8 кун / 7 кеча. Афросиёб, меҳмонхоналар, гид ва трансферлар бир дастурда.","cta":"Саёҳат учун сўров бериш"},
     "newsletter": { "eyebrow": "Биз билан саёҳат қилинг", "title": "Янги йўналишлар ва саёҳат лавҳалари", "subtitle": "Тур таклифлари, видеолар ва меҳмонлар таассуротларини Instagram саҳифамизда кузатиб боринг.", "cta": "Instagram’да кузатиш" },
     "misc": { "menu": "Меню", "language": "Тилни танлаш" }
@@ -36,7 +34,6 @@
     "hero": {"trending":"Популярные направления","happyTravellers":"Более 20 000 довольных путешественников","subtitle":"Ташкент, Самарканд и Бухара за 8 дней / 7 ночей. Афросиёб, отели, гид и трансферы в одной программе."},
     "sections": {"featured":{"subtitle":"Ташкент, Самарканд и Бухара за 8 дней / 7 ночей. Афросиёб, отели, гид и трансферы в одной программе."},"destinations":{"subtitle":"Откройте для себя знаковые достопримечательности и места для прогулок в Ташкенте, Самарканде, Бухаре, Шахрисабзе, Термезе и Туркестане."}},
     "destinations": { "enquire": "Запланировать поездку" },
-    "footer": { "partners": "Партнёры" },
     "deals": {"eyebrow":"Путешествие по Шёлковому пути","title":"Три исторических города Узбекистана","subtitle":"Ташкент, Самарканд и Бухара за 8 дней / 7 ночей. Афросиёб, отели, гид и трансферы в одной программе.","cta":"Запросить поездку"},
     "newsletter": { "eyebrow": "Путешествуйте с нами", "title": "Новые маршруты и моменты путешествий", "subtitle": "Следите за предложениями туров, видео и впечатлениями гостей на нашей странице в Instagram.", "cta": "Подписаться в Instagram" },
     "misc": { "menu": "Меню", "language": "Выбрать язык" }
@@ -50,7 +47,6 @@
     "hero": {"trending":"Popular destinations","happyTravellers":"Over 20,000 happy travellers","subtitle":"Tashkent, Samarkand and Bukhara in 8 days / 7 nights. Afrosiyob trains, hotels, a guide and transfers in one programme."},
     "sections": {"featured":{"subtitle":"Tashkent, Samarkand and Bukhara in 8 days / 7 nights. Afrosiyob trains, hotels, a guide and transfers in one programme."},"destinations":{"subtitle":"Discover iconic landmarks and beautiful places to explore in Tashkent, Samarkand, Bukhara, Shahrisabz, Termiz and Turkestan."}},
     "destinations": { "enquire": "Plan your trip" },
-    "footer": { "partners": "Partners" },
     "deals": {"eyebrow":"A Silk Road journey","title":"Three historic cities of Uzbekistan","subtitle":"Tashkent, Samarkand and Bukhara in 8 days / 7 nights. Afrosiyob trains, hotels, a guide and transfers in one programme.","cta":"Enquire about this journey"},
     "newsletter": { "eyebrow": "Travel with us", "title": "New routes and travel moments", "subtitle": "Follow our Instagram page for tour offers, videos and our guests’ impressions.", "cta": "Follow on Instagram" },
     "misc": { "menu": "Menu", "language": "Choose language" }

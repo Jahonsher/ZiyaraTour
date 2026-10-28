@@ -3,6 +3,7 @@ import CTA from '../components/CTA.jsx'
 import Testimonials from '../components/Testimonials.jsx'
 import Reveal from '../components/Reveal.jsx'
 import Img from '../components/Img.jsx'
+import site from '../data/site.json'
 
 const team = [
   { name: 'Kamalova Makhsuda', image: 'kamalova-makhsuda.jpg', role: 'ceo', width: 1065, height: 1280 },
@@ -64,12 +65,6 @@ export default function About() {
           <p className="mt-8 max-w-4xl leading-relaxed text-slate-300">{content.projectsOutro}</p>
         </div>
       </section>
-      <section className="container-x py-16 sm:py-20">
-        <SectionTitle eyebrow={content.partnersEyebrow} title={content.partnersTitle} />
-        <p className="max-w-4xl text-slate-600 leading-relaxed">{content.partnersIntro}</p>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{content.partners.map(partner => <li key={partner.name} className="rounded-2xl border border-slate-200 p-5"><h3 className="font-display font-bold text-lg text-ink-900">{partner.name}</h3><p className="mt-1 text-sm text-slate-600">{partner.region}</p></li>)}</ul>
-        <p className="mt-8 max-w-4xl text-slate-600 leading-relaxed">{content.partnersOutro}</p>
-      </section>
       <section className="bg-brand-50 py-16 sm:py-20">
         <div className="container-x"><SectionTitle eyebrow={content.strengthsEyebrow} title={content.strengthsTitle} /><ul className="grid gap-5 md:grid-cols-2">{content.strengths.map(text => <li key={text} className="flex items-start gap-3 text-slate-700 leading-relaxed"><span aria-hidden="true" className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-700 text-white text-sm">✓</span><span>{text}</span></li>)}</ul></div>
       </section>
@@ -83,7 +78,7 @@ export default function About() {
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-brand-700 font-semibold">
             <a className="hover:underline" href="https://www.ziyaratour.uz" target="_blank" rel="noopener noreferrer">www.ziyaratour.uz</a>
             <a className="hover:underline" href="https://www.instagram.com/ziyaratour.uz/" target="_blank" rel="noopener noreferrer">@ziyaratour.uz</a>
-            <a className="hover:underline" href="tel:+998930507077">+998 93 050 70 77</a>
+            {[site.contact.phone, site.contact.phone2].map(phone => <a key={phone} className="hover:underline" href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>)}
           </div>
         </div>
       </section>

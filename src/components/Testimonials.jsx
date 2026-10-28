@@ -3,9 +3,9 @@ import { useI18n } from '../i18n/I18nContext.jsx'
 import testimonials from '../data/testimonials.json'
 import Reveal from './Reveal.jsx'
 
-export default function Testimonials() {
+export default function Testimonials({ showAll = false, headingLevel: Heading = 'h2' }) {
   const { t, localize } = useI18n()
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(showAll)
   const gridId = useId()
   const sectionRef = useRef(null)
   const visible = expanded ? testimonials : testimonials.slice(0, 3)
@@ -20,7 +20,7 @@ export default function Testimonials() {
       <div className="container-x">
         <Reveal className="text-center mb-12">
           <div className="section-eyebrow">{t('sections.testimonials.eyebrow')}</div>
-          <h2 className="section-title mt-2">{t('sections.testimonials.title')}</h2>
+          <Heading className="section-title mt-2">{t('sections.testimonials.title')}</Heading>
           <p className="mt-4 max-w-2xl mx-auto text-slate-600 leading-relaxed">
             {t('sections.testimonials.subtitle')}
           </p>

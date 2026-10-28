@@ -1,0 +1,110 @@
+[
+  {
+    "id": "sweet-01",
+    "category": "halva",
+    "width": 938,
+    "height": 1000
+  },
+  {
+    "id": "sweet-02",
+    "category": "halva",
+    "width": 1000,
+    "height": 999
+  },
+  {
+    "id": "sweet-03",
+    "category": "halva",
+    "width": 900,
+    "height": 1000
+  },
+  {
+    "id": "sweet-04",
+    "category": "halva",
+    "width": 953,
+    "height": 1000
+  },
+  {
+    "id": "sweet-05",
+    "category": "halva",
+    "width": 963,
+    "height": 1000
+  },
+  {
+    "id": "sweet-06",
+    "category": "halva",
+    "width": 1000,
+    "height": 996
+  },
+  {
+    "id": "sweet-07",
+    "category": "halva",
+    "width": 1000,
+    "height": 912
+  },
+  {
+    "id": "sweet-08",
+    "category": "halva",
+    "width": 970,
+    "height": 1000
+  },
+  {
+    "id": "sweet-09",
+    "category": "halva",
+    "width": 1000,
+    "height": 931
+  },
+  {
+    "id": "sweet-10",
+    "category": "halva",
+    "width": 1000,
+    "height": 666
+  },
+  {
+    "id": "sweet-11",
+    "category": "gift",
+    "width": 800,
+    "height": 1000
+  },
+  {
+    "id": "sweet-12",
+    "category": "gift",
+    "width": 938,
+    "height": 1000
+  },
+  {
+    "id": "sweet-13",
+    "category": "gift",
+    "width": 1000,
+    "height": 881
+  },
+  {
+    "id": "sweet-14",
+    "category": "gift",
+    "width": 923,
+    "height": 1000
+  },
+  {
+    "id": "sweet-15",
+    "category": "gift",
+    "width": 827,
+    "height": 1000
+  },
+  {
+    "id": "sweet-16",
+    "category": "gift",
+    "width": 1000,
+    "height": 478
+  },
+  {
+    "id": "sweet-17",
+    "category": "halva",
+    "width": 750,
+    "height": 1000
+  },
+  {
+    "id": "sweet-18",
+    "category": "halva",
+    "width": 750,
+    "height": 1000
+  }
+]

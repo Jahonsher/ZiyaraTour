@@ -6,10 +6,10 @@ import LanguageSwitcher from './LanguageSwitcher.jsx'
 
 const NAV = [
   { to: '/',            key: 'nav.home' },
-  { to: '/tours',       key: 'nav.tours' },
-  { to: '/destinations', key: 'nav.destinations' },
-  { to: '/gallery',     key: 'nav.gallery' },
   { to: '/about',       key: 'nav.about' },
+  { to: '/tours',       key: 'nav.tours' },
+  { to: '/reviews',     key: 'nav.reviews' },
+  { to: '/gallery',     key: 'nav.gallery' },
   { to: '/sweets',      key: 'nav.sweets' },
   { to: '/contact',     key: 'nav.contact' },
 ]

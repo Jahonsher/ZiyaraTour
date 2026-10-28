@@ -26,7 +26,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">{t('footer.explore')}</h4>
           <ul className="space-y-2 text-sm">
             <li><Link to="/tours" className="hover:text-white transition">{t('nav.tours')}</Link></li>
-            <li><Link to="/destinations" className="hover:text-white transition">{t('nav.destinations')}</Link></li>
+            <li><Link to="/reviews" className="hover:text-white transition">{t('nav.reviews')}</Link></li>
             <li><Link to="/gallery" className="hover:text-white transition">{t('nav.gallery')}</Link></li>
             <li><Link to="/book" className="hover:text-white transition">{t('nav.book')}</Link></li>
           </ul>
@@ -39,19 +39,6 @@ export default function Footer() {
             <li><Link to="/sweets" className="hover:text-white transition">{t('nav.sweets')}</Link></li>
             <li><Link to="/contact" className="hover:text-white transition">{t('nav.contact')}</Link></li>
           </ul>
-          {site.partners && site.partners.length > 0 && (
-            <div className="mt-6">
-              <div className="text-xs uppercase tracking-widest text-white/50 mb-3">{t('footer.partners')}</div>
-              <div className="flex gap-3 flex-wrap items-center">
-                {site.partners.map((p) => (
-                  <a key={p.id} href={p.url} target="_blank" rel="noreferrer"
-                    className="bg-white/95 rounded-lg p-2 hover:bg-white transition" title={p.name}>
-                    <img src={p.logo} alt={p.name} className="h-10 w-auto object-contain" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
 
         <div>

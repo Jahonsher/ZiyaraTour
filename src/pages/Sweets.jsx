@@ -1,36 +1,69 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
+import sweets from '../data/sweets.json'
+import Reveal from '../components/Reveal.jsx'
+
+function SweetImage({ sweet, hero = false }) {
+  return (
+    <img
+      src={`/images/sweets/${sweet.id}-1000.webp`}
+      srcSet={`/images/sweets/${sweet.id}-480.webp ${Math.round(sweet.width * 480 / Math.max(sweet.width, sweet.height))}w, /images/sweets/${sweet.id}-1000.webp ${sweet.width}w`}
+      sizes={hero ? '(min-width: 1024px) 560px, 100vw' : '(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw'}
+      alt={hero || sweet.category === 'gift' ? 'Silk Road Sweets' : ''}
+      width={sweet.width}
+      height={sweet.height}
+      loading={hero ? 'eager' : 'lazy'}
+      fetchPriority={hero ? 'high' : 'auto'}
+      decoding="async"
+      className={`w-full h-full ${hero ? 'object-cover' : 'object-contain transition-transform duration-500 group-hover:scale-105'}`}
+    />
+  )
+}
 
 export default function Sweets() {
   const { t } = useI18n()
+  const hero = sweets.find(sweet => sweet.category === 'gift')
   return (
-    <div className="pt-32 sm:pt-40 pb-8">
+    <div className="pt-28 sm:pt-36 pb-8">
       <section className="container-x">
         <div className="text-center max-w-2xl mx-auto">
           <div className="section-eyebrow">{t('sweets.eyebrow')}</div>
           <h1 className="section-title mt-3">{t('sweets.title')}</h1>
-          <p className="mt-4 text-slate-500 leading-relaxed">{t('sweets.subtitle')}</p>
+          <p className="mt-4 text-slate-600 leading-relaxed">{t('sweets.subtitle')}</p>
         </div>
-
-        <div className="relative isolate overflow-hidden mt-10 sm:mt-14 max-w-3xl mx-auto rounded-[2rem] border border-orange-100 bg-gradient-to-b from-orange-50/70 via-white to-white px-6 py-14 sm:py-20 text-center">
-          <div aria-hidden="true" className="absolute -top-20 -right-20 -z-10 w-64 h-64 rounded-full bg-orange-100/50 blur-3xl" />
-          <div aria-hidden="true" className="absolute -bottom-20 -left-20 -z-10 w-64 h-64 rounded-full bg-brand-100/30 blur-3xl" />
-          <div aria-hidden="true" className="relative mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-white shadow-[0_8px_40px_rgba(249,115,22,0.09)] ring-1 ring-orange-100">
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <path d="m18 25-9-5 3 12-3 12 9-5m28-14 9-5-3 12 3 12-9-5" fill="#ffedd5" stroke="#fb923c" strokeWidth="2" strokeLinejoin="round" />
-              <rect x="17" y="19" width="30" height="26" rx="12" fill="#fff7ed" stroke="#f97316" strokeWidth="2" />
-              <path d="m26 21-5 17m15-17-8 22m15-18-6 18" stroke="#fdba74" strokeWidth="3" strokeLinecap="round" />
-              <path d="M47 7v6m-3-3h6M14 52v5m-2.5-2.5h5" stroke="#f97316" strokeWidth="2" strokeLinecap="round" />
-              <circle cx="51" cy="50" r="2" fill="#c7d2fe" />
-              <circle cx="14" cy="13" r="2" fill="#fed7aa" />
-            </svg>
+        <div className="mt-10 sm:mt-14 grid lg:grid-cols-2 overflow-hidden rounded-3xl bg-orange-50 border border-orange-100">
+          <div className="aspect-square sm:aspect-[4/3] lg:aspect-auto lg:h-[520px] overflow-hidden">
+            <SweetImage sweet={hero} hero />
           </div>
-          <span className="inline-flex mt-7 rounded-full border border-orange-100 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700">{t('sweets.badge')}</span>
-          <h2 className="mt-4 font-display font-bold text-2xl sm:text-3xl text-ink-900">{t('sweets.emptyTitle')}</h2>
-          <p className="mt-3 mx-auto max-w-md text-sm sm:text-base leading-relaxed text-slate-500">{t('sweets.emptyText')}</p>
-          <Link to="/" className="inline-flex items-center gap-2 mt-8 text-sm font-semibold text-brand-700 hover:text-brand-900 transition-colors">
-            <span aria-hidden="true">←</span>{t('sweets.back')}
-          </Link>
+          <div className="flex flex-col justify-center items-start p-7 sm:p-12 lg:p-14">
+            <span className="section-eyebrow !text-orange-700">{t('sweets.gift')}</span>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-ink-900">{t('sweets.heroTitle')}</h2>
+            <p className="mt-5 text-slate-600 leading-relaxed">{t('sweets.heroText')}</p>
+            <a href="#collection" className="btn-primary mt-7">{t('sweets.explore')} <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+      <section id="collection" className="container-x pt-16 sm:pt-20 scroll-mt-32">
+        <div className="flex flex-wrap items-end justify-between gap-3 mb-8">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-ink-900">{t('sweets.collection')}</h2>
+          <span className="text-sm text-slate-500">ZiyaraTour · Silk Road Sweets</span>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {sweets.map((sweet, index) => (
+            <Reveal key={sweet.id} delay={(index % 3) * 60}>
+              <figure className="group h-full overflow-hidden rounded-2xl border border-slate-100 bg-white">
+                <div className="aspect-square overflow-hidden bg-slate-50"><SweetImage sweet={sweet} /></div>
+                <figcaption className="flex justify-between items-center gap-3 p-5">
+                  <span className="font-semibold text-ink-900">{t(`sweets.${sweet.category}`)}</span>
+                  <span className="text-xs text-slate-400">{String(index + 1).padStart(2, '0')}</span>
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+        <div className="mt-12 rounded-3xl bg-brand-50 p-8 sm:p-10 text-center">
+          <p className="font-display text-xl sm:text-2xl font-bold text-ink-900">{t('sweets.caption')}</p>
+          <Link to="/contact" className="btn-primary mt-6">{t('sweets.contact')}</Link>
         </div>
       </section>
     </div>

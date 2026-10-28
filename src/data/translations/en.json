@@ -1,9 +1,10 @@
 {
   "nav": {
+    "reviews": "Reviews",
     "home": "Home",
     "tours": "Tours",
     "destinations": "Destinations",
-    "about": "About",
+    "about": "About Us",
     "contact": "Contact",
     "book": "Book now"
   },
@@ -110,7 +111,7 @@
   "why": {
     "local": { "title": "Truly local", "text": "Born and raised in Uzbekistan — we know every corner." },
     "flex": { "title": "Flexible plans", "text": "Every tour can be customised to your dates, pace and budget." },
-    "safe": { "title": "Safe & vetted", "text": "Trusted partners, licensed guides and 24/7 support on the road." },
+    "safe": { "title": "Safe & vetted", "text": "Licensed guides and 24/7 support on the road." },
     "value": { "title": "Fair pricing", "text": "No hidden costs. Best price guarantee for direct bookings." }
   },
   "stats": {
@@ -125,9 +126,7 @@
     "eyebrow": "About us",
     "title": "A local team for the great Silk Road",
     "p1": "ZiyaraTour is a Tashkent-based agency specialising in cultural, historical and pilgrimage travel across Uzbekistan. We combine deep local knowledge with modern comfort so you can focus on the journey.",
-    "p2": "Our team includes licensed guides, drivers, and long-time partners in every city we visit. We are proud partners of the International Institute of Central Asian Studies.",
-    "partnersTitle": "Our partners",
-    "officialPartner": "Official partner:"
+    "p2": "Our team includes licensed guides and experienced drivers who support travellers throughout their journey."
   },
   "contact": {
     "eyebrow": "Get in touch",
@@ -180,14 +179,6 @@
   "counter": {
     "eyebrow": "By the numbers",
     "title": "Trusted by travellers worldwide"
-  },
-  "blog": {
-    "eyebrow": "Travel journal",
-    "title": "Stories & travel tips",
-    "subtitle": "Insider guides written by our local team.",
-    "readMore": "Read more",
-    "min": "min read",
-    "all": "All posts"
   },
   "newsletter": {
     "eyebrow": "Newsletter",

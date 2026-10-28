@@ -12,7 +12,7 @@
       "teamEyebrow": "Bizning jamoamiz",
       "teamTitle": "Sayohatingizni tashkil etuvchi mutaxassislar",
       "roles": {
-        "ceo": "CEO",
+        "ceo": "Founder and Ceo",
         "headManager": "Bosh menejer",
         "manager": "ZiyaraTour menejeri"
       },
@@ -61,53 +61,10 @@
         }
       ],
       "projectsOutro": "Biz xalqaro biznes tadbirlarida mehmonxona joylashuvi, transport, tarjimonlar, konferensiya zallari, texnik xizmatlar va delegatsiya logistikasini kompleks ravishda muvofiqlashtiramiz.",
-      "partnersEyebrow": "Xalqaro aloqalar",
-      "partnersTitle": "Xalqaro hamkorlarimiz",
-      "partnersIntro": "Ziyara Tour Buyuk Britaniya, AQSh, Kanada, Germaniya, Portugaliya, Polsha, Janubiy Afrika, Malayziya, Rossiya, Iordaniya va boshqa mamlakatlarning turistik kompaniyalari hamda biznes tashkilotlari bilan hamkorlik aloqalarini rivojlantirib kelmoqda. Xalqaro hamkorlik aloqalarimiz qatorida:",
-      "partners": [
-        {
-          "name": "Ayman Group",
-          "region": "Buyuk Britaniya, AQSh va Kanada"
-        },
-        {
-          "name": "Sabeel Travel",
-          "region": "Buyuk Britaniya"
-        },
-        {
-          "name": "Hidma Reisen",
-          "region": "Germaniya"
-        },
-        {
-          "name": "Aventus Tours",
-          "region": "Portugaliya"
-        },
-        {
-          "name": "Expogate",
-          "region": "Polsha"
-        },
-        {
-          "name": "Dar El Salam Travel",
-          "region": "Xalqaro turizm"
-        },
-        {
-          "name": "Sahel Travel",
-          "region": "Iordaniya"
-        },
-        {
-          "name": "Umma Travel",
-          "region": "Rossiya"
-        },
-        {
-          "name": "Zaarvel",
-          "region": "Xalqaro turizm"
-        }
-      ],
-      "partnersOutro": "Kompaniyamiz xalqaro B2B hamkorlikni rivojlantirish, xorijiy sayyohlik agentliklari bilan uzoq muddatli aloqalar o‘rnatish va O‘zbekistonning turizm salohiyatini jahon bozorida targ‘ib qilishga alohida e’tibor qaratadi.",
       "strengthsEyebrow": "Nima uchun Ziyara Tour",
       "strengthsTitle": "Bizning ustunliklarimiz",
       "strengths": [
         "Turizm sohasida 2018-yildan buyon faoliyat tajribasi.",
-        "Xalqaro turistik agentliklar va biznes tashkilotlari bilan hamkorlik.",
         "Tayyor va individual tur paketlarini ishlab chiqish.",
         "Individual, oilaviy, VIP va katta guruhlarga xizmat ko‘rsatish.",
         "Ziyorat, madaniy, biznes va MICE turizmi bo‘yicha kompleks xizmatlar.",
@@ -135,7 +92,7 @@
       "teamEyebrow": "Бизнинг жамоамиз",
       "teamTitle": "Саёҳатингизни ташкил этувчи мутахассислар",
       "roles": {
-        "ceo": "CEO",
+        "ceo": "Founder and Ceo",
         "headManager": "Бош менежер",
         "manager": "ZiyaraTour менежери"
       },
@@ -184,53 +141,10 @@
         }
       ],
       "projectsOutro": "Биз халқаро бизнес тадбирларида меҳмонхона жойлашуви, транспорт, таржимонлар, конференция заллари, техник хизматлар ва делегация логистикасини комплекс равишда мувофиқлаштирамиз.",
-      "partnersEyebrow": "Халқаро алоқалар",
-      "partnersTitle": "Халқаро ҳамкорларимиз",
-      "partnersIntro": "Ziyara Tour Буюк Британия, АҚШ, Канада, Германия, Португалия, Польша, Жанубий Африка, Малайзия, Россия, Иордания ва бошқа мамлакатларнинг туристик компаниялари ҳамда бизнес ташкилотлари билан ҳамкорлик алоқаларини ривожлантириб келмоқда. Халқаро ҳамкорлик алоқаларимиз қаторида:",
-      "partners": [
-        {
-          "name": "Ayman Group",
-          "region": "Буюк Британия, АҚШ ва Канада"
-        },
-        {
-          "name": "Sabeel Travel",
-          "region": "Буюк Британия"
-        },
-        {
-          "name": "Hidma Reisen",
-          "region": "Германия"
-        },
-        {
-          "name": "Aventus Tours",
-          "region": "Португалия"
-        },
-        {
-          "name": "Expogate",
-          "region": "Польша"
-        },
-        {
-          "name": "Dar El Salam Travel",
-          "region": "Халқаро туризм"
-        },
-        {
-          "name": "Sahel Travel",
-          "region": "Иордания"
-        },
-        {
-          "name": "Umma Travel",
-          "region": "Россия"
-        },
-        {
-          "name": "Zaarvel",
-          "region": "Халқаро туризм"
-        }
-      ],
-      "partnersOutro": "Компаниямиз халқаро B2B ҳамкорликни ривожлантириш, хорижий сайёҳлик агентликлари билан узоқ муддатли алоқалар ўрнатиш ва Ўзбекистоннинг туризм салоҳиятини жаҳон бозорида тарғиб қилишга алоҳида эътибор қаратади.",
       "strengthsEyebrow": "Нима учун Ziyara Tour",
       "strengthsTitle": "Бизнинг устунликларимиз",
       "strengths": [
         "Туризм соҳасида 2018-йилдан буён фаолият тажрибаси.",
-        "Халқаро туристик агентликлар ва бизнес ташкилотлари билан ҳамкорлик.",
         "Тайёр ва индивидуал тур пакетларини ишлаб чиқиш.",
         "Индивидуал, оилавий, VIP ва катта гуруҳларга хизмат кўрсатиш.",
         "Зиёрат, маданий, бизнес ва MICE туризми бўйича комплекс хизматлар.",
@@ -258,7 +172,7 @@
       "teamEyebrow": "Наша команда",
       "teamTitle": "Люди, которые организуют ваше путешествие",
       "roles": {
-        "ceo": "Генеральный директор",
+        "ceo": "Founder and Ceo",
         "headManager": "Главный менеджер",
         "manager": "Менеджер ZiyaraTour"
       },
@@ -307,53 +221,10 @@
         }
       ],
       "projectsOutro": "На международных деловых мероприятиях мы комплексно координируем размещение в отелях, транспорт, переводчиков, конференц-залы, технические услуги и логистику делегаций.",
-      "partnersEyebrow": "Международные связи",
-      "partnersTitle": "Наши международные партнёры",
-      "partnersIntro": "Ziyara Tour развивает сотрудничество с туристическими компаниями и бизнес-организациями Великобритании, США, Канады, Германии, Португалии, Польши, Южной Африки, Малайзии, России, Иордании и других стран. Среди наших международных партнёров:",
-      "partners": [
-        {
-          "name": "Ayman Group",
-          "region": "Великобритания, США и Канада"
-        },
-        {
-          "name": "Sabeel Travel",
-          "region": "Великобритания"
-        },
-        {
-          "name": "Hidma Reisen",
-          "region": "Германия"
-        },
-        {
-          "name": "Aventus Tours",
-          "region": "Португалия"
-        },
-        {
-          "name": "Expogate",
-          "region": "Польша"
-        },
-        {
-          "name": "Dar El Salam Travel",
-          "region": "Международный туризм"
-        },
-        {
-          "name": "Sahel Travel",
-          "region": "Иордания"
-        },
-        {
-          "name": "Umma Travel",
-          "region": "Россия"
-        },
-        {
-          "name": "Zaarvel",
-          "region": "Международный туризм"
-        }
-      ],
-      "partnersOutro": "Мы уделяем особое внимание развитию международного B2B-сотрудничества, установлению долгосрочных отношений с зарубежными туристическими агентствами и продвижению туристического потенциала Узбекистана на мировом рынке.",
       "strengthsEyebrow": "Почему Ziyara Tour",
       "strengthsTitle": "Наши преимущества",
       "strengths": [
         "Опыт работы в туризме с 2018 года.",
-        "Сотрудничество с международными туристическими агентствами и бизнес-организациями.",
         "Разработка готовых и индивидуальных турпакетов.",
         "Обслуживание индивидуальных путешественников, семей, VIP-клиентов и больших групп.",
         "Комплексные услуги паломнического, культурного, делового и MICE-туризма.",
@@ -381,7 +252,7 @@
       "teamEyebrow": "Our team",
       "teamTitle": "The people behind your journey",
       "roles": {
-        "ceo": "CEO",
+        "ceo": "Founder and Ceo",
         "headManager": "Head Manager",
         "manager": "Manager at ZiyaraTour"
       },
@@ -430,53 +301,10 @@
         }
       ],
       "projectsOutro": "We coordinate hotel accommodation, transport, interpreters, conference venues, technical services and delegation logistics for international business events.",
-      "partnersEyebrow": "International connections",
-      "partnersTitle": "Our international partners",
-      "partnersIntro": "Ziyara Tour develops partnerships with tourism companies and business organisations in the United Kingdom, USA, Canada, Germany, Portugal, Poland, South Africa, Malaysia, Russia, Jordan and other countries. Our international connections include:",
-      "partners": [
-        {
-          "name": "Ayman Group",
-          "region": "United Kingdom, USA and Canada"
-        },
-        {
-          "name": "Sabeel Travel",
-          "region": "United Kingdom"
-        },
-        {
-          "name": "Hidma Reisen",
-          "region": "Germany"
-        },
-        {
-          "name": "Aventus Tours",
-          "region": "Portugal"
-        },
-        {
-          "name": "Expogate",
-          "region": "Poland"
-        },
-        {
-          "name": "Dar El Salam Travel",
-          "region": "International tourism"
-        },
-        {
-          "name": "Sahel Travel",
-          "region": "Jordan"
-        },
-        {
-          "name": "Umma Travel",
-          "region": "Russia"
-        },
-        {
-          "name": "Zaarvel",
-          "region": "International tourism"
-        }
-      ],
-      "partnersOutro": "We focus on developing international B2B cooperation, building long-term relationships with overseas travel agencies and promoting Uzbekistan’s tourism potential in the global market.",
       "strengthsEyebrow": "Why Ziyara Tour",
       "strengthsTitle": "Our strengths",
       "strengths": [
         "Experience in tourism since 2018.",
-        "Cooperation with international travel agencies and business organisations.",
         "Ready-made and tailor-made tour packages.",
         "Services for individuals, families, VIP travellers and large groups.",
         "Comprehensive pilgrimage, cultural, business and MICE tourism services.",

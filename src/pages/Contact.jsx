@@ -19,10 +19,14 @@ export default function Contact() {
           <p className="mt-3 text-slate-600">{t('contact.subtitle')}</p>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-12">
           <Reveal variant="up" delay={0}>
             <ContactCard icon="📞" title={t('contact.phone')} value={site.contact.phone}
               href={`tel:${site.contact.phone.replace(/\s/g, '')}`} />
+          </Reveal>
+          <Reveal variant="up" delay={50}>
+            <ContactCard icon="📞" title={t('contact.phone')} value={site.contact.phone2}
+              href={`tel:${site.contact.phone2.replace(/\s/g, '')}`} />
           </Reveal>
           <Reveal variant="up" delay={100}>
             <ContactCard icon="✉️" title={t('contact.email')} value={site.contact.email}

@@ -1,5 +1,6 @@
 {
   "nav": {
+    "reviews": "Mijozlar fikri",
     "home": "Bosh sahifa",
     "tours": "Turlar",
     "destinations": "Yo'nalishlar",
@@ -110,7 +111,7 @@
   "why": {
     "local": { "title": "Haqiqiy mahalliy", "text": "O'zbekistonda tug'ilib, o'sganmiz — har bir chekkasini bilamiz." },
     "flex": { "title": "Moslashuvchan", "text": "Har bir tur sizning sana, tezlik va byudjetga moslashadi." },
-    "safe": { "title": "Xavfsiz", "text": "Ishonchli hamkorlar, litsenziyali gidlar va 24/7 yordam." },
+    "safe": { "title": "Xavfsiz", "text": "Litsenziyali gidlar va sayohat davomida 24/7 yordam." },
     "value": { "title": "Halol narx", "text": "Yashirin to'lovlar yo'q. To'g'ridan-to'g'ri buyurtma — eng yaxshi narx." }
   },
   "stats": {
@@ -125,9 +126,7 @@
     "eyebrow": "Biz haqimizda",
     "title": "Buyuk Ipak yo'li uchun mahalliy jamoa",
     "p1": "ZiyaraTour — Toshkentda joylashgan sayohat agentligi. Biz O'zbekiston bo'ylab madaniy, tarixiy va ziyorat turlariga ixtisoslashganmiz. Chuqur mahalliy bilim va zamonaviy qulaylikni birlashtiramiz.",
-    "p2": "Jamoamizda litsenziyali gidlar, haydovchilar va har bir shahardagi ishonchli hamkorlar bor. Xalqaro Markaziy Osiyo tadqiqotlari instituti bilan rasmiy hamkormiz.",
-    "partnersTitle": "Hamkorlarimiz",
-    "officialPartner": "Rasmiy hamkor:"
+    "p2": "Jamoamizda sayohat davomida mehmonlarga xizmat ko‘rsatuvchi litsenziyali gidlar va tajribali haydovchilar bor."
   },
   "contact": {
     "eyebrow": "Bog'lanish",
@@ -180,14 +179,6 @@
   "counter": {
     "eyebrow": "Raqamlarda",
     "title": "Butun dunyodan sayohatchilar bizga ishonadi"
-  },
-  "blog": {
-    "eyebrow": "Sayohat jurnali",
-    "title": "Hikoyalar va maslahatlar",
-    "subtitle": "Mahalliy jamoamiz tomonidan yozilgan qo'llanmalar.",
-    "readMore": "Batafsil o'qish",
-    "min": "daqiqalik o'qish",
-    "all": "Barcha maqolalar"
   },
   "newsletter": {
     "eyebrow": "Yangiliklar",
