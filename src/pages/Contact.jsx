@@ -2,6 +2,7 @@ import { useI18n } from '../i18n/I18nContext.jsx'
 import site from '../data/site.json'
 import BookingForm from '../components/BookingForm.jsx'
 import Reveal from '../components/Reveal.jsx'
+import { WhatsAppIcon, whatsappUrl } from '../components/WhatsAppLink.jsx'
 
 export default function Contact() {
   const { t, localize } = useI18n()
@@ -21,8 +22,8 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-12">
           <Reveal variant="up" delay={0}>
-            <ContactCard icon="📞" title={t('contact.phone')} value={site.contact.phone}
-              href={`tel:${site.contact.phone.replace(/\s/g, '')}`} />
+            <ContactCard icon={<WhatsAppIcon size={32} />} title="WhatsApp" value={site.contact.phone}
+              href={whatsappUrl} />
           </Reveal>
           <Reveal variant="up" delay={50}>
             <ContactCard icon="📞" title={t('contact.phone')} value={site.contact.phone2}
@@ -65,7 +66,7 @@ export default function Contact() {
 function ContactCard({ icon, title, value, href }) {
   const Tag = href ? 'a' : 'div'
   return (
-    <Tag href={href} className="bg-white rounded-2xl border border-slate-100 p-6 text-center shadow-card hover:border-brand-300 hover:shadow-pop hover:-translate-y-2 transition-all duration-500 block group h-full">
+    <Tag href={href} target={href?.startsWith('https://') ? '_blank' : undefined} rel={href?.startsWith('https://') ? 'noopener noreferrer' : undefined} className="bg-white rounded-2xl border border-slate-100 p-6 text-center shadow-card hover:border-brand-300 hover:shadow-pop hover:-translate-y-2 transition-all duration-500 block group h-full">
       <div className="text-3xl inline-block transition-transform duration-500 group-hover:scale-125 group-hover:-rotate-12">{icon}</div>
       <div className="mt-2 text-xs uppercase tracking-widest text-slate-500 font-semibold">{title}</div>
       <div className="mt-1 font-semibold text-ink-900 break-words group-hover:text-brand-700 transition-colors">{value}</div>

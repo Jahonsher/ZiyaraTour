@@ -3,6 +3,7 @@ import { useI18n } from '../i18n/I18nContext.jsx'
 import BookingForm from '../components/BookingForm.jsx'
 import site from '../data/site.json'
 import Reveal from '../components/Reveal.jsx'
+import WhatsAppLink, { WhatsAppIcon } from '../components/WhatsAppLink.jsx'
 
 export default function Book() {
   const { t, localize } = useI18n()
@@ -39,12 +40,10 @@ export default function Book() {
 
                   <ul className="mt-6 space-y-4 text-sm">
                     <li className="flex gap-3 group">
-                      <span className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center transition-all duration-500 group-hover:bg-accent-500 group-hover:scale-110">📞</span>
+                      <span className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center transition-all duration-500 group-hover:bg-accent-500 group-hover:scale-110"><WhatsAppIcon size={22} /></span>
                       <div>
-                        <div className="text-white/60 text-xs uppercase tracking-widest">{t('contact.phone')}</div>
-                        <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`} className="font-semibold hover:text-accent-300 transition-colors">
-                          {site.contact.phone}
-                        </a>
+                        <div className="text-white/60 text-xs uppercase tracking-widest">WhatsApp</div>
+                        <WhatsAppLink showIcon={false} className="font-semibold hover:text-accent-300 transition-colors" />
                       </div>
                     </li>
                     <li className="flex gap-3 group">

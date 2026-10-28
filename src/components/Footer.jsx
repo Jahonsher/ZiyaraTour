@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import site from '../data/site.json'
+import WhatsAppLink from './WhatsAppLink.jsx'
 
 export default function Footer() {
   const { t, localize } = useI18n()
@@ -16,7 +17,7 @@ export default function Footer() {
           <p className="mt-4 text-sm leading-relaxed text-white/70">{t('footer.tagline')}</p>
           <p className="mt-4 text-sm text-white/60">{localize(site.contact.address)}</p>
           <div className="mt-4 space-y-1 text-sm text-white/70">
-            <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`} className="block hover:text-white">{site.contact.phone}</a>
+            <WhatsAppLink className="hover:text-white" />
             <a href={`tel:${site.contact.phone2.replace(/\s/g, '')}`} className="block hover:text-white">{site.contact.phone2}</a>
             <a href={`mailto:${site.contact.email}`} className="block hover:text-white">{site.contact.email}</a>
           </div>

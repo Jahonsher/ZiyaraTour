@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nContext.jsx'
 import site from '../data/site.json'
 import LanguageSwitcher from './LanguageSwitcher.jsx'
+import WhatsAppLink from './WhatsAppLink.jsx'
 
 const NAV = [
   { to: '/',            key: 'nav.home' },
@@ -43,10 +44,7 @@ export default function Header({ transparent = false }) {
       <div className={`hidden md:block text-xs ${solid ? 'bg-ink-900 text-white/80' : 'bg-black/30 text-white/80 backdrop-blur'}`}>
         <div className="container-x flex justify-between items-center h-8">
           <div className="flex gap-4">
-            <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`} className="hover:text-white inline-flex items-center gap-1">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
-              {site.contact.phone}
-            </a>
+            <WhatsAppLink iconSize={14} className="hover:text-white" />
             <a href={`tel:${site.contact.phone2.replace(/\s/g, '')}`} className="hover:text-white hidden lg:inline">
               {site.contact.phone2}
             </a>
@@ -110,7 +108,7 @@ export default function Header({ transparent = false }) {
             ))}
             <Link to="/book" className="btn-primary mt-2 justify-center">{t('nav.book')}</Link>
             <div className="pt-3 mt-2 border-t border-slate-100 text-sm text-slate-600 space-y-1">
-              <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`} className="block">{site.contact.phone}</a>
+              <WhatsAppLink />
               <a href={`tel:${site.contact.phone2.replace(/\s/g, '')}`} className="block">{site.contact.phone2}</a>
               <a href={`mailto:${site.contact.email}`} className="block">{site.contact.email}</a>
             </div>

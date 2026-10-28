@@ -4,6 +4,7 @@ import Testimonials from '../components/Testimonials.jsx'
 import Reveal from '../components/Reveal.jsx'
 import Img from '../components/Img.jsx'
 import site from '../data/site.json'
+import WhatsAppLink from '../components/WhatsAppLink.jsx'
 
 const team = [
   { name: 'Kamalova Makhsuda', image: 'kamalova-makhsuda.jpg', role: 'ceo', width: 1065, height: 1280 },
@@ -78,7 +79,8 @@ export default function About() {
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-brand-700 font-semibold">
             <a className="hover:underline" href="https://www.ziyaratour.uz" target="_blank" rel="noopener noreferrer">www.ziyaratour.uz</a>
             <a className="hover:underline" href="https://www.instagram.com/ziyaratour.uz/" target="_blank" rel="noopener noreferrer">@ziyaratour.uz</a>
-            {[site.contact.phone, site.contact.phone2].map(phone => <a key={phone} className="hover:underline" href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>)}
+            <WhatsAppLink className="hover:underline" />
+            <a className="hover:underline" href={`tel:${site.contact.phone2.replace(/\s/g, '')}`}>{site.contact.phone2}</a>
           </div>
         </div>
       </section>
