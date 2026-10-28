@@ -5,9 +5,9 @@ import Reveal from '../components/Reveal.jsx'
 import Img from '../components/Img.jsx'
 
 const team = [
-  { name: 'Kamalova Makhsuda', image: 'kamalova-makhsuda.jpg', role: 'ceo', width: 1145, height: 1374 },
-  { name: 'Yunusova Shahzoda', image: 'yunusova-shahzoda.jpg', role: 'headManager', width: 1144, height: 1375 },
-  { name: 'Esonboyev Bakhodir', image: 'esonboyev-bakhodir.jpg', role: 'manager', width: 1280, height: 1024 },
+  { name: 'Kamalova Makhsuda', image: 'kamalova-makhsuda.jpg', role: 'ceo', width: 1065, height: 1280 },
+  { name: 'Yunusova Shahzoda', image: 'yunusova-shahzoda.jpg', role: 'headManager', width: 1065, height: 1280 },
+  { name: 'Esonboyev Bakhodir', image: 'esonboyev-bakhodir.jpg', role: 'manager', width: 1024, height: 1280 },
 ]
 
 function SectionTitle({ eyebrow, title }) {
