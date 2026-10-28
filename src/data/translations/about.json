@@ -1,0 +1,494 @@
+{
+  "uz": {
+    "aboutProfile": {
+      "eyebrow": "Biz haqimizda",
+      "tagline": "Your Faithful Discovery — Ishonchli sayohat hamrohingiz",
+      "since": "yildan buyon turizm sohasida",
+      "intro": [
+        "Ziyara Tour — 2018-yildan buyon turizm sohasida faoliyat yuritib kelayotgan, O‘zbekistonning Toshkent shahrida joylashgan xalqaro turizm kompaniyasi. Kompaniya GOLDEN PATH LACORE MChJ tarkibida faoliyat olib boradi.",
+        "Ziyara Tour ichki, kirish (Inbound) va chiqish (Outbound) turizmi, ziyorat va madaniy sayohatlar, individual va guruhli turlar, shuningdek, xalqaro biznes turizmi va MICE tadbirlarini tashkil etishga ixtisoslashgan.",
+        "Kompaniyamiz O‘zbekiston va Markaziy Osiyoga tashrif buyuruvchi xorijiy sayyohlar uchun kompleks DMC (Destination Management Company) xizmatlarini taqdim etadi. Shu bilan birga, O‘zbekiston fuqarolari uchun dunyoning turli mamlakatlariga dam olish, sayohat va biznes safarlarini tashkil etadi."
+      ],
+      "teamEyebrow": "Bizning jamoamiz",
+      "teamTitle": "Sayohatingizni tashkil etuvchi mutaxassislar",
+      "roles": {
+        "ceo": "CEO",
+        "headManager": "Bosh menejer",
+        "manager": "ZiyaraTour menejeri"
+      },
+      "servicesEyebrow": "Bizning xizmatlarimiz",
+      "servicesTitle": "Har bir sayohat uchun to‘liq xizmat",
+      "services": [
+        {
+          "title": "Tayyor va individual tur paketlari",
+          "text": "Mijozlarimizga oldindan ishlab chiqilgan tayyor tur paketlarini taklif etamiz. Shuningdek, har bir sayyoh, oila yoki guruhning istagi, byudjeti va sayohat maqsadidan kelib chiqib, maxsus individual tur dasturlarini ishlab chiqamiz."
+        },
+        {
+          "title": "O‘zbekiston va Markaziy Osiyo bo‘ylab sayohatlar",
+          "text": "Toshkent, Samarqand, Buxoro, Xiva, Termiz, Shahrisabz va boshqa tarixiy shaharlarga madaniy, tarixiy, gastronomik va ziyorat turlarini tashkil etamiz. Qozog‘iston va Tojikiston bilan birlashtirilgan sayohat dasturlarini ham taklif qilamiz."
+        },
+        {
+          "title": "Xorijga sayohatlar — Outbound Tourism",
+          "text": "Dunyoning turli mamlakatlariga oilaviy dam olish, individual va guruhli sayohatlar, mehmonxona bronlari, aviachiptalar, transferlar va boshqa turistik xizmatlarni taqdim etamiz."
+        },
+        {
+          "title": "Ziyorat turizmi — Islamic Heritage Tours",
+          "text": "Buyuk islom allomalari, tarixiy masjidlar, maqbaralar va muqaddas qadamjolarni qamrab oluvchi maxsus ma’rifiy va ziyorat dasturlarini ishlab chiqamiz."
+        },
+        {
+          "title": "MICE va biznes turizmi",
+          "text": "Xalqaro ko‘rgazmalar, konferensiyalar, biznes forumlar, B2B uchrashuvlar, korporativ safarlar va tadbirkorlar delegatsiyalarini tashkil etamiz."
+        }
+      ],
+      "projectsTitle": "Xalqaro MICE va biznes loyihalarimiz",
+      "projectsIntro": "Ziyara Tour nafaqat sayyohlik, balki xalqaro biznes tadbirlarini tashkil etish yo‘nalishida ham tajribaga ega. Kompaniyamizning MICE va biznes turizm faoliyati quyidagi xalqaro yo‘nalishlarni qamrab oladi:",
+      "projects": [
+        {
+          "title": "Dubay, BAA",
+          "text": "Gulfood xalqaro ko‘rgazmasi doirasida tadbirkorlar delegatsiyasi va biznes safarlarini tashkil etish."
+        },
+        {
+          "title": "Boku, Ozarbayjon",
+          "text": "Biznes sayohatlar va ishbilarmonlik tadbirlari."
+        },
+        {
+          "title": "Minsk, Belarus",
+          "text": "UzTextile biznes missiyasi, xalqaro B2B uchrashuvlar va konferensiya xizmatlarini tashkil etish."
+        },
+        {
+          "title": "Varshava va Łódź, Polsha",
+          "text": "Xalqaro biznes missiyasi, B2B forumlar, ishlab chiqarish va savdo markazlariga tashriflar bo‘yicha tashkiliy ishlar."
+        }
+      ],
+      "projectsOutro": "Biz xalqaro biznes tadbirlarida mehmonxona joylashuvi, transport, tarjimonlar, konferensiya zallari, texnik xizmatlar va delegatsiya logistikasini kompleks ravishda muvofiqlashtiramiz.",
+      "partnersEyebrow": "Xalqaro aloqalar",
+      "partnersTitle": "Xalqaro hamkorlarimiz",
+      "partnersIntro": "Ziyara Tour Buyuk Britaniya, AQSh, Kanada, Germaniya, Portugaliya, Polsha, Janubiy Afrika, Malayziya, Rossiya, Iordaniya va boshqa mamlakatlarning turistik kompaniyalari hamda biznes tashkilotlari bilan hamkorlik aloqalarini rivojlantirib kelmoqda. Xalqaro hamkorlik aloqalarimiz qatorida:",
+      "partners": [
+        {
+          "name": "Ayman Group",
+          "region": "Buyuk Britaniya, AQSh va Kanada"
+        },
+        {
+          "name": "Sabeel Travel",
+          "region": "Buyuk Britaniya"
+        },
+        {
+          "name": "Hidma Reisen",
+          "region": "Germaniya"
+        },
+        {
+          "name": "Aventus Tours",
+          "region": "Portugaliya"
+        },
+        {
+          "name": "Expogate",
+          "region": "Polsha"
+        },
+        {
+          "name": "Dar El Salam Travel",
+          "region": "Xalqaro turizm"
+        },
+        {
+          "name": "Sahel Travel",
+          "region": "Iordaniya"
+        },
+        {
+          "name": "Umma Travel",
+          "region": "Rossiya"
+        },
+        {
+          "name": "Zaarvel",
+          "region": "Xalqaro turizm"
+        }
+      ],
+      "partnersOutro": "Kompaniyamiz xalqaro B2B hamkorlikni rivojlantirish, xorijiy sayyohlik agentliklari bilan uzoq muddatli aloqalar o‘rnatish va O‘zbekistonning turizm salohiyatini jahon bozorida targ‘ib qilishga alohida e’tibor qaratadi.",
+      "strengthsEyebrow": "Nima uchun Ziyara Tour",
+      "strengthsTitle": "Bizning ustunliklarimiz",
+      "strengths": [
+        "Turizm sohasida 2018-yildan buyon faoliyat tajribasi.",
+        "Xalqaro turistik agentliklar va biznes tashkilotlari bilan hamkorlik.",
+        "Tayyor va individual tur paketlarini ishlab chiqish.",
+        "Individual, oilaviy, VIP va katta guruhlarga xizmat ko‘rsatish.",
+        "Ziyorat, madaniy, biznes va MICE turizmi bo‘yicha kompleks xizmatlar.",
+        "Mehmonxona, transport, gid, avia va temiryo‘l chiptalari hamda sayohat logistikasini muvofiqlashtirish.",
+        "Har bir mijozga individual yondashuv va sifatli xizmat ko‘rsatishga intilish."
+      ],
+      "missionEyebrow": "Bizning missiyamiz",
+      "mission": [
+        "Bizning missiyamiz — O‘zbekiston va Markaziy Osiyoning boy tarixiy, madaniy va ma’naviy merosini dunyoga tanitish, mijozlarimizga unutilmas sayohat tajribasini taqdim etish hamda xalqaro turizm va biznes hamkorlik aloqalarini mustahkamlash.",
+        "Biz uchun har bir sayohat — yangi kashfiyot, har bir mijoz — qadrli mehmon, har bir hamkorlik esa uzoq muddatli ishonchli munosabatlarning boshlanishidir."
+      ],
+      "location": "Toshkent, O‘zbekiston"
+    }
+  },
+  "uzc": {
+    "aboutProfile": {
+      "eyebrow": "Биз ҳақимизда",
+      "tagline": "Your Faithful Discovery — Ишончли саёҳат ҳамроҳингиз",
+      "since": "йилдан буён туризм соҳасида",
+      "intro": [
+        "Ziyara Tour — 2018-йилдан буён туризм соҳасида фаолият юритиб келаётган, Ўзбекистоннинг Тошкент шаҳрида жойлашган халқаро туризм компанияси. Компания GOLDEN PATH LACORE MChJ таркибида фаолият олиб боради.",
+        "Ziyara Tour ички, кириш (Inbound) ва чиқиш (Outbound) туризми, зиёрат ва маданий саёҳатлар, индивидуал ва гуруҳли турлар, шунингдек, халқаро бизнес туризми ва MICE тадбирларини ташкил этишга ихтисослашган.",
+        "Компаниямиз Ўзбекистон ва Марказий Осиёга ташриф буюрувчи хорижий сайёҳлар учун комплекс DMC (Destination Management Company) хизматларини тақдим этади. Шу билан бирга, Ўзбекистон фуқаролари учун дунёнинг турли мамлакатларига дам олиш, саёҳат ва бизнес сафарларини ташкил этади."
+      ],
+      "teamEyebrow": "Бизнинг жамоамиз",
+      "teamTitle": "Саёҳатингизни ташкил этувчи мутахассислар",
+      "roles": {
+        "ceo": "CEO",
+        "headManager": "Бош менежер",
+        "manager": "ZiyaraTour менежери"
+      },
+      "servicesEyebrow": "Бизнинг хизматларимиз",
+      "servicesTitle": "Ҳар бир саёҳат учун тўлиқ хизмат",
+      "services": [
+        {
+          "title": "Тайёр ва индивидуал тур пакетлари",
+          "text": "Мижозларимизга олдиндан ишлаб чиқилган тайёр тур пакетларини таклиф этамиз. Шунингдек, ҳар бир сайёҳ, оила ёки гуруҳнинг истаги, бюджети ва саёҳат мақсадидан келиб чиқиб, махсус индивидуал тур дастурларини ишлаб чиқамиз."
+        },
+        {
+          "title": "Ўзбекистон ва Марказий Осиё бўйлаб саёҳатлар",
+          "text": "Тошкент, Самарқанд, Бухоро, Хива, Термиз, Шаҳрисабз ва бошқа тарихий шаҳарларга маданий, тарихий, гастрономик ва зиёрат турларини ташкил этамиз. Қозоғистон ва Тожикистон билан бирлаштирилган саёҳат дастурларини ҳам таклиф қиламиз."
+        },
+        {
+          "title": "Хорижга саёҳатлар — Outbound Tourism",
+          "text": "Дунёнинг турли мамлакатларига оилавий дам олиш, индивидуал ва гуруҳли саёҳатлар, меҳмонхона бронлари, авиачипталар, трансферлар ва бошқа туристик хизматларни тақдим этамиз."
+        },
+        {
+          "title": "Зиёрат туризми — Islamic Heritage Tours",
+          "text": "Буюк ислом алломалари, тарихий масжидлар, мақбаралар ва муқаддас қадамжоларни қамраб олувчи махсус маърифий ва зиёрат дастурларини ишлаб чиқамиз."
+        },
+        {
+          "title": "MICE ва бизнес туризми",
+          "text": "Халқаро кўргазмалар, конференциялар, бизнес форумлар, B2B учрашувлар, корпоратив сафарлар ва тадбиркорлар делегацияларини ташкил этамиз."
+        }
+      ],
+      "projectsTitle": "Халқаро MICE ва бизнес лойиҳаларимиз",
+      "projectsIntro": "Ziyara Tour нафақат сайёҳлик, балки халқаро бизнес тадбирларини ташкил этиш йўналишида ҳам тажрибага эга. Компаниямизнинг MICE ва бизнес туризм фаолияти қуйидаги халқаро йўналишларни қамраб олади:",
+      "projects": [
+        {
+          "title": "Дубай, БАА",
+          "text": "Gulfood халқаро кўргазмаси доирасида тадбиркорлар делегацияси ва бизнес сафарларини ташкил этиш."
+        },
+        {
+          "title": "Боку, Озарбайжон",
+          "text": "Бизнес саёҳатлар ва ишбилармонлик тадбирлари."
+        },
+        {
+          "title": "Минск, Беларус",
+          "text": "UzTextile бизнес миссияси, халқаро B2B учрашувлар ва конференция хизматларини ташкил этиш."
+        },
+        {
+          "title": "Варшава ва Łódź, Польша",
+          "text": "Халқаро бизнес миссияси, B2B форумлар, ишлаб чиқариш ва савдо марказларига ташрифлар бўйича ташкилий ишлар."
+        }
+      ],
+      "projectsOutro": "Биз халқаро бизнес тадбирларида меҳмонхона жойлашуви, транспорт, таржимонлар, конференция заллари, техник хизматлар ва делегация логистикасини комплекс равишда мувофиқлаштирамиз.",
+      "partnersEyebrow": "Халқаро алоқалар",
+      "partnersTitle": "Халқаро ҳамкорларимиз",
+      "partnersIntro": "Ziyara Tour Буюк Британия, АҚШ, Канада, Германия, Португалия, Польша, Жанубий Африка, Малайзия, Россия, Иордания ва бошқа мамлакатларнинг туристик компаниялари ҳамда бизнес ташкилотлари билан ҳамкорлик алоқаларини ривожлантириб келмоқда. Халқаро ҳамкорлик алоқаларимиз қаторида:",
+      "partners": [
+        {
+          "name": "Ayman Group",
+          "region": "Буюк Британия, АҚШ ва Канада"
+        },
+        {
+          "name": "Sabeel Travel",
+          "region": "Буюк Британия"
+        },
+        {
+          "name": "Hidma Reisen",
+          "region": "Германия"
+        },
+        {
+          "name": "Aventus Tours",
+          "region": "Португалия"
+        },
+        {
+          "name": "Expogate",
+          "region": "Польша"
+        },
+        {
+          "name": "Dar El Salam Travel",
+          "region": "Халқаро туризм"
+        },
+        {
+          "name": "Sahel Travel",
+          "region": "Иордания"
+        },
+        {
+          "name": "Umma Travel",
+          "region": "Россия"
+        },
+        {
+          "name": "Zaarvel",
+          "region": "Халқаро туризм"
+        }
+      ],
+      "partnersOutro": "Компаниямиз халқаро B2B ҳамкорликни ривожлантириш, хорижий сайёҳлик агентликлари билан узоқ муддатли алоқалар ўрнатиш ва Ўзбекистоннинг туризм салоҳиятини жаҳон бозорида тарғиб қилишга алоҳида эътибор қаратади.",
+      "strengthsEyebrow": "Нима учун Ziyara Tour",
+      "strengthsTitle": "Бизнинг устунликларимиз",
+      "strengths": [
+        "Туризм соҳасида 2018-йилдан буён фаолият тажрибаси.",
+        "Халқаро туристик агентликлар ва бизнес ташкилотлари билан ҳамкорлик.",
+        "Тайёр ва индивидуал тур пакетларини ишлаб чиқиш.",
+        "Индивидуал, оилавий, VIP ва катта гуруҳларга хизмат кўрсатиш.",
+        "Зиёрат, маданий, бизнес ва MICE туризми бўйича комплекс хизматлар.",
+        "Меҳмонхона, транспорт, гид, авиа ва темирйўл чипталари ҳамда саёҳат логистикасини мувофиқлаштириш.",
+        "Ҳар бир мижозга индивидуал ёндашув ва сифатли хизмат кўрсатишга интилиш."
+      ],
+      "missionEyebrow": "Бизнинг миссиямиз",
+      "mission": [
+        "Бизнинг миссиямиз — Ўзбекистон ва Марказий Осиёнинг бой тарихий, маданий ва маънавий меросини дунёга танитиш, мижозларимизга унутилмас саёҳат тажрибасини тақдим этиш ҳамда халқаро туризм ва бизнес ҳамкорлик алоқаларини мустаҳкамлаш.",
+        "Биз учун ҳар бир саёҳат — янги кашфиёт, ҳар бир мижоз — қадрли меҳмон, ҳар бир ҳамкорлик эса узоқ муддатли ишончли муносабатларнинг бошланишидир."
+      ],
+      "location": "Тошкент, Ўзбекистон"
+    }
+  },
+  "ru": {
+    "aboutProfile": {
+      "eyebrow": "О нас",
+      "tagline": "Your Faithful Discovery — Ваш надёжный спутник в путешествиях",
+      "since": "работаем в туризме с этого года",
+      "intro": [
+        "Ziyara Tour — международная туристическая компания, расположенная в Ташкенте, Узбекистан, и работающая в сфере туризма с 2018 года. Компания осуществляет деятельность в составе ООО GOLDEN PATH LACORE.",
+        "Ziyara Tour специализируется на внутреннем, въездном (Inbound) и выездном (Outbound) туризме, паломнических и культурных путешествиях, индивидуальных и групповых турах, а также международном деловом туризме и организации MICE-мероприятий.",
+        "Мы предоставляем комплексные услуги DMC (Destination Management Company) иностранным туристам, посещающим Узбекистан и Центральную Азию. Также организуем отдых, путешествия и деловые поездки в разные страны мира для граждан Узбекистана."
+      ],
+      "teamEyebrow": "Наша команда",
+      "teamTitle": "Люди, которые организуют ваше путешествие",
+      "roles": {
+        "ceo": "Генеральный директор",
+        "headManager": "Главный менеджер",
+        "manager": "Менеджер ZiyaraTour"
+      },
+      "servicesEyebrow": "Наши услуги",
+      "servicesTitle": "Всё для вашего путешествия",
+      "services": [
+        {
+          "title": "Готовые и индивидуальные турпакеты",
+          "text": "Мы предлагаем заранее разработанные турпакеты, а также создаём индивидуальные программы с учётом пожеланий, бюджета и целей каждого путешественника, семьи или группы."
+        },
+        {
+          "title": "Путешествия по Узбекистану и Центральной Азии",
+          "text": "Организуем культурные, исторические, гастрономические и паломнические туры в Ташкент, Самарканд, Бухару, Хиву, Термез, Шахрисабз и другие исторические города. Также предлагаем комбинированные маршруты с Казахстаном и Таджикистаном."
+        },
+        {
+          "title": "Зарубежные путешествия — Outbound Tourism",
+          "text": "Предоставляем услуги семейного отдыха, индивидуальных и групповых путешествий по миру, бронирования отелей, авиабилетов, трансферов и другие туристические услуги."
+        },
+        {
+          "title": "Паломнический туризм — Islamic Heritage Tours",
+          "text": "Разрабатываем специальные просветительские и паломнические программы, охватывающие наследие великих исламских учёных, исторические мечети, мавзолеи и святые места."
+        },
+        {
+          "title": "MICE и деловой туризм",
+          "text": "Организуем международные выставки, конференции, бизнес-форумы, B2B-встречи, корпоративные поездки и делегации предпринимателей."
+        }
+      ],
+      "projectsTitle": "Наши международные MICE и бизнес-проекты",
+      "projectsIntro": "Ziyara Tour обладает опытом организации как туристических поездок, так и международных деловых мероприятий. Наша деятельность в сфере MICE и бизнес-туризма охватывает следующие направления:",
+      "projects": [
+        {
+          "title": "Дубай, ОАЭ",
+          "text": "Организация делегаций предпринимателей и деловых поездок на международную выставку Gulfood."
+        },
+        {
+          "title": "Баку, Азербайджан",
+          "text": "Деловые поездки и бизнес-мероприятия."
+        },
+        {
+          "title": "Минск, Беларусь",
+          "text": "Организация бизнес-миссии UzTextile, международных B2B-встреч и конференционных услуг."
+        },
+        {
+          "title": "Варшава и Лодзь, Польша",
+          "text": "Организация международных бизнес-миссий, B2B-форумов и посещений производственных и торговых центров."
+        }
+      ],
+      "projectsOutro": "На международных деловых мероприятиях мы комплексно координируем размещение в отелях, транспорт, переводчиков, конференц-залы, технические услуги и логистику делегаций.",
+      "partnersEyebrow": "Международные связи",
+      "partnersTitle": "Наши международные партнёры",
+      "partnersIntro": "Ziyara Tour развивает сотрудничество с туристическими компаниями и бизнес-организациями Великобритании, США, Канады, Германии, Португалии, Польши, Южной Африки, Малайзии, России, Иордании и других стран. Среди наших международных партнёров:",
+      "partners": [
+        {
+          "name": "Ayman Group",
+          "region": "Великобритания, США и Канада"
+        },
+        {
+          "name": "Sabeel Travel",
+          "region": "Великобритания"
+        },
+        {
+          "name": "Hidma Reisen",
+          "region": "Германия"
+        },
+        {
+          "name": "Aventus Tours",
+          "region": "Португалия"
+        },
+        {
+          "name": "Expogate",
+          "region": "Польша"
+        },
+        {
+          "name": "Dar El Salam Travel",
+          "region": "Международный туризм"
+        },
+        {
+          "name": "Sahel Travel",
+          "region": "Иордания"
+        },
+        {
+          "name": "Umma Travel",
+          "region": "Россия"
+        },
+        {
+          "name": "Zaarvel",
+          "region": "Международный туризм"
+        }
+      ],
+      "partnersOutro": "Мы уделяем особое внимание развитию международного B2B-сотрудничества, установлению долгосрочных отношений с зарубежными туристическими агентствами и продвижению туристического потенциала Узбекистана на мировом рынке.",
+      "strengthsEyebrow": "Почему Ziyara Tour",
+      "strengthsTitle": "Наши преимущества",
+      "strengths": [
+        "Опыт работы в туризме с 2018 года.",
+        "Сотрудничество с международными туристическими агентствами и бизнес-организациями.",
+        "Разработка готовых и индивидуальных турпакетов.",
+        "Обслуживание индивидуальных путешественников, семей, VIP-клиентов и больших групп.",
+        "Комплексные услуги паломнического, культурного, делового и MICE-туризма.",
+        "Координация отелей, транспорта, гидов, авиа- и железнодорожных билетов и логистики путешествий.",
+        "Индивидуальный подход к каждому клиенту и стремление к качественному обслуживанию."
+      ],
+      "missionEyebrow": "Наша миссия",
+      "mission": [
+        "Наша миссия — знакомить мир с богатым историческим, культурным и духовным наследием Узбекистана и Центральной Азии, дарить клиентам незабываемые впечатления и укреплять международное сотрудничество в туризме и бизнесе.",
+        "Для нас каждое путешествие — новое открытие, каждый клиент — дорогой гость, а каждое партнёрство — начало долгосрочных доверительных отношений."
+      ],
+      "location": "Ташкент, Узбекистан"
+    }
+  },
+  "en": {
+    "aboutProfile": {
+      "eyebrow": "About us",
+      "tagline": "Your Faithful Discovery",
+      "since": "working in tourism since",
+      "intro": [
+        "Ziyara Tour is an international tourism company based in Tashkent, Uzbekistan, operating in the tourism sector since 2018. The company operates as part of GOLDEN PATH LACORE LLC.",
+        "Ziyara Tour specialises in domestic, inbound and outbound tourism, pilgrimage and cultural journeys, private and group tours, as well as international business travel and MICE events.",
+        "We provide comprehensive DMC (Destination Management Company) services for international travellers visiting Uzbekistan and Central Asia. We also organise holidays, tours and business trips around the world for citizens of Uzbekistan."
+      ],
+      "teamEyebrow": "Our team",
+      "teamTitle": "The people behind your journey",
+      "roles": {
+        "ceo": "CEO",
+        "headManager": "Head Manager",
+        "manager": "Manager at ZiyaraTour"
+      },
+      "servicesEyebrow": "Our services",
+      "servicesTitle": "Everything for your journey",
+      "services": [
+        {
+          "title": "Ready-made and tailor-made tour packages",
+          "text": "We offer carefully prepared tour packages and create bespoke itineraries around the wishes, budget and travel goals of each traveller, family or group."
+        },
+        {
+          "title": "Journeys across Uzbekistan and Central Asia",
+          "text": "We organise cultural, historical, gastronomic and pilgrimage tours to Tashkent, Samarkand, Bukhara, Khiva, Termez, Shakhrisabz and other historic cities. We also offer combined itineraries including Kazakhstan and Tajikistan."
+        },
+        {
+          "title": "Travel abroad — Outbound Tourism",
+          "text": "We arrange family holidays, private and group journeys around the world, hotel reservations, flights, transfers and other travel services."
+        },
+        {
+          "title": "Pilgrimage — Islamic Heritage Tours",
+          "text": "We design educational and pilgrimage programmes exploring the legacy of great Islamic scholars, historic mosques, mausoleums and sacred sites."
+        },
+        {
+          "title": "MICE and business travel",
+          "text": "We organise international exhibitions, conferences, business forums, B2B meetings, corporate trips and entrepreneur delegations."
+        }
+      ],
+      "projectsTitle": "Our international MICE and business projects",
+      "projectsIntro": "Alongside leisure travel, Ziyara Tour has experience organising international business events. Our MICE and business travel activities cover the following destinations:",
+      "projects": [
+        {
+          "title": "Dubai, UAE",
+          "text": "Organising entrepreneur delegations and business trips to the Gulfood international exhibition."
+        },
+        {
+          "title": "Baku, Azerbaijan",
+          "text": "Business travel and professional events."
+        },
+        {
+          "title": "Minsk, Belarus",
+          "text": "Organising the UzTextile business mission, international B2B meetings and conference services."
+        },
+        {
+          "title": "Warsaw and Łódź, Poland",
+          "text": "Arranging international business missions, B2B forums and visits to production and trade centres."
+        }
+      ],
+      "projectsOutro": "We coordinate hotel accommodation, transport, interpreters, conference venues, technical services and delegation logistics for international business events.",
+      "partnersEyebrow": "International connections",
+      "partnersTitle": "Our international partners",
+      "partnersIntro": "Ziyara Tour develops partnerships with tourism companies and business organisations in the United Kingdom, USA, Canada, Germany, Portugal, Poland, South Africa, Malaysia, Russia, Jordan and other countries. Our international connections include:",
+      "partners": [
+        {
+          "name": "Ayman Group",
+          "region": "United Kingdom, USA and Canada"
+        },
+        {
+          "name": "Sabeel Travel",
+          "region": "United Kingdom"
+        },
+        {
+          "name": "Hidma Reisen",
+          "region": "Germany"
+        },
+        {
+          "name": "Aventus Tours",
+          "region": "Portugal"
+        },
+        {
+          "name": "Expogate",
+          "region": "Poland"
+        },
+        {
+          "name": "Dar El Salam Travel",
+          "region": "International tourism"
+        },
+        {
+          "name": "Sahel Travel",
+          "region": "Jordan"
+        },
+        {
+          "name": "Umma Travel",
+          "region": "Russia"
+        },
+        {
+          "name": "Zaarvel",
+          "region": "International tourism"
+        }
+      ],
+      "partnersOutro": "We focus on developing international B2B cooperation, building long-term relationships with overseas travel agencies and promoting Uzbekistan’s tourism potential in the global market.",
+      "strengthsEyebrow": "Why Ziyara Tour",
+      "strengthsTitle": "Our strengths",
+      "strengths": [
+        "Experience in tourism since 2018.",
+        "Cooperation with international travel agencies and business organisations.",
+        "Ready-made and tailor-made tour packages.",
+        "Services for individuals, families, VIP travellers and large groups.",
+        "Comprehensive pilgrimage, cultural, business and MICE tourism services.",
+        "Coordination of hotels, transport, guides, flights, rail tickets and travel logistics.",
+        "A personal approach to every client and a commitment to quality service."
+      ],
+      "missionEyebrow": "Our mission",
+      "mission": [
+        "Our mission is to introduce the rich historical, cultural and spiritual heritage of Uzbekistan and Central Asia to the world, provide unforgettable travel experiences and strengthen international tourism and business partnerships.",
+        "For us, every journey is a new discovery, every client is a valued guest, and every partnership is the beginning of a lasting relationship built on trust."
+      ],
+      "location": "Tashkent, Uzbekistan"
+    }
+  }
+}
