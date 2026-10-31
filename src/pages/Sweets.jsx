@@ -9,20 +9,20 @@ function SweetImage({ sweet, hero = false }) {
       src={`/images/sweets/${sweet.id}-1000.webp`}
       srcSet={`/images/sweets/${sweet.id}-480.webp ${Math.round(sweet.width * 480 / Math.max(sweet.width, sweet.height))}w, /images/sweets/${sweet.id}-1000.webp ${sweet.width}w`}
       sizes={hero ? '(min-width: 1024px) 560px, 100vw' : '(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw'}
-      alt={hero || sweet.category === 'gift' ? 'Silk Road Sweets' : ''}
+      alt={`Silk Road Sweets — ${sweet.category === 'gift' ? 'Gift collection' : 'Halva'}`}
       width={sweet.width}
       height={sweet.height}
       loading={hero ? 'eager' : 'lazy'}
       fetchPriority={hero ? 'high' : 'auto'}
       decoding="async"
-      className={`w-full h-full ${hero ? 'object-cover' : 'object-contain transition-transform duration-500 group-hover:scale-105'}`}
+      className={`w-full h-full ${hero ? 'object-contain' : 'object-contain transition-transform duration-500 group-hover:scale-105'}`}
     />
   )
 }
 
 export default function Sweets() {
   const { t } = useI18n()
-  const hero = sweets.find(sweet => sweet.category === 'gift')
+  const hero = sweets.find(sweet => sweet.category === 'gift') || sweets[0]
   return (
     <div className="pt-28 sm:pt-36 pb-8">
       <section className="container-x">

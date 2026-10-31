@@ -38,3 +38,7 @@ ZiyaraTour-TAYYOR.zip
 
 # Local source photos; the website uses optimized WebP copies.
 aweets/
+
+# Local SSH deployment keys
+id_rsa
+id_rsa.pub

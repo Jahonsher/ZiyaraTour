@@ -1,0 +1,8 @@
+# React Router routes on Apache/cPanel. Preserve existing files and API handlers.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^api(?:/|$) - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>

@@ -316,5 +316,101 @@
   "document_6014958709996787439.mp4": {
     "category": "moments",
     "order": 2
+  },
+  "photo_5413823388217712257_y.jpg": {
+    "category": "moments",
+    "width": 1280,
+    "height": 960,
+    "order": 2
+  },
+  "photo_5413823388217712258_y.jpg": {
+    "category": "moments",
+    "width": 960,
+    "height": 1280,
+    "order": 3
+  },
+  "photo_5413823388217712259_y.jpg": {
+    "category": "moments",
+    "width": 960,
+    "height": 1280,
+    "order": 4
+  },
+  "photo_5413823388217712260_y.jpg": {
+    "category": "moments",
+    "width": 1280,
+    "height": 960,
+    "order": 5
+  },
+  "photo_5413823388217712261_w.jpg": {
+    "category": "moments",
+    "width": 1920,
+    "height": 1440,
+    "order": 6
+  },
+  "photo_5413823388217712262_y.jpg": {
+    "category": "moments",
+    "width": 960,
+    "height": 1280,
+    "order": 7
+  },
+  "photo_5413823388217712263_w.jpg": {
+    "category": "moments",
+    "width": 1920,
+    "height": 1440,
+    "order": 8
+  },
+  "photo_5413823388217712264_y.jpg": {
+    "category": "moments",
+    "width": 960,
+    "height": 1280,
+    "order": 9
+  },
+  "photo_5413823388217712265_w.jpg": {
+    "category": "moments",
+    "width": 1920,
+    "height": 1440,
+    "order": 10
+  },
+  "photo_5413823388217712266_y.jpg": {
+    "category": "moments",
+    "width": 960,
+    "height": 1280,
+    "order": 11
+  },
+  "photo_5413823388217712267_y.jpg": {
+    "category": "moments",
+    "width": 1280,
+    "height": 720,
+    "order": 12
+  },
+  "photo_5413823388217712269_w.jpg": {
+    "category": "moments",
+    "width": 1440,
+    "height": 1920,
+    "order": 13
+  },
+  "photo_5413823388217712270_y.jpg": {
+    "category": "moments",
+    "width": 720,
+    "height": 1280,
+    "order": 14
+  },
+  "photo_5413823388217712271_w.jpg": {
+    "category": "moments",
+    "width": 1440,
+    "height": 1920,
+    "order": 15
+  },
+  "photo_5413823388217712272_y.jpg": {
+    "category": "moments",
+    "width": 720,
+    "height": 1280,
+    "order": 16
+  },
+  "photo_5413823388217712273_y.jpg": {
+    "category": "moments",
+    "width": 960,
+    "height": 1280,
+    "order": 17
   }
 }

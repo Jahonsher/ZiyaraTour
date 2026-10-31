@@ -6,3 +6,6 @@ public/Commentary/
 public/manba/*.docx
 deploy/
 ZiyaraTour-TAYYOR.zip
+
+id_rsa
+id_rsa.pub
